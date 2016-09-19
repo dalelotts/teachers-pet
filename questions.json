@@ -180,5 +180,100 @@
     "stem": "What is the default template engine used in Express?",
     "answer": "Jade or Pug",
     "subject": "express"
+  },
+  {
+    "stem": "What is middleware? List some examples of middleware we have used.",
+    "answer": "Any number of functions that are invoked by the Express.js routing layer before the final request handler, and thus sits in the middle between a raw request and the final intended route.",
+    "subject": "express"
+  },
+  {
+    "stem": "What is the purpose of the `next` parameter?",
+    "answer": "Provides access to next middleware function in the application’s request-response cycle.",
+    "subject": "express"
+  },
+  {
+    "stem": "In what order are middleware functions called?",
+    "answer": "In the order they are added",
+    "subject": "express"
+  },
+  {
+    "stem": "In what order are route functions called?",
+    "answer": "In the order they are added",
+    "subject": "express"
+  },
+  {
+    "stem": "What is the difference between a unit test and an integration test?",
+    "answer": "Unit tests validate a class or method in isolation. Integration tests include dependencies",
+    "subject": "testing"
+  },
+  {
+    "stem": "What are the components of an HTTP request?",
+    "answer": "verb, version, url, header(s) (includes cookies), and body",
+    "subject": "http"
+  },
+  {
+    "stem": "What are the components of an HTTP response?",
+    "answer": "status code & reason phrase, header(s) (includes cookies), and body",
+    "subject": "http"
+  },
+  {
+    "stem": "What is the difference between a mock and a stub?",
+    "answer": "Mock cares if you call it. Stubs are sanguine (optimistic or positive - don't care about calls, order, or validation)",
+    "subject": "mocking"
+  },
+  {
+    "stem": "What are the four states of a file in git?",
+    "answer": "Untracked, Unmodified, Modified, Staged, Committed",
+    "subject": "git"
+  },
+  {
+    "stem": "What does `git init` do?",
+    "answer": "Initializes any directory to a new Git repository",
+    "subject": "git"
+  },
+  {
+    "stem": "What does `git status` do?",
+    "answer": "Shows the states of the files in a git repository",
+    "subject": "git"
+  },
+  {
+    "stem": "How do you stage all untracked and modified files in a git repository?",
+    "answer": "'git add .'",
+    "subject": "git"
+  },
+  {
+    "stem": "What does the .gitignore file do?",
+    "answer": "Tells git which files should not be included in the repository",
+    "subject": "git"
+  },
+  {
+    "stem": "What does `git diff` do?",
+    "answer": "Shows the changes to all modified files in the repository",
+    "subject": "git"
+  },
+  {
+    "stem": "Is 'Updated about page' a good commit message? Why or why not?",
+    "answer": "No, it does not tell you WHY it changed. Was it a bug, a story, or something else?",
+    "subject": "git"
+  },
+  {
+    "stem": "What is the generic name for tools like Pug?",
+    "answer": "Template engine",
+    "subject": "pug"
+  },
+  {
+    "stem": "What is the generic name for tools like Pug?",
+    "answer": "Template engine",
+    "subject": "pug"
+  },
+  {
+    "stem": "What is the output format of Pug?",
+    "answer": "HTML",
+    "subject": "pug"
+  },
+  {
+    "stem": "What is the output format of Pug?",
+    "answer": "HTML",
+    "subject": "pug"
   }
 ]
