@@ -1,0 +1,49 @@
+<section class="col-sm-6">
+    <ng-form name="meetupSetup" role="form">
+
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject"
+                    class="form-control"
+                    data-ng-options="subject for subject in subjects"
+                    data-ng-model="subject"
+                    required>
+            </select>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" data-ng-click="importNamesAndQuestions()"
+                    data-ng-disabled="meetupSetup.$invalid">Import
+                Names and Questions
+            </button>
+            <button class="btn btn-danger pull-right" data-ng-click="resetEverything()">Reset Everything</button>
+        </div>
+        <div class="form-group">
+            <span class="badge">{{ rsvps.length }}</span> names available
+            <span class="badge">{{ questions.length }}</span> questions available
+        </div>
+    </ng-form>
+
+</section>
+<section class="col-sm-6">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <button class="btn btn-primary" data-ng-click="selectQuestion()" data-ng-disabled="!questions.length">Pick
+                Question
+            </button>
+            <span class="badge">{{ selected.length }}</span> selected
+        </div>
+
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li data-ng-repeat="question in selected ">
+                    <h3>{{ question.name }}</h3>
+                    <h4 class="well">{{ question.stem }}</h4>
+                    <p data-ng-show="question.showAnswer">{{ question.answer }}</p>
+                    <button class="btn btn-success btn-xs" data-ng-click="toggleAnswer($index)"><i
+                            class="glyphicon glyphicon-eye-open"></i></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

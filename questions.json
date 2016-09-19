@@ -1,0 +1,184 @@
+[
+  {
+    "stem": "You have a performance problem with your application, what do you do first?",
+    "answer": "Run a profiler to gather data about exactly where the problem is located. (Don't guess!)",
+    "subject": "debugging"
+  },
+  {
+    "stem": "When you are first becoming acquainted with a new code base, what things do you notice, or look for, which give you an indication of the quality of the code?",
+    "subject": "code quality"
+  },
+  {
+    "stem": "What things tell you that the code is probably well organized and what things tell you it probably isn’t?",
+    "subject": "code quality"
+  },
+  {
+    "stem": "Explain the details and usage of a design pattern that you have used, other than singleton.",
+    "subject": "design patterns"
+  },
+  {
+    "stem": "What is the difference between a class and an instance?",
+    "answer": "A class is a template for a new object; an instance is an object which was created from that template.",
+    "subject": "java"
+  },
+  {
+    "stem": "What are the access/visibility modifiers in Java?",
+    "answer": "public, protected, private, and package (default)",
+    "subject": "java"
+  },
+  {
+    "stem": "What is the difference between abstract classes and interfaces?",
+    "answer": "Abstract classes can contain code/implementation.\nInterfaces are simply a declarative structure",
+    "subject": "java"
+  },
+  {
+    "stem": "Does the Java language allow multiple inheritance?",
+    "answer": "Yes. It allows multiple interface inheritance. It does disallow multiple implementation inheritance though.",
+    "subject": "java"
+  },
+  {
+    "stem": "When do static members of an object get initialized?",
+    "answer": "The first time the object is instantiated or invoked, NOT at application startup).",
+    "subject": "java"
+  },
+  {
+    "stem": "Explain the final keyword for a field",
+    "answer": "Field = value of field cannot be changed outside the constructor.",
+    "subject": "java"
+  },
+  {
+    "stem": "Explain the final keyword for a method, and a class",
+    "answer": "The method cannot be overridden in subclasses.",
+    "subject": "java"
+  },
+  {
+    "stem": "Explain the final keyword for a class",
+    "answer": "The class cannot be sub-classed (extended).",
+    "subject": "java"
+  },
+  {
+    "stem": "What is the difference between the .equals method and the 'equals equals' operator?",
+    "answer": "'equals equals' performs a comparison of the object reference, .equals performs a class specific comparison",
+    "subject": "java"
+  },
+  {
+    "stem": "If two objects are equal (using the equals method), will they have the same hash code? Why?",
+    "answer": "Yes, the contract for equals states the hash code must be equal for objects that are equal.",
+    "subject": "java"
+  },
+  {
+    "stem": "Explain checked exceptions vs. unchecked exceptions",
+    "answer": "Checked exceptions must be caught or declared as thrown, unchecked do not need to be caught",
+    "subject": "java"
+  },
+  {
+    "stem": "Why would you declare a private constructor?",
+    "answer": "So the object cannot be externally instantiated.",
+    "subject": "java"
+  },
+  {
+    "stem": "What is the difference between an anonymous class and an inner class?",
+    "answer": "Anonymous classes are declared within a method body and cannot be reused.\nInner classes are declared within a class body and can be reused",
+    "subject": "java"
+  },
+  {
+    "stem": "What is the difference between an inner class and a static inner class?",
+    "answer": "Inner class has a reference to its enclosing class and cannot be instantiated independent of its enclosing class.\nStatic inner class does not have a reference to its enclosing instance and can be instantiated directly.",
+    "subject": "java"
+  },
+  {
+    "stem": "What is synchronization and when do you use it?",
+    "answer": "Synchronization controls access of multiple threads to shared resources. Without synchronization, it is possible for one thread to modify a shared object while another thread is in the process of using or updating that object's value",
+    "subject": "java"
+  },
+  {
+    "stem": "Explain the difference between a synchronized block and a synchronized method.",
+    "answer": "Method obtains a lock on the instance of the containing object.\nBlock obtains a lock on the object specified in the block.",
+    "subject": "java"
+  },
+  {
+    "stem": "What is reflection and when do you use it?",
+    "answer": "Reflection is when an application has the ability to examine and modify its own structure and behavior at runtime.\nAllows the runtime variation of the concrete implementation, method called, or variable modified to vary at runtime.",
+    "subject": "java"
+  },
+  {
+    "stem": "Why would you declare a serial version UID field?",
+    "answer": "SUID is used to inform the Java serialization mechanism which version of the class is compatible with this serialized object.",
+    "subject": "java"
+  },
+  {
+    "stem": "When is type checking performed on generic classes?",
+    "answer": "Compile time",
+    "subject": "java"
+  },
+  {
+    "stem": "What does REST mean?",
+    "answer": "Representational state transfer",
+    "subject": "express"
+  },
+  {
+    "stem": "What is a template engine?",
+    "answer": "Combines one or more templates with a data model",
+    "subject": "express"
+  },
+  {
+    "stem": "What XP Value does using the express-generator espouse?",
+    "answer": "Simplicity",
+    "subject": "express"
+  },
+  {
+    "stem": "What is an Express Route in relation to MVC?",
+    "answer": "The controller",
+    "subject": "express"
+  },
+  {
+    "stem": "How are EDD and TDD similar?",
+    "answer": "Both require an error to drive what to do next.",
+    "subject": "express"
+  },
+  {
+    "stem": "When would you use EDD instead of TDD?",
+    "answer": "Never for production, but most commonly for learning new frameworks / API's that you don't yet know how to test.",
+    "subject": "express"
+  },
+  {
+    "stem": "What is the most significant advantage of TDD over EDD?",
+    "answer": "No extra cost or effort to re-validate the behavior of the system. Able to re-execute the tests with no manual effort.",
+    "subject": "express"
+  },
+  {
+    "stem": "what is req.body ? How did it get there?",
+    "answer": "A JavaScript Object representation of the submitted form.  Added to the reqest by the bodyparser. ",
+    "subject": "express"
+  },
+  {
+    "stem": "what function arguments are available to Express.js route handlers?",
+    "answer": "req - the request object, res - the response object, next (optional) - a function to pass control to one of the subsequent route handlers",
+    "subject": "express"
+  },
+  {
+    "stem": "what are core features of the Express.js framework?",
+    "answer": "Use middleware to respond to HTTP Requests, Defines routing which maps to a URL and HTTP Method. Render HTML Pages using a templating engine.",
+    "subject": "express"
+  },
+  {
+    "stem": "How do you get query parameters in Express.js?",
+    "answer": "req.query[paramater-name]",
+    "subject": "express"
+  },
+  {
+    "stem": "How do you get URL parameters in Express.js?",
+    "answer": "req.params[paramater-name]",
+    "subject": "express"
+  },
+  {
+    "stem": "What is the parameter “next” used for in Express?",
+    "answer": "a function to pass control to one of the subsequent route handlers",
+    "subject": "express"
+  },
+  {
+    "stem": "What is the default template engine used in Express?",
+    "answer": "Jade or Pug",
+    "subject": "express"
+  }
+]

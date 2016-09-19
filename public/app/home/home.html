@@ -1,0 +1,37 @@
+<section class="col-sm-6">
+    <ng-form name="meetupSetup" role="form">
+
+
+        <div class="form-group">
+            <button class="btn btn-primary" data-ng-click="importNames()" data-ng-disabled="meetupSetup.$invalid">Import
+                Names
+            </button>
+            <button class="btn btn-danger pull-right" data-ng-click="resetEverything()">Reset Everything</button>
+        </div>
+
+        <div class="form-group">
+            <span class="badge">{{ rsvps.length }}</span> names available
+        </div>
+
+    </ng-form>
+
+</section>
+<section class="col-sm-6">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <button class="btn btn-primary" data-ng-click="selectRSVP()" data-ng-disabled="!rsvps.length">Pick
+                Name
+            </button>
+            <span class="badge">{{ selected.length }}</span> selected
+        </div>
+
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li data-ng-repeat="rsvp in selected ">
+                    <h3>{{ rsvp.name }}</h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
