@@ -227,6 +227,21 @@
     "subject": "git"
   },
   {
+    "stem": "What is the difference between a local and remote repository?",
+    "answer": "The local is a complete copy (perhaps missing some branches)",
+    "subject": "git"
+  },
+  {
+    "stem": "Can the remote origin repository be ahead of the local repository?",
+    "answer": "Yes.",
+    "subject": "git"
+  },
+  {
+    "stem": "How many 'remotes' can a repository have?",
+    "answer": "Unlimited",
+    "subject": "git"
+  },
+  {
     "stem": "What does `git init` do?",
     "answer": "Initializes any directory to a new Git repository",
     "subject": "git"
@@ -320,31 +335,37 @@
   },
   {
     "stem": "Are protractor by.* methods asynchronous?",
-    "subject": "protractor"
+    "subject": "protractor",
+    "answer": "Yes"
   },
   {
     "stem": "Do we need QA if we have 100% acceptance test coverage?",
-    "subject": "protractor"
+    "subject": "protractor",
+    "answer": "Yes. People are excellent at destructive testing, computers are not. 'here is a hammer, try to break it'"
   },
   {
-    "stem": "Do acceptance tests verify the number of records in the database?",
-    "subject": "protractor"
+    "stem": "Should acceptance tests verify the number of records in the database?",
+    "subject": "protractor" ,
+    "answer": "Only indirectly through observing content on the page."
   },
   {
-    "stem": "Should acceptance tests verify the state of the javascript data object the page?",
-    "subject": "protractor"
+    "stem": "Should acceptance tests verify the state of the javascript data objects the page?",
+    "subject": "protractor" ,
+    "answer": "Only indirectly through observing content on the page."
   },
   {
     "stem": "When should use you by.xpath(...)?",
-    "subject": "protractor"
+    "subject": "protractor",
+    "answer": "This should be avoided because it makes the tests brittle. Use only when another method will not work."
   },
   {
     "stem": "You are using a jquery plugin on the page, should the acceptance tests execute all of the behavior of the plugin? - No! You are testing your code, not someone elses!",
-    "subject": "protractor"
+    "subject": "protractor",
+    "answer": "No, the developer of the plugin should have tested it. Only test code 'you' write."
   },
   {
     "stem": "Do you include negative path tests in acceptance tests?",
-    "answer": "it depends",
+    "answer": "it depends. Is it important to the end user?",
     "subject": "protractor"
   }
 ]
