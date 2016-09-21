@@ -237,6 +237,86 @@
     "subject": "git"
   },
   {
+    "stem": "Which git commands interact with the remote server?",
+    "answer": "fetch, pull, push. No other commands connect to the remote server. Unlike SVN, Perforce, etc, no server is required.",
+    "subject": "git"
+  },
+  {
+    "stem": "Can any directory be a git repository?",
+    "answer": "Yes. git init works in any directory.",
+    "subject": "git"
+  },
+  {
+    "stem": "What is the function of ‘GIT PUSH’ in GIT?",
+    "answer": "Pushes your changes to the remote repository. Technically it Updates remote refs along with associated objects",
+    "subject": "git"
+  },
+  {
+    "stem": "What does 'git remote -v' do?",
+    "answer": "List the remote repositories associated with the repositories",
+    "subject": "git"
+  },
+  {
+    "stem": "Which git command(s) will work outside of a git repository?",
+    "answer": "git init",
+    "subject": "git"
+  },
+  {
+    "stem": "How to you list the commit history of a repository?",
+    "answer": "git log",
+    "subject": "git"
+  },
+  {
+    "stem": "What does commit object contain??",
+    "answer": "1) A set of files, representing the state of the entire repository at a given point of time. 2) Reference to parent commit objects. 3) An SHA name, a 40 character string that uniquely identifies the commit object.",
+    "subject": "git"
+  },
+  {
+    "stem": "What is the function of git clone?",
+    "answer": "The git clone command creates a copy of an existing Git repository.  To get the copy of a central repository, ‘cloning’  is the most common way used by programmers.",
+    "subject": "git"
+  },
+  {
+    "stem": "How can you create a repository in Git?",
+    "answer": "'git init' is any directory.",
+    "subject": "git"
+  },
+  {
+    "stem": "What is the purpose of branching in GIT?",
+    "answer": "Allows you to go to your previous work keeping your recent work intact.",
+    "subject": "git"
+  },
+  {
+    "stem": "How can you bring a new feature in the main branch?",
+    "answer": "'git merge' or 'git pull'",
+    "subject": "git"
+  },
+  {
+    "stem": "What is a ‘merge conflict’ in git?",
+    "answer": "The commit that has to be merged has some change in one place, and the current commit also has a change at the same place. Git will not be able to predict which change should take precedence.",
+    "subject": "git"
+  },
+  {
+    "stem": "How can 'merge conflict' be resolved?",
+    "answer": "Edit the files manually to fix the conflicting changes and then add the resolved files using 'git add'. Then run 'git rebase --continue' or 'git commit'",
+    "subject": "git"
+  },
+  {
+    "stem": "What is the function of ‘git diff’?",
+    "answer": "shows the changes between commits, commit and working tree, etc",
+    "subject": "git"
+  },
+  {
+    "stem": "What is ‘git status’ is used for?",
+    "answer": "shows the difference between the working directory and the index (committed files)",
+    "subject": "git"
+  },
+  {
+    "stem": "What is ‘git add’ is used for?",
+    "answer": "Changes the tracking state of the files from Modified or Untracked to Staged.",
+    "subject": "git"
+  },
+  {
     "stem": "How many 'remotes' can a repository have?",
     "answer": "Unlimited",
     "subject": "git"
@@ -345,12 +425,12 @@
   },
   {
     "stem": "Should acceptance tests verify the number of records in the database?",
-    "subject": "protractor" ,
+    "subject": "protractor",
     "answer": "Only indirectly through observing content on the page."
   },
   {
     "stem": "Should acceptance tests verify the state of the javascript data objects the page?",
-    "subject": "protractor" ,
+    "subject": "protractor",
     "answer": "Only indirectly through observing content on the page."
   },
   {
