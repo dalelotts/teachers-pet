@@ -7,7 +7,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
 
 var students = require('./students.json');
 var questions = require('./questions.json');
@@ -23,31 +22,31 @@ app.set('view engine', 'ejs');
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/', routes);
-app.use('/users', users);
+
 app.use('/rsvps', function (req, res) {
-   res.json(students);
+  res.json(students);
 });
+
 app.use('/questions', function (req, res) {
-  res.json(questions.filter(function(question) {
+  res.json(questions.filter(function (question) {
     return question.subject === req.query.subject;
   }));
 });
+
 app.use('/subjects', function (req, res) {
-  var subjects = questions.reduce(function (accumulator, question) {
-       if (accumulator.indexOf(question.subject) === -1) {
-         accumulator.push(question.subject);
-       }
-       return accumulator
-  }, []).sort();
+  var subjects = Object.keys(questions.reduce(function (accumulator, question) {
+    accumulator[question.subject] = true;
+    return accumulator
+  }, {})).sort();
 
   res.json(subjects);
 });
-
 
 /// catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -79,6 +78,5 @@ app.use(function (err, req, res, next) {
     error: {}
   });
 });
-
 
 module.exports = app;
