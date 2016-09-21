@@ -207,12 +207,12 @@
     "subject": "testing"
   },
   {
-    "stem": "What are the components of an HTTP request?",
+    "stem": "What are the components of an HTTP request (not a duplicate)?",
     "answer": "verb, version, url, header(s) (includes cookies), and body",
     "subject": "http"
   },
   {
-    "stem": "What are the components of an HTTP response?",
+    "stem": "What are the components of an HTTP response (not a duplicate)?",
     "answer": "status code & reason phrase, header(s) (includes cookies), and body",
     "subject": "http"
   },
@@ -275,5 +275,76 @@
     "stem": "What is the output format of Pug?",
     "answer": "HTML",
     "subject": "pug"
+  },
+  {
+    "stem": "What is the difference between acceptance testing and unit testing",
+    "subject": "protractor"
+  },
+  {
+    "stem": "What is the difference between acceptance testing and integration testing",
+    "subject": "protractor"
+  },
+  {
+    "stem": "What is the difference between acceptance testing and UI testing",
+    "subject": "protractor"
+  },
+  {
+    "stem": "What is the difference between mocha and jasmine",
+    "subject": "protractor"
+  },
+  {
+    "stem": "What underlying tool does protractor use to drive the browswer",
+    "subject": "protractor"
+  },
+  {
+    "stem": "Does protractor interact directly with the server? - no only the browser",
+    "subject": "protractor"
+  },
+  {
+    "stem": "what is User acceptance testing",
+    "subject": "protractor"
+  },
+  {
+    "stem": "What are the objectives of a User Acceptance Test.",
+    "subject": "protractor"
+  },
+  {
+    "stem": "You are starting a new feature, which type of test do you write first? Unit, Integration, or Acceptance? And why?",
+    "subject": "protractor",
+    "answer": "follows outside in, you know your done with the feature the moment the acceptance test passes"
+  },
+  {
+    "stem": "What are the by.* functions in protractor?",
+    "answer": "Matcher",
+    "subject": "protractor"
+  },
+  {
+    "stem": "Are protractor by.* methods asynchronous?",
+    "subject": "protractor"
+  },
+  {
+    "stem": "Do we need QA if we have 100% acceptance test coverage?",
+    "subject": "protractor"
+  },
+  {
+    "stem": "Do acceptance tests verify the number of records in the database?",
+    "subject": "protractor"
+  },
+  {
+    "stem": "Should acceptance tests verify the state of the javascript data object the page?",
+    "subject": "protractor"
+  },
+  {
+    "stem": "When should use you by.xpath(...)?",
+    "subject": "protractor"
+  },
+  {
+    "stem": "You are using a jquery plugin on the page, should the acceptance tests execute all of the behavior of the plugin? - No! You are testing your code, not someone elses!",
+    "subject": "protractor"
+  },
+  {
+    "stem": "Do you include negative path tests in acceptance tests?",
+    "answer": "it depends",
+    "subject": "protractor"
   }
 ]
