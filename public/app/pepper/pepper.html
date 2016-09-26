@@ -1,5 +1,15 @@
 <section class="col-sm-6">
-    <ng-form name="meetupSetup" role="form">
+    <ng-form name="pepperSetup" role="form">
+
+        <div class="form-group">
+            <label for="cohort">Cohort</label>
+            <select id="cohort"
+                    class="form-control"
+                    data-ng-options="cohort for cohort in cohorts"
+                    data-ng-model="cohort"
+                    required>
+            </select>
+        </div>
 
         <div class="form-group">
             <label for="subject">Subject</label>
@@ -12,13 +22,13 @@
         </div>
         <div class="form-group">
             <button class="btn btn-primary" data-ng-click="importNamesAndQuestions()"
-                    data-ng-disabled="meetupSetup.$invalid">Import
+                    data-ng-disabled="pepperSetup.$invalid">Import
                 Names and Questions
             </button>
             <button class="btn btn-danger pull-right" data-ng-click="resetEverything()">Reset Everything</button>
         </div>
         <div class="form-group">
-            <span class="badge">{{ rsvps.length }}</span> names available
+            <span class="badge">{{ students.length }}</span> names available
             <span class="badge">{{ questions.length }}</span> questions available
         </div>
     </ng-form>

@@ -6,9 +6,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
+var index = require('./routes/index');
+var cohorts = require('./routes/cohorts');
 
-var students = require('./students.json');
 var questions = require('./questions.json');
 
 var https = require('https');
@@ -27,11 +27,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
-app.use('/', routes);
-
-app.use('/rsvps', function (req, res) {
-  res.json(students);
-});
+app.use('/', index);
+app.use('/cohorts', cohorts);
 
 app.use('/questions', function (req, res) {
   res.json(questions.filter(function (question) {

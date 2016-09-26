@@ -3,40 +3,41 @@ angular.module('apot.homeController', ['ngResource'])
     '$scope',
     '$resource',
     '$q',
-    function ($scope, $resource, $q) {
+    function ($scope, $resource) {
       'use strict';
       $scope.controllerName = 'homeController';
 
 
       $scope.resetEverything = function () {
         $scope.api = { };
-        $scope.rsvps = [];
+        $scope.students = [];
         $scope.selected = [];
 
       };
 
+      const CohortAPI = $resource('/cohorts/:cohort', {cohort:'@cohort'});
+      $scope.cohorts = CohortAPI.query();
+
       $scope.resetEverything();
 
-      var RsvpAPI = $resource('/rsvps');
-
       $scope.importNames = function () {
-        $scope.rsvps = RsvpAPI.query({event_id: event.event_id, key: $scope.api.key});
+        $scope.students = CohortAPI.query({cohort: $scope.cohort});
       };
 
 
-      $scope.selectRSVP = function () {
-        if ($scope.rsvps.length) {
-          var index = Math.floor(Math.random() * ($scope.rsvps.length - 1));
+      $scope.selectStudent = function () {
+        if ($scope.students.length) {
+          var index = Math.floor(Math.random() * ($scope.students.length - 1));
           $scope.selected.unshift($scope.removeMember(index));
         }
       };
 
       $scope.clearRSVPS = function () {
-        $scope.rsvps = [];
+        $scope.students = [];
       };
 
       $scope.removeMember = function (index) {
-        return $scope.rsvps.splice(index, 1)[0];
+        return $scope.students.splice(index, 1)[0];
       };
 
       $scope.removeEvent = function (index) {
