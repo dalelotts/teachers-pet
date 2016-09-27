@@ -447,5 +447,75 @@
     "stem": "Do you include negative path tests in acceptance tests?",
     "answer": "it depends. Is it important to the end user?",
     "subject": "protractor"
+  },
+  {
+    "stem": "Is there a potential pitfall with using typeof bar === 'object' to determine if bar is an object? If so, how can this pitfall be avoided?",
+    "answer": "typeof null === 'object' evaluates to true, so does typeof [].  Avoid this by checking for bar being null or an array.",
+    "subject": "JavaScript intro"
+  },
+  {
+    "stem": "What are the benefits of including 'use strict' at the beginning of the file?",
+    "answer": "Prevents accidental globals; Disallows duplicate property names or parameter values; More benefits covered later in the course",
+    "subject": "JavaScript intro"
+  },
+  {
+    "stem": "What is NaN?",
+    "answer": "It represents a value that is 'not a number'",
+    "subject": "JavaScript intro"
+  },
+  {
+    "stem": "What is the typeof NaN?",
+    "answer": "typeof NaN === 'number' evaluates to true",
+    "subject": "JavaScript intro"
+  },
+  {
+    "stem": "What is the output of 'console.log({} === {})?",
+    "answer": "false - objects cannot be compared using === or ==",
+    "subject": "JavaScript intro"
+  },
+  {
+    "stem": "Is NaN === NaN?",
+    "answer": "NaN === NaN evaluates to false",
+    "subject": "JavaScript intro"
+  },
+  {
+    "stem": "What is the difference between == and ===?",
+    "answer": "== is abstract equality, which will attempt to resolve the data types via type coercion before making a comparison. === is strict equality, which will will return false if the types are different",
+    "subject": "JavaScript intro"
+  },
+  {
+    "stem": "What is the difference Boolean and boolean?",
+    "answer": "Booleean's are instances. boolean is a literal.",
+    "subject": "JavaScript intro"
+  },
+  {
+    "stem": "How does the value of 'Simplicity' helps us build better software?",
+    "answer": "Maximize the value created for the investment",
+    "subject": "xp"
+  },
+  {
+    "stem": "How does the value of 'Communication' helps us build better software?",
+    "answer": "We communicate to create the best solution to our problem that we can together.",
+    "subject": "xp"
+  },
+  {
+    "stem": "How does the value of 'Feedback' helps us build better software?",
+    "answer": "Lots of feedback allows for frequent and small course corrections.",
+    "subject": "xp"
+  },
+  {
+    "stem": "What are some common types of 'Feedback' we have in XP?",
+    "answer": "Pair programming, TDD, iteration, retrospectives, demo's, releases.",
+    "subject": "xp"
+  },
+  {
+    "stem": "How does the value of 'Respect' helps us build better software?",
+    "answer": "Everyone contributes value even if it's simply enthusiasm. Developers respect the expertise of the customers and vice versa. Management respects our right to accept responsibility and receive authority over our own work.",
+    "subject": "xp"
+  },
+  {
+    "stem": "How does the value of 'Courage' helps us build better software?",
+    "answer": "We will tell the truth about progress and estimates. We don't document excuses for failure because we plan to succeed. We don't fear anything because no one ever works alone. We will adapt to changes when ever they happen.",
+    "subject": "xp"
   }
 ]
