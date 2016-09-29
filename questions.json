@@ -517,5 +517,114 @@
     "stem": "How does the value of 'Courage' helps us build better software?",
     "answer": "We will tell the truth about progress and estimates. We don't document excuses for failure because we plan to succeed. We don't fear anything because no one ever works alone. We will adapt to changes when ever they happen.",
     "subject": "xp"
+  },
+  {
+    "stem": "What is a higher order function?",
+    "answer": "A function that accepts a function as a parameter, returns a function, or both.",
+    "subject": "higher order functions"
+  },
+  {
+    "stem": "What is the contract of the filter function callback?",
+    "answer": "If the callback returns true, the element will be included in the returned array, otherwise it will excluded.",
+    "subject": "higher order functions"
+  },
+  {
+    "stem": "When using the filter function, can the resulting array contain FEWER elements than the original array?",
+    "answer": "Yes, the array can be the same size or have some elements removed resulting in a smaller array.",
+    "subject": "higher order functions"
+  },
+  {
+    "stem": "When using the filter function, can the resulting array contain MORE elements than the original array?",
+    "answer": "No, the array will be of equal size or smaller.",
+    "subject": "higher order functions"
+  },
+  {
+    "stem": "When using the map function, can the resulting array contain MORE elements than the original array?",
+    "answer": "No, the array will be of equal size",
+    "subject": "higher order functions"
+  },
+  {
+    "stem": "When using the map function, can the resulting array contain FEWER elements than the original array?",
+    "answer": "No, the array will be of equal size",
+    "subject": "higher order functions"
+  },
+  {
+    "stem": "What is the return type of the reduce function?",
+    "answer": "Any data type - array, object, number, string, etc.",
+    "subject": "higher order functions"
+  },
+  {
+    "stem": "When using the reduce function, can you return an array with FEWER elements than the original array?",
+    "answer": "Yes. The result can be any size array or any data type.",
+    "subject": "higher order functions"
+  },
+  {
+    "stem": "When using the reduce function, can you return an array with MORE elements than the original array?",
+    "answer": "Yes. The result can be any size array or any data type.",
+    "subject": "higher order functions"
+  },
+
+  {
+    "stem": "If a function takes another function?",
+    "answer": "Yes. The result can be any size array or any data type.",
+    "subject": "higher order functions"
+  },
+
+  {
+    "stem": "What is an  advantage of a higher order function?",
+    "answer": "Change behavior of callee by passing in a function. ",
+    "subject": "higher order functions"
+  },
+  {
+    "stem": "What do you call a function that has at least one bound variable?",
+    "answer": "Closure",
+    "subject": "higher order functions"
+  },
+  {
+    "stem": "What is a closure?",
+    "answer": "A function containing at least one bound variable",
+    "subject": "higher order functions"
+  },
+  {
+    "stem": "What is a free variable?",
+    "answer": "A free variable is any variable that is neither local to the function, nor a parameter of the function.",
+    "subject": "higher order functions"
+  },
+
+  {
+    "stem": "What is a bound variable?",
+    "answer": "A variable is bound when the value of the variable has been substituted by a specific value. i.e. in a closure instance",
+    "subject": "higher order functions"
+  },
+  {
+    "stem": "What are the parts of a function?",
+    "answer": "name (optional in some cases), parameters, body",
+    "subject": "higher order functions"
+  },
+
+  {
+    "stem": "What is the output of this code?<code><p>var myOutput = fs.readFile(&#39;someFile.txt&#39;)</p><p>console.log(myOutput)</p></code>",
+    "answer": "undefined",
+    "subject": "Into to async JavaScript"
+  },
+  {
+    "stem": "What is the output of this code?<code><p>&nbsp; var myOutput = &#39;&#39;;</p><p>&nbsp; var readFileResult = fs.readFile(&#39;someFile.txt&#39;, (err, data) => {<br />&nbsp; &nbsp; myOutput += data.toString()<br />&nbsp; });</p><p>&nbsp; console.log(readFileResult);<br />&nbsp; console.log(myOutput);</p></code>",
+    "answer": "undefined<br>undefined",
+    "subject": "Into to async JavaScript"
+  },
+  {
+    "stem": "What is the output of this code?<code><p>var myOutput = &#39;&#39;;</p><p>var contents = fs.readFile(&#39;someFile.txt&#39;, (err, data) =&gt; {<br />&nbsp; console.log(data.toString());<br />});</p><p>console.log(contents);</p></code>",
+    "answer": "undefined<br><code>contents of the file</code>",
+    "subject": "Into to async JavaScript"
+  },  {
+    "stem": "What is the output of this code?<code><p>const myOutput = [10, 11, 13].map(console.log)</p><p>console.log(myOutput)</p></code>",
+    "answer": "<p>10 0 [ 10, 11, 13 ]<br />11 1 [ 10, 11, 13 ]<br />13 2 [ 10, 11, 13 ]<br />[ undefined, undefined, undefined ]</p>",
+    "subject": "Into to async JavaScript"
+  },
+
+  {
+    "stem": "Is asynchronous code <strong>faster</strong> than synchronous code?",
+    "answer": "No, it still takes the same amount of time, but the program is more responsive so it appears to faster",
+    "subject": "Into to async JavaScript"
   }
 ]

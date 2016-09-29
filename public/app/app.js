@@ -1,8 +1,9 @@
 angular.module('apot',
   [
-    'ui.router',
     'apot.homeController',
-    'apot.pepperController'
+    'apot.pepperController',
+    'ngSanitize',
+    'ui.router'
   ])
   .config([
     '$stateProvider',
