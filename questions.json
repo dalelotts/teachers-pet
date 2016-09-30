@@ -626,5 +626,135 @@
     "stem": "Is asynchronous code <strong>faster</strong> than synchronous code?",
     "answer": "No, it still takes the same amount of time, but the program is more responsive so it appears to faster",
     "subject": "Into to async JavaScript"
+  },
+  {
+    "stem": "What does TDD stand for?",
+    "answer": "Test-Driven Development",
+    "subject": "tdd"
+  },
+  {
+    "stem": "What is TDD about?",
+    "answer": "Creating a reason for writing production code.",
+    "subject": "tdd"
+  },
+  {
+    "stem": "Describe the basic flow of TDD",
+    "answer": "Red, Green, Refactor (Write failing test, Run test(s), Write minimal code to make test pass, Run test(s), Clean up code without breaking tests, Run test(s))",
+    "subject": "tdd"
+  },
+  {
+    "stem": "What tests a Unit Test?",
+    "answer": "The smallest unit of software.",
+    "subject": "tdd"
+  },
+  {
+    "stem": "Name at least 2 requirements for a good Unit Test",
+    "answer": "Test only 1 aspect of a function/method, Tests unit in isolation of dependencies, Tests only 1 path through function/method, Is automated",
+    "subject": "tdd"
+  },
+  {
+    "stem": "List at least 3 benefits of TDD",
+    "answer": "Validation (of production code), Increases Productivity, Acts as Safety Net (for refactoring), Increases Quality, Improves Modularity, Produces Documentation",
+    "subject": "tdd"
+  },
+  {
+    "stem": "What is the 1st rule of TDD",
+    "answer": "You are not allowed to write any production code unless it is to make a failing test pass.",
+    "subject": "tdd"
+  },
+  {
+    "stem": "Name at least 2 contexts of 'this' in JavaScript.",
+    "answer": "Global, Object Method, Constructor, apply & call",
+    "subject": "js-contexts"
+  },
+  {
+    "stem": "What is `this` when invoking a global function in node.js?",
+    "answer": "The `global` object.",
+    "subject": "js-contexts"
+  },
+  {
+    "stem": "What is `this` when invoking a global JavaScript function in a browser?",
+    "answer": "The `window` object.",
+    "subject": "js-contexts"
+  },
+  {
+    "stem": "What is `this` when invoking a global JavaScript function in strict mode?",
+    "answer": "Undefined.",
+    "subject": "js-contexts"
+  },
+  {
+    "stem": "What is `this` when used within an JavaScript object method?",
+    "answer": "The object, having the method.",
+    "subject": "js-contexts"
+  },
+  {
+    "stem": "What is `this` when used within a JavaScript constructor function?",
+    "answer": "The object, being created.",
+    "subject": "js-contexts"
+  },
+  {
+    "stem": "What is `this` when used within a JavaScript function, added to the prototype of a constructor function?",
+    "answer": "The object, constructed with the construtor function.",
+    "subject": "js-contexts"
+  },
+  {
+    "stem": "What is `this` when used within a JavaScript function that gets invoked with Function.prototype.call or .apply?",
+    "answer": "That depends on what is passed as first argument to Function.prototype.call or .apply.",
+    "subject": "js-contexts"
+  },
+  {
+    "stem": "Where is the end of the Prototype Chain pointing to?",
+    "answer": "Nowhere (null).",
+    "subject": "js-prototype"
+  },
+  {
+    "stem": "What is the last element of the Prototype Chain?",
+    "answer": "The Object prototype.",
+    "subject": "js-prototype"
+  },
+  {
+    "stem": "How does the JavaScript runtime evaluate if an object has a certain property or not?",
+    "answer": "It traverses the Prototype Chain.",
+    "subject": "js-prototype"
+  },
+  {
+    "stem": "Is it possible to add behavior to JavaScript object instances after they have been created?",
+    "answer": "Yes. By adding a function to one of the objects in the Prototype Chain.",
+    "subject": "js-prototype"
+  },
+  {
+    "stem": "Is it possible to add value properties to JavaScript object instances after they have been created?",
+    "answer": "Only static properties, that are shared between all instances.",
+    "subject": "js-prototype"
+  },
+  {
+    "stem": "What is the type of Object?",
+    "answer": "A (constructor) function.",
+    "subject": "js-prototype"
+  },
+  {
+    "stem": "What is the type of Object.prototype?",
+    "answer": "object",
+    "subject": "js-prototype"
+  },
+  {
+    "stem": "What is so special about class definitions in ES6?",
+    "answer": "They keywords are just syntactical sugar.",
+    "subject": "js-classes"
+  },
+  {
+    "stem": "List at least two steps, required for Prototypal Inheritance in JavaScript.",
+    "answer": "Invoke constructor function of super type with apply or call. Set prototype of sub type to new object that is linked to prototype of super type. Reset prototype constructor to sub type constructor.",
+    "subject": "js-classes"
+  },
+  {
+    "stem": "Which keyword can be used in ES6 to inherite from a certain super type?",
+    "answer": "extends",
+    "subject": "js-classes"
+  },
+  {
+    "stem": "Does ES6 use classic inheritance?",
+    "answer": "No. It's still based on Prototypal Inheritance. The new keywords are just 'syntactical sugar'",
+    "subject": "js-classes"
   }
 ]
