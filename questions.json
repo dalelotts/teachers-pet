@@ -756,5 +756,15 @@
     "stem": "Does ES6 use classic inheritance?",
     "answer": "No. It's still based on Prototypal Inheritance. The new keywords are just 'syntactical sugar'",
     "subject": "js-classes"
+  },
+  {
+    "stem": "Why do we need Integration Testing?",
+    "answer": "To ensure that units or components work together.",
+    "subject": "integration testing"
+  },
+  {
+    "stem": "How do Integration Tests usualy relate to Unit Tests on the Testing Pyramid?",
+    "answer": "There are fewer, they are slower and usually harder to implement and therefor more expensive.",
+    "subject": "integration testing"
   }
 ]
