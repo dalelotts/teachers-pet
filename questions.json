@@ -764,7 +764,7 @@
   },
   {
     "stem": "How do Integration Tests usualy relate to Unit Tests on the Testing Pyramid?",
-    "answer": "There are fewer, they are slower and usually harder to implement and therefor more expensive.",
+    "answer": "There are fewer, they are slower and usually harder to implement and therefore more expensive.",
     "subject": "integration testing"
   }
 ]
