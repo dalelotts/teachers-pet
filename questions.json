@@ -766,5 +766,25 @@
     "stem": "How do Integration Tests usualy relate to Unit Tests on the Testing Pyramid?",
     "answer": "There are fewer, they are slower and usually harder to implement and therefore more expensive.",
     "subject": "integration testing"
+  },
+  {
+    "stem": "Name typical external software dependencies?",
+    "answer": "Databases, APIs, Microservices, Webservices, Filesystem",
+    "subject": "external dependencies"
+  },
+  {
+    "stem": "What are typical issues with external software dependencies?",
+    "answer": "Slow, Not available, Not accessable, Not existent, Limited rate/quota",
+    "subject": "external dependencies"
+  },
+  {
+    "stem": "Name at least two benefits of the Adapter and/or Facade Pattern?",
+    "answer": "Isolates code into one location. Simplifies behaviour for rest of application. Enables easy mocking.",
+    "subject": "external dependencies"
+  },
+  {
+    "stem": "What problem do we encounter when it comes to testing applications with external dependencies? How do we address it?",
+    "answer": "Communication with external dependencies slows down our tests drastically. This problem can be addresses by using a mock that intercepts the communication with external dependencies and responds quickly with fake responses.",
+    "subject": "external dependencies"
   }
 ]
