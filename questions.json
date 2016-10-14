@@ -127,6 +127,46 @@
     "subject": "express"
   },
   {
+    "stem": "What does MVC stand for?",
+    "answer": "Model, View, Controller",
+    "subject": "express"
+  },
+  {
+    "stem": "MVC: Where can I find the views in express?",
+    "answer": "In the 'views' directory.",
+    "subject": "express"
+  },
+  {
+    "stem": "MVC: Where can I find the controllers in express?",
+    "answer": "In the 'routes' directory.",
+    "subject": "express"
+  },
+  {
+    "stem": "MVC: Where can I find the models in express?",
+    "answer": "Potentially in a 'src', 'model' or 'services' directory. Express does not generate any model for you.",
+    "subject": "express"
+  },
+  {
+    "stem": "MVC: What is the responsibility of a view?",
+    "answer": "Displaying or presenting data to the user and reacting to user input or interactions.",
+    "subject": "express"
+  },
+  {
+    "stem": "MVC: What is the responsibility of a controller?",
+    "answer": "Directing 'traffic' between view and model.",
+    "subject": "express"
+  },
+  {
+    "stem": "MVC: What is the responsibility of a controller in Express?",
+    "answer": "Interpreting requests and preparing responses.",
+    "subject": "express"
+  },
+  {
+    "stem": "MVC: What is the responsibility of a model?",
+    "answer": "It contains the business logic and/or deals with persistance of data.",
+    "subject": "express"
+  },
+  {
     "stem": "What is an Express Route in relation to MVC?",
     "answer": "The controller",
     "subject": "express"
@@ -147,33 +187,33 @@
     "subject": "express"
   },
   {
-    "stem": "what is req.body ? How did it get there?",
+    "stem": "What is req.body? How did it get there?",
     "answer": "A JavaScript Object representation of the submitted form.  Added to the reqest by the bodyparser. ",
     "subject": "express"
   },
   {
-    "stem": "what function arguments are available to Express.js route handlers?",
+    "stem": "What function arguments are available to Express.js route handlers?",
     "answer": "req - the request object, res - the response object, next (optional) - a function to pass control to one of the subsequent route handlers",
     "subject": "express"
   },
   {
-    "stem": "what are core features of the Express.js framework?",
+    "stem": "What are core features of the Express.js framework?",
     "answer": "Use middleware to respond to HTTP Requests, Defines routing which maps to a URL and HTTP Method. Render HTML Pages using a templating engine.",
     "subject": "express"
   },
   {
     "stem": "How do you get query parameters in Express.js?",
-    "answer": "req.query[paramater-name]",
+    "answer": "req.params.parameterName or req.query[paramater-name]",
     "subject": "express"
   },
   {
     "stem": "How do you get URL parameters in Express.js?",
-    "answer": "req.params[paramater-name]",
+    "answer": "req.params.parameterName or req.params[paramater-name]",
     "subject": "express"
   },
   {
-    "stem": "What is the parameter “next” used for in Express?",
-    "answer": "a function to pass control to one of the subsequent route handlers",
+    "stem": "What is the parameter 'next' used for in Express?",
+    "answer": "A function to pass control to one of the subsequent route handlers",
     "subject": "express"
   },
   {
@@ -187,7 +227,7 @@
     "subject": "express"
   },
   {
-    "stem": "What is the purpose of the `next` parameter?",
+    "stem": "What is the purpose of the 'next' parameter?",
     "answer": "Provides access to next middleware function in the application’s request-response cycle.",
     "subject": "express"
   },
@@ -223,133 +263,128 @@
   },
   {
     "stem": "What are the four states of a file in git?",
-    "answer": "Untracked, Unmodified, Modified, Staged, Committed",
-    "subject": "git"
+    "answer": "Untracked, Unmodified (Committed), Modified, Staged (Added)",
+    "subject": "git-basics"
   },
   {
     "stem": "What is the difference between a local and remote repository?",
-    "answer": "The local is a complete copy (perhaps missing some branches)",
-    "subject": "git"
+    "answer": "The local repository lives on your local machine and is a complete copy of the remote repository which is located on a remote server.",
+    "subject": "git-basics"
   },
   {
     "stem": "Can the remote origin repository be ahead of the local repository?",
     "answer": "Yes.",
-    "subject": "git"
+    "subject": "git-advanced"
   },
   {
     "stem": "Which git commands interact with the remote server?",
     "answer": "fetch, pull, push. No other commands connect to the remote server. Unlike SVN, Perforce, etc, no server is required.",
-    "subject": "git"
+    "subject": "git-advanced"
   },
   {
     "stem": "Can any directory be a git repository?",
     "answer": "Yes. git init works in any directory.",
-    "subject": "git"
+    "subject": "git-basics"
   },
   {
-    "stem": "What is the function of ‘GIT PUSH’ in GIT?",
+    "stem": "What is the function of ‘git push’?",
     "answer": "Pushes your changes to the remote repository. Technically it Updates remote refs along with associated objects",
-    "subject": "git"
+    "subject": "git-advanced"
   },
   {
     "stem": "What does 'git remote -v' do?",
     "answer": "List the remote repositories associated with the repositories",
-    "subject": "git"
+    "subject": "git-advanced"
   },
   {
     "stem": "Which git command(s) will work outside of a git repository?",
     "answer": "git init",
-    "subject": "git"
+    "subject": "git-basics"
   },
   {
     "stem": "How to you list the commit history of a repository?",
     "answer": "git log",
-    "subject": "git"
+    "subject": "git-basics"
   },
   {
     "stem": "What does commit object contain??",
     "answer": "1) A set of files, representing the state of the entire repository at a given point of time. 2) Reference to parent commit objects. 3) An SHA name, a 40 character string that uniquely identifies the commit object.",
-    "subject": "git"
+    "subject": "git-basics"
   },
   {
     "stem": "What is the function of git clone?",
-    "answer": "The git clone command creates a copy of an existing Git repository.  To get the copy of a central repository, ‘cloning’  is the most common way used by programmers.",
-    "subject": "git"
+    "answer": "The git clone command creates a copy of an existing git repository. To get the copy of a central repository, ‘cloning’  is the most common way used by programmers.",
+    "subject": "git-advanced"
   },
   {
-    "stem": "How can you create a repository in Git?",
-    "answer": "'git init' is any directory.",
-    "subject": "git"
+    "stem": "How can you create a repository in git?",
+    "answer": "'git init' in any directory.",
+    "subject": "git-basics"
   },
   {
-    "stem": "What is the purpose of branching in GIT?",
+    "stem": "What is the purpose of branching in git?",
     "answer": "Allows you to go to your previous work keeping your recent work intact.",
-    "subject": "git"
+    "subject": "git-advanced"
   },
   {
     "stem": "How can you bring a new feature in the main branch?",
     "answer": "'git merge' or 'git pull'",
-    "subject": "git"
+    "subject": "git-advanced"
   },
   {
     "stem": "What is a ‘merge conflict’ in git?",
     "answer": "The commit that has to be merged has some change in one place, and the current commit also has a change at the same place. Git will not be able to predict which change should take precedence.",
-    "subject": "git"
+    "subject": "git-advanced"
   },
   {
     "stem": "How can 'merge conflict' be resolved?",
     "answer": "Edit the files manually to fix the conflicting changes and then add the resolved files using 'git add'. Then run 'git rebase --continue' or 'git commit'",
-    "subject": "git"
+    "subject": "git-advanced"
   },
   {
-    "stem": "What is the function of ‘git diff’?",
-    "answer": "shows the changes between commits, commit and working tree, etc",
-    "subject": "git"
+    "stem": "What is ‘git status’ used for?",
+    "answer": "Shows the difference between the working directory and the index (committed files).",
+    "subject": "git-basics"
   },
   {
-    "stem": "What is ‘git status’ is used for?",
-    "answer": "shows the difference between the working directory and the index (committed files)",
-    "subject": "git"
-  },
-  {
-    "stem": "What is ‘git add’ is used for?",
+    "stem": "What is ‘git add’ used for?",
     "answer": "Changes the tracking state of the files from Modified or Untracked to Staged.",
-    "subject": "git"
+    "subject": "git-basics"
   },
   {
     "stem": "How many 'remotes' can a repository have?",
     "answer": "Unlimited",
-    "subject": "git"
+    "subject": "git-advanced"
   },
   {
-    "stem": "What does `git init` do?",
-    "answer": "Initializes any directory to a new Git repository",
-    "subject": "git"
+    "stem": "What does 'git init' do?",
+    "answer": "Initializes any directory to a new git repository.",
+    "subject": "git-basics"
   },
   {
-    "stem": "What does `git status` do?",
+    "stem": "What does 'git status' do?",
     "answer": "Shows the states of the files in a git repository",
-    "subject": "git"
+    "subject": "git-basics"
   },
   {
     "stem": "How do you stage all untracked and modified files in a git repository?",
     "answer": "'git add .'",
-    "subject": "git"
+    "subject": "git-basics"
   },
   {
     "stem": "What does the .gitignore file do?",
     "answer": "Tells git which files should not be included in the repository",
-    "subject": "git"
+    "subject": "git-basics"
   },
   {
-    "stem": "What does `git diff` do?",
+    "stem": "What does 'git diff' do?",
     "answer": "Shows the changes to all modified files in the repository",
-    "subject": "git"
+    "subject": "git-basics"
   },
   {
     "stem": "Is 'Updated about page' a good commit message? Why or why not?",
     "answer": "No, it does not tell you WHY it changed. Was it a bug, a story, or something else?",
-    "subject": "git"
+    "subject": "git-basics"
   },
   {
     "stem": "What is the generic name for tools like Pug?",
@@ -357,56 +392,89 @@
     "subject": "pug"
   },
   {
-    "stem": "What is the generic name for tools like Pug?",
-    "answer": "Template engine",
-    "subject": "pug"
-  },
-  {
-    "stem": "What is the output format of Pug?",
+    "stem": "What is the output format when rendering a page with Pug?",
     "answer": "HTML",
     "subject": "pug"
   },
   {
-    "stem": "What is the output format of Pug?",
-    "answer": "HTML",
+    "stem": "What is the input when rendering a page with Pug?",
+    "answer": "A pug file and a JSON object containing the variable content of the page to render.",
     "subject": "pug"
   },
   {
-    "stem": "What is the difference between acceptance testing and unit testing",
+    "stem": "Why would someone use Pug mixins?",
+    "answer": "To reduce pug code duplication (DRY principle).",
+    "subject": "pug"
+  },
+  {
+    "stem": "Why would someone use Pug layouts?",
+    "answer": "To apply the same look and feel to all pages (e.g. header and footer).",
+    "subject": "pug"
+  },
+  {
+    "stem": "Which symbols in Pug files indicate a switch to JavaScript syntax?",
+    "answer": "dash (-), equals (=), hash with curly brackets (#{..}), round brackets (for='attributes')",
+    "subject": "pug"
+  },
+  {
+    "stem": "What happens to the first word in a line of a Pug file when followed by a space?",
+    "answer": "It will be rendered as HTML opening and closing tag (containing everything else in that line after the space).",
+    "subject": "pug"
+  },
+  {
+    "stem": "What is the difference between Jade and Pug?",
+    "answer": "No difference. Jade is just the old name for Pug.",
+    "subject": "pug"
+  },
+  {
+    "stem": "What is the benefit of using Pug over writing plain HTML?",
+    "answer": "HTML is static. With Pug it becomes possible to render HTML pages with dynamic (variable) content.",
+    "subject": "pug"
+  },
+  {
+    "stem": "What is the difference between acceptance testing and unit testing?",
+    "answer": "Unit testing is about testing the smallest aspect of our production code. Acceptance testing is about testing if user acceptance criteria are meet or not.",
     "subject": "protractor"
   },
   {
-    "stem": "What is the difference between acceptance testing and integration testing",
+    "stem": "What is the difference between acceptance testing and integration testing?",
+    "answer": "Integration testing is about testin if units work together. Acceptance testing is about testing if user acceptance criteria are meet or not.",
     "subject": "protractor"
   },
   {
-    "stem": "What is the difference between acceptance testing and UI testing",
+    "stem": "What is the difference between acceptance testing and UI testing?",
+    "answer": "User Interface (UI) testing is about testing user interfaces while the backend is mocked out. Acceptance testing is about testing the application from end to end.",
     "subject": "protractor"
   },
   {
-    "stem": "What is the difference between mocha and jasmine",
+    "stem": "What is the difference between 'mocha' and 'jasmine'?",
+    "answer": "Both are test runners. Jasmine comes with integrated Matcher/Expectation and Mocking functionality. Mocha relies on other modules like 'chai' or 'sinon' to do that job.",
     "subject": "protractor"
   },
   {
-    "stem": "What underlying tool does protractor use to drive the browswer",
+    "stem": "What underlying tool does protractor use to drive the browswer?",
+    "answer": "Selenium, a web browser automation tool.",
     "subject": "protractor"
   },
   {
-    "stem": "Does protractor interact directly with the server? - no only the browser",
+    "stem": "Does protractor interact directly with the server?",
+    "answer": "No, only the browser.",
     "subject": "protractor"
   },
   {
-    "stem": "what is User acceptance testing",
+    "stem": "What is user acceptance testing?",
+    "answer": "The process of writing automated user acceptance tests in order to verify if a user story is implemented according to the user acceptance criteria.",
     "subject": "protractor"
   },
   {
-    "stem": "What are the objectives of a User Acceptance Test.",
+    "stem": "What are the objectives of a User Acceptance Test?",
+    "answer": "To automate the test if a User Acceptance Criteria is met or not.",
     "subject": "protractor"
   },
   {
     "stem": "You are starting a new feature, which type of test do you write first? Unit, Integration, or Acceptance? And why?",
-    "subject": "protractor",
-    "answer": "follows outside in, you know your done with the feature the moment the acceptance test passes"
+    "answer": "Follow the outside-in approach and you know your done with the feature the moment the acceptance test passes.",
+    "subject": "protractor"
   },
   {
     "stem": "What are the by.* functions in protractor?",
@@ -415,37 +483,37 @@
   },
   {
     "stem": "Are protractor by.* methods asynchronous?",
-    "subject": "protractor",
-    "answer": "Yes"
+    "answer": "Yes",
+    "subject": "protractor"
   },
   {
     "stem": "Do we need QA if we have 100% acceptance test coverage?",
-    "subject": "protractor",
-    "answer": "Yes. People are excellent at destructive testing, computers are not. 'here is a hammer, try to break it'"
+    "answer": "Yes. People are excellent at destructive testing, computers are not. 'here is a hammer, try to break it' We don't necessarily need a QA department, though. A cross-functional team should have at least one team member with QA know-how.",
+    "subject": "protractor"
   },
   {
     "stem": "Should acceptance tests verify the number of records in the database?",
-    "subject": "protractor",
-    "answer": "Only indirectly through observing content on the page."
+    "answer": "Only indirectly through observing content on the page.",
+    "subject": "protractor"
   },
   {
-    "stem": "Should acceptance tests verify the state of the javascript data objects the page?",
-    "subject": "protractor",
-    "answer": "Only indirectly through observing content on the page."
+    "stem": "Should acceptance tests verify the state of the JavaScript data objects in the page?",
+    "answer": "Only indirectly through observing content on the page.",
+    "subject": "protractor"
   },
   {
-    "stem": "When should use you by.xpath(...)?",
-    "subject": "protractor",
-    "answer": "This should be avoided because it makes the tests brittle. Use only when another method will not work."
+    "stem": "When should you use by.xpath(...)?",
+    "answer": "This should be avoided because it makes the tests brittle. Use only when another method will not work.",
+    "subject": "protractor"
   },
   {
-    "stem": "You are using a jquery plugin on the page, should the acceptance tests execute all of the behavior of the plugin? - No! You are testing your code, not someone elses!",
-    "subject": "protractor",
-    "answer": "No, the developer of the plugin should have tested it. Only test code 'you' write."
+    "stem": "You are using a jquery plugin on the page, should the acceptance tests execute all of the behavior of the plugin?",
+    "answer": "No, the developer of the plugin should have tested it. Only test code 'you' write.",
+    "subject": "protractor"
   },
   {
     "stem": "Do you include negative path tests in acceptance tests?",
-    "answer": "it depends. Is it important to the end user?",
+    "answer": "It depends. Only if it is important to the end user.",
     "subject": "protractor"
   },
   {
@@ -668,37 +736,37 @@
     "subject": "js-contexts"
   },
   {
-    "stem": "What is `this` when invoking a global function in node.js?",
-    "answer": "The `global` object.",
+    "stem": "What is 'this' when invoking a global function in node.js?",
+    "answer": "The 'global' object.",
     "subject": "js-contexts"
   },
   {
-    "stem": "What is `this` when invoking a global JavaScript function in a browser?",
-    "answer": "The `window` object.",
+    "stem": "What is 'this' when invoking a global JavaScript function in a browser?",
+    "answer": "The 'window' object.",
     "subject": "js-contexts"
   },
   {
-    "stem": "What is `this` when invoking a global JavaScript function in strict mode?",
+    "stem": "What is 'this' when invoking a global JavaScript function in strict mode?",
     "answer": "Undefined.",
     "subject": "js-contexts"
   },
   {
-    "stem": "What is `this` when used within an JavaScript object method?",
+    "stem": "What is 'this' when used within an JavaScript object method?",
     "answer": "The object, having the method.",
     "subject": "js-contexts"
   },
   {
-    "stem": "What is `this` when used within a JavaScript constructor function?",
+    "stem": "What is 'this' when used within a JavaScript constructor function?",
     "answer": "The object, being created.",
     "subject": "js-contexts"
   },
   {
-    "stem": "What is `this` when used within a JavaScript function, added to the prototype of a constructor function?",
+    "stem": "What is 'this' when used within a JavaScript function, added to the prototype of a constructor function?",
     "answer": "The object, constructed with the construtor function.",
     "subject": "js-contexts"
   },
   {
-    "stem": "What is `this` when used within a JavaScript function that gets invoked with Function.prototype.call or .apply?",
+    "stem": "What is 'this' when used within a JavaScript function that gets invoked with Function.prototype.call or .apply?",
     "answer": "That depends on what is passed as first argument to Function.prototype.call or .apply.",
     "subject": "js-contexts"
   },
