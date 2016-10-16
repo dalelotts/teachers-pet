@@ -673,27 +673,27 @@
   {
     "stem": "What is the output of this code?<code><p>var myOutput = fs.readFile(&#39;someFile.txt&#39;)</p><p>console.log(myOutput)</p></code>",
     "answer": "undefined",
-    "subject": "Into to async JavaScript"
+    "subject": "Intro to async JavaScript"
   },
   {
     "stem": "What is the output of this code?<code><p>&nbsp; var myOutput = &#39;&#39;;</p><p>&nbsp; var readFileResult = fs.readFile(&#39;someFile.txt&#39;, (err, data) => {<br />&nbsp; &nbsp; myOutput += data.toString()<br />&nbsp; });</p><p>&nbsp; console.log(readFileResult);<br />&nbsp; console.log(myOutput);</p></code>",
     "answer": "undefined<br>undefined",
-    "subject": "Into to async JavaScript"
+    "subject": "Intro to async JavaScript"
   },
   {
     "stem": "What is the output of this code?<code><p>var myOutput = &#39;&#39;;</p><p>var contents = fs.readFile(&#39;someFile.txt&#39;, (err, data) =&gt; {<br />&nbsp; console.log(data.toString());<br />});</p><p>console.log(contents);</p></code>",
     "answer": "undefined<br><code>contents of the file</code>",
-    "subject": "Into to async JavaScript"
+    "subject": "Intro to async JavaScript"
   },  {
     "stem": "What is the output of this code?<code><p>const myOutput = [10, 11, 13].map(console.log)</p><p>console.log(myOutput)</p></code>",
     "answer": "<p>10 0 [ 10, 11, 13 ]<br />11 1 [ 10, 11, 13 ]<br />13 2 [ 10, 11, 13 ]<br />[ undefined, undefined, undefined ]</p>",
-    "subject": "Into to async JavaScript"
+    "subject": "Intro to async JavaScript"
   },
 
   {
     "stem": "Is asynchronous code <strong>faster</strong> than synchronous code?",
     "answer": "No, it still takes the same amount of time, but the program is more responsive so it appears to faster",
-    "subject": "Into to async JavaScript"
+    "subject": "Intro to async JavaScript"
   },
   {
     "stem": "What does TDD stand for?",
