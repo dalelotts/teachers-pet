@@ -854,5 +854,10 @@
     "stem": "What problem do we encounter when it comes to testing applications with external dependencies? How do we address it?",
     "answer": "Communication with external dependencies slows down our tests drastically. This problem can be addresses by using a mock that intercepts the communication with external dependencies and responds quickly with fake responses.",
     "subject": "external dependencies"
+  },
+  {
+    "stem": "Name two Rules of Engagement when giving feedback.",
+    "answer": "And, not but; Ask first; Start and end with the positives; Get to genuinely know people; Use the other person's name",
+    "subject": "giving-feedback"
   }
 ]
