@@ -9,7 +9,7 @@
     "subject": "SWE: Code Quality"
   },
   {
-    "stem": "What things tell you that the code is probably well organized and what things tell you it probably isn’t?",
+    "stem": "What things tell you that the code is probably well organized and what things tell you it probably isn't?",
     "subject": "SWE: Code Quality"
   },
   {
@@ -228,7 +228,7 @@
   },
   {
     "stem": "What is the purpose of the 'next' parameter?",
-    "answer": "Provides access to next middleware function in the application’s request-response cycle.",
+    "answer": "Provides access to next middleware function in the application's request-response cycle.",
     "subject": "Fullstack: Express"
   },
   {
@@ -287,13 +287,13 @@
     "subject": "Git: Basics"
   },
   {
-    "stem": "What is the function of ‘git push’?",
-    "answer": "Pushes your changes to the remote repository. Technically it Updates remote refs along with associated objects",
+    "stem": "What is the function of 'git push'?",
+    "answer": "Pushes your changes to the remote repository. Technically it Updates remote refs along with associated objects.",
     "subject": "Git: Advanced"
   },
   {
     "stem": "What does 'git remote -v' do?",
-    "answer": "List the remote repositories associated with the repositories",
+    "answer": "List the remote repositories associated with the local repository.",
     "subject": "Git: Advanced"
   },
   {
@@ -313,7 +313,7 @@
   },
   {
     "stem": "What is the function of git clone?",
-    "answer": "The git clone command creates a copy of an existing git repository. To get the copy of a central repository, ‘cloning’  is the most common way used by programmers.",
+    "answer": "The git clone command creates a copy of an existing git repository. To get the copy of a central repository, 'cloning'  is the most common way used by programmers.",
     "subject": "Git: Advanced"
   },
   {
@@ -332,22 +332,22 @@
     "subject": "Git: Advanced"
   },
   {
-    "stem": "What is a ‘merge conflict’ in git?",
+    "stem": "What is a 'merge conflict' in git?",
     "answer": "The commit that has to be merged has some change in one place, and the current commit also has a change at the same place. Git will not be able to predict which change should take precedence.",
     "subject": "Git: Advanced"
   },
   {
-    "stem": "How can 'merge conflict' be resolved?",
+    "stem": "How can a 'merge conflict' be resolved?",
     "answer": "Edit the files manually to fix the conflicting changes and then add the resolved files using 'git add'. Then run 'git rebase --continue' or 'git commit'",
     "subject": "Git: Advanced"
   },
   {
-    "stem": "What is ‘git status’ used for?",
+    "stem": "What is 'git status' used for?",
     "answer": "Shows the difference between the working directory and the index (committed files).",
     "subject": "Git: Basics"
   },
   {
-    "stem": "What is ‘git add’ used for?",
+    "stem": "What is 'git add' used for?",
     "answer": "Changes the tracking state of the files from Modified or Untracked to Staged.",
     "subject": "Git: Basics"
   },
@@ -925,6 +925,121 @@
     "subject": "User Stories: INVEST"
   },
   {
+    "stem": "What is the maximum timespan between us talking for the first time about the 'How' of a User Story and delivery of the User Story?",
+    "answer": "A bit less than 5 working days (planned on Monday, started on Thursday, delivered on Friday).",
+    "subject": "User Stories: Agile Refinement"
+  },
+  {
+    "stem": "What do we call the set of criteria that defines when a User Story can be worked on?",
+    "answer": "Defintion of Ready",
+    "subject": "User Stories: Agile Refinement"
+  },
+  {
+    "stem": "What do we call the set of criteria that defines when all work of a User Story is finished?",
+    "answer": "Defintion of Done",
+    "subject": "User Stories: Agile Refinement"
+  },
+  {
+    "stem": "Why is so important not to talk about the 'How' of a User Story until right before the implementation begins?",
+    "answer": "Because requirements and conditions change over time and talking about the 'How' bears the risk of wasting precious time.",
+    "subject": "User Stories: Agile Refinement"
+  },
+  {
+    "stem": "When does the end user get value out of an XP software project?",
+    "answer": "Every week.",
+    "subject": "XP: Iteration"
+  },
+  {
+    "stem": "Name two XP ceremonies.",
+    "answer": "Inception, Pre-IPM, IPM, Standup, Retro",
+    "subject": "XP: Iteration"
+  },
+  {
+    "stem": "What is the input to an XP Iteration cycle?",
+    "answer": "User Stories, ready according to Definiton of Ready",
+    "subject": "XP: Iteration"
+  },
+  {
+    "stem": "What is the output of an XP Iteration cycle?",
+    "answer": "A production-ready product increment with additional value to the end user.",
+    "subject": "XP: Iteration"
+  },
+  {
+    "stem": "What are the goals of the Team Standup?",
+    "answer": "1) To synchronize work with other team members. 2) To clarify if team is on track to meet Iteration Goal. 3) To identify blockers.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "Who hosts the Team Standup?",
+    "answer": "The team.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "Who is the target audience of the Team Standup?",
+    "answer": "The team.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "What could you do if the Product Manager asks for a status report in the Team Standup?",
+    "answer": "You could remind him about the actual goal of the Team Standup and ask him to talk to the team once the Standup is over.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "What is the goal of the Pre-IPM?",
+    "answer": "To get enough User Stories ready for the IPM - ready according to the Definition of Ready (usually INVEST criteria).",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "What can you do if the quality of User Stories, presented by the Product Manager seems to be low during the IPM?",
+    "answer": "Reject working on these User Stories and suggest to help improving them first. A Pre-IPM ceremony well in advance to the IPM can be used to achieve exactly that.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "How can we estimate User Stories without talking about the 'How'?",
+    "answer": "Relative Estimation - Sizing of User Story relative to reference User Stories.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "What are the goals of the IPM?",
+    "answer": "1) Define an iteration goal. 2) Team to commit to deliver a set of User Stories until the end of the iteration. 3) Each team member to fully understand what should be delivered and why.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "IPM: The team's velocity is 10 SP. After committing to deliver User Stories, worth 8 SP the team signals that they cannot commit to deliver more User Stories in this iteration. The Product Manager insists that two more User Stories have to be finished until Friday. How should you react?",
+    "answer": "You could ask the Product Manager if he could imagine to drop some of the other User Stories instead. Do not over-commit!",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "IPM: Your Iteration Goal seems to not contain any value for the end user (e.g. User Stories). How should you react?",
+    "answer": "Suggest to work on at least one User Story of high quality. If there are no User Stories, interrupt the IPM ceremony and do a Pre-IPM instead.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "What is one goal of the Inception?",
+    "answer": "Ensure that the whole teams understands the Business Goals, Anti-Goals and Risks, User Roles/Personas, Workflows and Activities.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "When is the first time that we should talk about the 'How' of a User Story?",
+    "answer": "During the Iteration, after the IPM.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "When are the goals of the Retrospective?",
+    "answer": "To create actionable Action Items for improvement during the next Iteration.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "Nobody seems to notice (or care) that the team did not deliver any value to the end user in this iteration. When is a good time to bring that up?",
+    "answer": "During the Retrospective (if there is no other ceremony).",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "Nobody seems to notice (or care) that the team did not deliver all committed User Stories. When is a good time to bring that up?",
+    "answer": "During the Retrospective (if there is no other ceremony).",
+    "subject": "XP: Ceremonies"
+  },
+  {
     "stem": "TODO?",
     "answer": "TODO.",
     "subject": "Fullstack: Bookshelf, Knex, SQL"
@@ -1003,5 +1118,30 @@
     "stem": "TODO?",
     "answer": "TODO.",
     "subject": "TDD: Unit Testing"
+  },
+  {
+    "stem": "TODO?",
+    "answer": "TODO.",
+    "subject": "Git: Rebase"
+  },
+  {
+    "stem": "What is responsive web design?",
+    "answer": "Designing web pages that adjust to the size of the screen or device (e.g. mobile vs. desktop).",
+    "subject": "Fullstack: Bootstrap"
+  },
+  {
+    "stem": "What is the benefit of using Twitter Bootstrap?",
+    "answer": "It allows styling a website very quickly and represents the XP value Simplicity.",
+    "subject": "Fullstack: Bootstrap"
+  },
+  {
+    "stem": "What is a downside of using Twitter Bootstrap?",
+    "answer": "All websites look the same if no effort is put into customizations.",
+    "subject": "Fullstack: Bootstrap"
+  },
+  {
+    "stem": "What is the result of following markup:<br><br><code>&lt;div class='row'&gt;<br>&nbsp;&nbsp;&lt;div class='col-md-6'&gt;Hello&lt;/div&gt;<br>&nbsp;&nbsp;&lt;div class='col-md-6'&gt;World&lt;/div&gt;<br>&lt;/div&gt;<code>",
+    "answer": "Twitter Bootstrap's grid layout will show both divs as two equal sized sections. On larger screens next to each other, on smaller screens on top of each other.",
+    "subject": "Fullstack: Bootstrap"
   }
 ]
