@@ -1143,5 +1143,40 @@
     "stem": "What is the result of following markup:<br><br><code>&lt;div class='row'&gt;<br>&nbsp;&nbsp;&lt;div class='col-md-6'&gt;Hello&lt;/div&gt;<br>&nbsp;&nbsp;&lt;div class='col-md-6'&gt;World&lt;/div&gt;<br>&lt;/div&gt;<code>",
     "answer": "Twitter Bootstrap's grid layout will show both divs as two equal sized sections. On larger screens next to each other, on smaller screens on top of each other.",
     "subject": "Fullstack: Bootstrap"
+  },
+  {
+    "stem": "TODO",
+    "answer": "TODO",
+    "subject": "Fullstack: React - Events, State, Refs"
+  },
+  {
+    "stem": "What is JSX?",
+    "answer": "A preprocessor step that adds XML syntax to JavaScript. JSX has been developed and is maintained by the React team.",
+    "subject": "Fullstack: React - JSX, Components, Properties"
+  },
+  {
+    "stem": "Name two benefits of using React.",
+    "answer": "Components support reusability. Simple and fast creation of Single Page Applications. With rich user interactions. Offloads computation for presentation to client.",
+    "subject": "Fullstack: React - JSX, Components, Properties"
+  },
+  {
+    "stem": "How do you pass arguments to React components?",
+    "answer": "As properties, by adding element attributes to a child component.",
+    "subject": "Fullstack: React - JSX, Components, Properties"
+  },
+  {
+    "stem": "How do you access arguments, passed into a React components?",
+    "answer": "this.props.argumentName",
+    "subject": "Fullstack: React - JSX, Components, Properties"
+  },
+  {
+    "stem": "How do you modify properties of a React component?",
+    "answer": "Not at all! Component properties are immutable.",
+    "subject": "Fullstack: React - JSX, Components, Properties"
+  },
+  {
+    "stem": "What is a PropType?",
+    "answer": "A declaration to add type checking for properties.",
+    "subject": "Fullstack: React - JSX, Components, Properties"
   }
 ]
