@@ -1145,11 +1145,6 @@
     "subject": "Fullstack: Bootstrap"
   },
   {
-    "stem": "TODO",
-    "answer": "TODO",
-    "subject": "Fullstack: React - Events, State, Refs"
-  },
-  {
     "stem": "What is JSX?",
     "answer": "A preprocessor step that adds XML syntax to JavaScript. JSX has been developed and is maintained by the React team.",
     "subject": "Fullstack: React - JSX, Components, Properties"
@@ -1178,5 +1173,45 @@
     "stem": "What is a PropType?",
     "answer": "A declaration to add type checking for properties.",
     "subject": "Fullstack: React - JSX, Components, Properties"
+  },
+  {
+    "stem": "What is so special about React events?",
+    "answer": "They are synthetic events - wrappers around native browser events.",
+    "subject": "Fullstack: React - Events, State, Refs"
+  },
+  {
+    "stem": "Which React feature can be used to access DOM elements?",
+    "answer": "References: 'this.refs'",
+    "subject": "Fullstack: React - Events, State, Refs"
+  },
+  {
+    "stem": "Using ES6 syntax, what additional step is necessary in order to use 'this.refs'?",
+    "answer": "'this' has to be bound to the method that tries to use 'this.refs'.",
+    "subject": "Fullstack: React - Events, State, Refs"
+  },
+  {
+    "stem": "How do you modify the state of a different React component?",
+    "answer": "Not at all! State is visible to the component only.",
+    "subject": "Fullstack: React - Events, State, Refs"
+  },
+  {
+    "stem": "How do you modify state within a React component?",
+    "answer": "Using 'setState()'. Do not modify state directly.",
+    "subject": "Fullstack: React - Events, State, Refs"
+  },
+  {
+    "stem": "What happens when you call 'setState(..)' in a React component?",
+    "answer": "React merges the given value into the previous state and schedules an asynchronous update of the Shadow DOM. Eventually the Browser DOM gets updated - but only the element nodes that changed.",
+    "subject": "Fullstack: React - Events, State, Refs"
+  },
+  {
+    "stem": "How do you pass data 'down' to a React child component?",
+    "answer": "As value properties.",
+    "subject": "Fullstack: React - Events, State, Refs"
+  },
+  {
+    "stem": "How do you pass data 'up' to a React parent component?",
+    "answer": "By passing 'down' a callback property.",
+    "subject": "Fullstack: React - Events, State, Refs"
   }
 ]
