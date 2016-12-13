@@ -17,6 +17,71 @@
     "subject": "SWE: Design Patterns"
   },
   {
+    "stem": "What does the acronym SOLID stand for?",
+    "answer": "5 software engineering design principles: SRP, OCP, LSP, ISP, DIP",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "Why would you follow the SOLID design principles?",
+    "answer": "When code is designed carefully and follows these principles, it is easier to maintain, modify and refactor.",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "Name two SOLID design principles?",
+    "answer": "Single Responsibility Principle (SRP), Open/Closed Principle (OCP), Liskov Substitution Principle (LSP), Interface Segregation Principle (ISP), Dependency Inversion Principle (DIP)",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What does SRP stand for?",
+    "answer": "Single Responsibility Principle",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What does OCP stand for?",
+    "answer": "Open/Closed Principle",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What does LSP stand for?",
+    "answer": "Liskov Substitution Principle",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What does ISP stand for?",
+    "answer": "Interface Segregation Principle",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What does DIP stand for?",
+    "answer": "Dependency Inversion Principle",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What is the Single Responsibility Principle (SRP)?",
+    "answer": "Every class should have one single responsiblity. There should never be more than one reason to change.",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What is the Open/Closed Principle (OCP)?",
+    "answer": "TODO",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What is the Interface Segregation Principle (ISP)?",
+    "answer": "TODO",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What is the Liskov Substitution Principle (LSP)?",
+    "answer": "TODO",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What is the Dependency Inversion Principle (DIP)?",
+    "answer": "TODO",
+    "subject": "SWE: Design Principles"
+  },
+  {
     "stem": "What is the difference between a class and an instance?",
     "answer": "A class is a template for a new object; an instance is an object which was created from that template.",
     "subject": "Java: Basics"
