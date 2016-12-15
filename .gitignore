@@ -1,4 +1,5 @@
 public/lib
+.DS_Store
 .idea
 *.iml
 # Logs

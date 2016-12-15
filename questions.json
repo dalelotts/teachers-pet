@@ -17,99 +17,199 @@
     "subject": "SWE: Design Patterns"
   },
   {
+    "stem": "What does the acronym SOLID stand for?",
+    "answer": "5 software engineering design principles: SRP, OCP, LSP, ISP, DIP",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "Why would you follow the SOLID design principles?",
+    "answer": "When code is designed carefully and follows these principles, it is easier to maintain, modify and refactor.",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "Name two SOLID design principles?",
+    "answer": "Single Responsibility Principle (SRP), Open/Closed Principle (OCP), Liskov Substitution Principle (LSP), Interface Segregation Principle (ISP), Dependency Inversion Principle (DIP)",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What does SRP stand for?",
+    "answer": "Single Responsibility Principle",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What does OCP stand for?",
+    "answer": "Open/Closed Principle",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What does LSP stand for?",
+    "answer": "Liskov Substitution Principle",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What does ISP stand for?",
+    "answer": "Interface Segregation Principle",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What does DIP stand for?",
+    "answer": "Dependency Inversion Principle",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What is the Single Responsibility Principle (SRP)?",
+    "answer": "Every class should have one single responsiblity. There should never be more than one reason to change.",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What is the Open/Closed Principle (OCP)?",
+    "answer": "TODO",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What is the Interface Segregation Principle (ISP)?",
+    "answer": "TODO",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What is the Liskov Substitution Principle (LSP)?",
+    "answer": "TODO",
+    "subject": "SWE: Design Principles"
+  },
+  {
+    "stem": "SOLID design Principles: What is the Dependency Inversion Principle (DIP)?",
+    "answer": "TODO",
+    "subject": "SWE: Design Principles"
+  },
+  {
     "stem": "What is the difference between a class and an instance?",
     "answer": "A class is a template for a new object; an instance is an object which was created from that template.",
     "subject": "Java: Basics"
   },
   {
-    "stem": "What are the access/visibility modifiers in Java?",
-    "answer": "public, protected, private, and package (default)",
+    "stem": "What does 'this' refer to in Java?",
+    "answer": "The current instance. Always.",
     "subject": "Java: Basics"
   },
   {
-    "stem": "What is the difference between abstract classes and interfaces?",
-    "answer": "Abstract classes can contain code/implementation.\nInterfaces are simply a declarative structure",
+    "stem": "Does Java have global functions?",
+    "answer": "No. Object methods only.",
     "subject": "Java: Basics"
+  },
+  {
+    "stem": "How do you indicate in Java that a method does not return anything?",
+    "answer": "Declare method with a return type of 'void'.",
+    "subject": "Java: Basics"
+  },
+  {
+    "stem": "What happens in Java if you forgot to terminate a statement with a semicolon?",
+    "answer": "The compiler will show a compiler error.",
+    "subject": "Java: Basics"
+  },
+  {
+    "stem": "Name a common library for unit testing in Java.",
+    "answer": "JUnit",
+    "subject": "Java: Basics"
+  },
+  {
+    "stem": "Name a common TDD assertion library for Java.",
+    "answer": "Hamcrest, FEST assert",
+    "subject": "Java: Basics"
+  },
+  {
+    "stem": "How do you declare a JUnit test?",
+    "answer": "By annotating a void test method without parameters with '@Test'.",
+    "subject": "Java: Basics"
+  },
+  {
+    "stem": "What are the access/visibility modifiers in Java?",
+    "answer": "public, protected, private, and package (default)",
+    "subject": "Java: Advanced"
   },
   {
     "stem": "Does the Java language allow multiple inheritance?",
     "answer": "Yes. It allows multiple interface inheritance. It does disallow multiple implementation inheritance though.",
-    "subject": "Java: Basics"
+    "subject": "Java: Inheritance"
+  },
+  {
+    "stem": "What is the difference between abstract classes and interfaces?",
+    "answer": "Abstract classes can contain code/implementation. Interfaces are simply a declarative structure",
+    "subject": "Java: Advanced"
   },
   {
     "stem": "When do static members of an object get initialized?",
-    "answer": "The first time the object is instantiated or invoked, NOT at application startup).",
-    "subject": "Java: Basics"
+    "answer": "The first time the object is instantiated or invoked. NOT at application startup.",
+    "subject": "Java: Advanced"
   },
   {
-    "stem": "Explain the final keyword for a field",
-    "answer": "Field = value of field cannot be changed outside the constructor.",
-    "subject": "Java: Basics"
+    "stem": "Explain the final keyword for a property.",
+    "answer": "Value of property cannot be changed outside the constructor.",
+    "subject": "Java: Advanced"
   },
   {
-    "stem": "Explain the final keyword for a method, and a class",
+    "stem": "Explain the final keyword for a method of a class.",
     "answer": "The method cannot be overridden in subclasses.",
-    "subject": "Java: Basics"
+    "subject": "Java: Advanced"
   },
   {
-    "stem": "Explain the final keyword for a class",
+    "stem": "Explain the final keyword for a class.",
     "answer": "The class cannot be sub-classed (extended).",
-    "subject": "Java: Basics"
+    "subject": "Java: Advanced"
   },
   {
-    "stem": "What is the difference between the .equals method and the 'equals equals' operator?",
-    "answer": "'equals equals' performs a comparison of the object reference, .equals performs a class specific comparison",
-    "subject": "Java: Basics"
+    "stem": "What is the difference between the .equals method and the '==' operator?",
+    "answer": "'==' performs a comparison of the object reference, .equals performs a class specific comparison.",
+    "subject": "Java: Advanced"
   },
   {
     "stem": "If two objects are equal (using the equals method), will they have the same hash code? Why?",
     "answer": "Yes, the contract for equals states the hash code must be equal for objects that are equal.",
-    "subject": "Java: Basics"
+    "subject": "Java: Advanced"
   },
   {
     "stem": "Explain checked exceptions vs. unchecked exceptions",
     "answer": "Checked exceptions must be caught or declared as thrown, unchecked do not need to be caught",
-    "subject": "Java: Basics"
+    "subject": "Java: Advanced"
   },
   {
     "stem": "Why would you declare a private constructor?",
     "answer": "So the object cannot be externally instantiated.",
-    "subject": "Java: Basics"
+    "subject": "Java: Advanced"
   },
   {
     "stem": "What is the difference between an anonymous class and an inner class?",
-    "answer": "Anonymous classes are declared within a method body and cannot be reused.\nInner classes are declared within a class body and can be reused",
-    "subject": "Java: Basics"
+    "answer": "Anonymous classes are declared within a method body and cannot be reused. Inner classes are declared within a class body and can be reused.",
+    "subject": "Java: Advanced"
   },
   {
     "stem": "What is the difference between an inner class and a static inner class?",
-    "answer": "Inner class has a reference to its enclosing class and cannot be instantiated independent of its enclosing class.\nStatic inner class does not have a reference to its enclosing instance and can be instantiated directly.",
-    "subject": "Java: Basics"
+    "answer": "Inner class has a reference to its enclosing class and cannot be instantiated independent of its enclosing class. Static inner class does not have a reference to its enclosing instance and can be instantiated directly.",
+    "subject": "Java: Advanced"
   },
   {
     "stem": "What is synchronization and when do you use it?",
-    "answer": "Synchronization controls access of multiple threads to shared resources. Without synchronization, it is possible for one thread to modify a shared object while another thread is in the process of using or updating that object's value",
-    "subject": "Java: Basics"
+    "answer": "Synchronization controls access of multiple threads to shared resources. Without synchronization, it is possible for one thread to modify a shared object while another thread is in the process of using or updating that object's value.",
+    "subject": "Java: Advanced"
   },
   {
     "stem": "Explain the difference between a synchronized block and a synchronized method.",
-    "answer": "Method obtains a lock on the instance of the containing object.\nBlock obtains a lock on the object specified in the block.",
-    "subject": "Java: Basics"
+    "answer": "Method obtains a lock on the instance of the containing object. Block obtains a lock on the object specified in the block.",
+    "subject": "Java: Advanced"
   },
   {
     "stem": "What is reflection and when do you use it?",
-    "answer": "Reflection is when an application has the ability to examine and modify its own structure and behavior at runtime.\nAllows the runtime variation of the concrete implementation, method called, or variable modified to vary at runtime.",
-    "subject": "Java: Basics"
+    "answer": "Reflection is when an application has the ability to examine and modify its own structure and behavior at runtime. Allows the runtime variation of the concrete implementation, method called, or variable modified to vary at runtime.",
+    "subject": "Java: Advanced"
   },
   {
     "stem": "Why would you declare a serial version UID field?",
     "answer": "SUID is used to inform the Java serialization mechanism which version of the class is compatible with this serialized object.",
-    "subject": "Java: Basics"
+    "subject": "Java: Advanced"
   },
   {
     "stem": "When is type checking performed on generic classes?",
     "answer": "Compile time",
-    "subject": "Java: Basics"
+    "subject": "Java: Advanced"
   },
   {
     "stem": "What does REST mean?",
