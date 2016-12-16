@@ -1,7 +1,7 @@
-angular.module('apot',
-  [
+angular.module('apot', [
     'apot.homeController',
     'apot.pepperController',
+    'apot.pairsController',
     'ngSanitize',
     'ui.router'
   ])
@@ -9,8 +9,8 @@ angular.module('apot',
     '$stateProvider',
     '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {
-      'use strict';
-      $urlRouterProvider.otherwise('/');
+      'use strict'
+      $urlRouterProvider.otherwise('/')
 
       // Home state routing
       $stateProvider
@@ -23,6 +23,11 @@ angular.module('apot',
           url: '/pepper',
           controller: 'pepperController',
           templateUrl: 'app/pepper/pepper.html'
-        });
+        })
+        .state('pairs', {
+          url: '/pairs',
+          controller: 'pairsController',
+          templateUrl: 'app/pairs/pairs.html'
+        })
     }
-  ]);
+  ])
