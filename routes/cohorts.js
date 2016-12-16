@@ -9,8 +9,8 @@ const express = require('express')
 const fs = require('fs')
 const path = require('path')
 const router = express.Router()
-const shuffle = require(path.resolve('util/shuffle'))
-const makePairs = require(path.resolve('util/makePairs'))
+const shuffle = require(path.resolve('pairs/shuffle'))
+const makePairs = require(path.resolve('pairs/makePairs'))
 
 const cohorts = require(path.resolve('data/cohorts'))
 
