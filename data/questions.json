@@ -1331,7 +1331,7 @@
   },
   {
     "stem": "How does Javascript interact with the DOM?",
-    "answer":"Javacript interacts with the DOM based on.",
+    "answer":"Javacript interacts with the DOM API",
     "subject": "HTML: DOM"
   },
   {
