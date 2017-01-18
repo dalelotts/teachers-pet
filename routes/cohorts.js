@@ -54,13 +54,28 @@ router.get('/:cohort/pairs/new', (req, res, next) => {
   res.json(newPairs)
 })
 
+router.get('/:cohort/git-pairs', (req, res, next) => {
+  let students = cohorts[req.params.cohort]
+
+
+  students = students
+    .sort().map((student) => {
+      const initialMatches = student.name.match(/\b\w/g)
+      student.initials = ((initialMatches.shift() || '') + (initialMatches.pop() || '')).toUpperCase()
+      return student
+    })
+
+
+  res.json(students)
+})
+
 router.get('/', (req, res) => {
   res.json(Object.keys(cohorts).sort())
 })
 
 module.exports = router
 
-function getPastPairs(cohort) {
+function getPastPairs (cohort) {
   try {
     return require(path.resolve('data/pairs/' + cohort))
   } catch (error) {
