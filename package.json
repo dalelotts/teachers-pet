@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon ./bin/www",
-    "test": "jasmine"
+    "test": "jasmine",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "angular": "^1.6.0",
@@ -23,7 +25,8 @@
     "logfmt": "^1.2.0",
     "morgan": "^1.7.0",
     "nodemon": "^1.11.0",
-    "static-favicon": "^2.0.0-alpha"
+    "static-favicon": "^2.0.0-alpha",
+    "snyk": "^1.30.1"
   },
   "repository": {
     "type": "git",
@@ -32,5 +35,6 @@
   "engine": "node >= 0.12",
   "devDependencies": {
     "jasmine": "^2.5.2"
-  }
+  },
+  "snyk": true
 }
