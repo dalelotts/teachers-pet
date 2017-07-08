@@ -8,10 +8,10 @@
     "test": "jasmine"
   },
   "dependencies": {
+    "@uirouter/angularjs": "^1.0.5",
     "angular": "^1.6.0",
     "angular-resource": "^1.6.0",
     "angular-sanitize": "^1.6.0",
-    "angular-ui-router": "^1.0.0-beta.2",
     "body-parser": "^1.15.2",
     "bootstrap": "^3.3.7",
     "bower": "latest",
