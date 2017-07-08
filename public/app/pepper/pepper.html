@@ -47,7 +47,7 @@
         <div class="panel-body">
             <ul class="list-unstyled">
                 <li data-ng-repeat="question in selected ">
-                    <h3>{{ question.name }}</h3>
+                    <h3 class="pepper-student">{{ question.name }}</h3>
                     <h4 class="well" data-ng-bind-html="question.stem"></h4>
                     <p data-ng-show="question.showAnswer" data-ng-bind-html="question.answer"></p>
                     <button class="btn btn-success btn-xs" data-ng-click="toggleAnswer($index)"><i

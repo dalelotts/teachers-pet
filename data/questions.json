@@ -810,8 +810,8 @@
     "subject": "TDD: Basics"
   },
   {
-    "stem": "What tests a Unit Test?",
-    "answer": "The smallest unit of software.",
+    "stem": "What is a Unit Test?",
+    "answer": "The a test that verifies the smallest unit of software.",
     "subject": "TDD: Basics"
   },
   {

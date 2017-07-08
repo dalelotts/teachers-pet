@@ -8,3 +8,18 @@ body {
     display: none !important;
 }
 
+.pepper-student {
+    animation: fadein 5s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes fadein {
+    99% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
