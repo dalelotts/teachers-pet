@@ -810,6 +810,16 @@
     "subject": "TDD: Basics"
   },
   {
+    "stem": "Why do we always write tests first?",
+    "answer": "Define the specification first. i.e. blueprints.",
+    "subject": "TDD: Basics"
+  },
+  {
+    "stem": "Which pairing styles did you use yesterday, and why?",
+    "answer": "Ping Pong, ",
+    "subject": "TDD: Basics"
+  },
+  {
     "stem": "What is a Unit Test?",
     "answer": "The a test that verifies the smallest unit of software.",
     "subject": "TDD: Basics"
