@@ -24,9 +24,16 @@ angular.module('apot.pepperController', ['ngResource'])
       $scope.cohorts = CohortAPI.query()
 
       function importNamesAndQuestions () {
-        $scope.students = CohortAPI.query({
+        CohortAPI.query({
           cohort: $scope.cohort
-        })
+        }).$promise.then((students) => {
+          var selectedNames = $scope.selected.map((question) => question.name);
+          console.log(selectedNames);
+          var result =  students.filter((student) => selectedNames.indexOf(student.name) === -1);
+          console.log(result);
+          $scope.students = result;
+        });
+
         $scope.questions = QuestionAPI.query({
           subject: $scope.subject
         })
