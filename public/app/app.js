@@ -1,10 +1,12 @@
 angular.module('apot', [
-    'apot.homeController',
-    'apot.pepperController',
-    'apot.pairsController',
-    'ngSanitize',
-    'ui.router'
-  ])
+  'apot.homeController',
+  'apot.pepperController',
+  'apot.pairsController',
+  'apot.retroController',
+  'apot.standUpController',
+  'ngSanitize',
+  'ui.router'
+])
   .config([
     '$stateProvider',
     '$urlRouterProvider',
@@ -28,6 +30,16 @@ angular.module('apot', [
           url: '/pairs',
           controller: 'pairsController',
           templateUrl: 'app/pairs/pairs.html'
+        })
+        .state('stand-up', {
+          url: '/stand-up',
+          controller: 'standUpController',
+          templateUrl: 'app/standup/standup.html'
+        })
+        .state('retro', {
+          url: '/retro',
+          controller: 'retroController',
+          templateUrl: 'app/retro/retro.html'
         })
     }
   ])

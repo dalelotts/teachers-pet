@@ -1,5 +1,4 @@
-[
-  {
+[{
     "stem": "You have a performance problem with your application, what do you do first?",
     "answer": "Run a profiler to gather data about exactly where the problem is located. (Don't guess!)",
     "subject": "SWE: Debugging"
@@ -122,6 +121,66 @@
     "subject": "Java: Basics"
   },
   {
+    "stem": "The term <code>instance variable</code> is another name for ___.",
+    "answer": "a non-static field",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "The term <code>class variable</code> is another name for ___.",
+    "answer": "a static field",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "A local variable stores temporary state; it is declared inside a ___.",
+    "answer": "Method",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "A variable declared within the opening and closing parenthesis of a method is called a ___.",
+    "answer": "Parameter",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "What are the eight primitive data types supported by the Java programming language?",
+    "answer": "byte, short, int, long, float, double, boolean, char",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "Character strings are represented by the class ___.",
+    "answer": "java.lang.String",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "A/An ___ is a container object that holds a fixed number of values of a single type",
+    "answer": "Array",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "What is the scope of a protected class? (Class,Package,Subclass,World)",
+    "answer": "Subclass",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "How long does a <code>method parameter</code> live?",
+    "answer": "the duration of the method invocation",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "How long does a <code>class variable</code> live?",
+    "answer": "the life of the JVM",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "How long does an <code>instance variable</code> live?",
+    "answer": "the life of the  instance",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "What best describes the scope system in Java?",
+    "answer": "Java has <code>block scope</code>",
+    "subject": "Java: Scope"
+  },
+  {
     "stem": "What are the access/visibility modifiers in Java?",
     "answer": "public, protected, private, and package (default)",
     "subject": "Java: Advanced"
@@ -129,6 +188,26 @@
   {
     "stem": "Does the Java language allow multiple inheritance?",
     "answer": "Yes. It allows multiple interface inheritance. It does disallow multiple implementation inheritance though.",
+    "subject": "Java: Inheritance"
+  },
+  {
+    "stem": "What is the <code>@Override</code> annotation and where can you use it?",
+    "answer": "Indicates that a method declaration is intended to override a method declaration in a super class or implemented interface. Used only on methods.",
+    "subject": "Java: Inheritance"
+  },
+  {
+    "stem": "What can happen if the <code>@Override</code> annotation is omitted from an overriding method?",
+    "answer": "A future change to the super-class method could result in the sub-class method no-longer overriding a method and the compiler will not catch it.",
+    "subject": "Java: Inheritance"
+  },
+  {
+    "stem": "What design pattern is preferred over inheritance?",
+    "answer": "Composition",
+    "subject": "Java: Inheritance"
+  },
+  {
+    "stem": "Why is composition preferred over inheritance?",
+    "answer": "Composition allows reuse of functionality without the single-parent limitiation of inheritance.",
     "subject": "Java: Inheritance"
   },
   {
@@ -784,7 +863,7 @@
     "stem": "What is the output of this code?<code><p>var myOutput = &#39;&#39;;</p><p>var contents = fs.readFile(&#39;someFile.txt&#39;, (err, data) =&gt; {<br />&nbsp; console.log(data.toString());<br />});</p><p>console.log(contents);</p></code>",
     "answer": "undefined<br><code>contents of the file</code>",
     "subject": "JS: Async"
-  },  {
+  }, {
     "stem": "What is the output of this code?<code><p>const myOutput = [10, 11, 13].map(console.log)</p><p>console.log(myOutput)</p></code>",
     "answer": "<p>10 0 [ 10, 11, 13 ]<br />11 1 [ 10, 11, 13 ]<br />13 2 [ 10, 11, 13 ]<br />[ undefined, undefined, undefined ]</p>",
     "subject": "JS: Async"
@@ -1341,7 +1420,7 @@
   },
   {
     "stem": "How does Javascript interact with the DOM?",
-    "answer":"Javacript interacts with the DOM API",
+    "answer": "Javacript interacts with the DOM API",
     "subject": "HTML: DOM"
   },
   {
@@ -1351,7 +1430,7 @@
   },
   {
     "stem": "What is the global Javascript object used to manipulate the DOM?",
-    "answer": "The `document` object",
+    "answer": "The <code>document</code> object",
     "subject": "HTML: DOM"
   },
   {

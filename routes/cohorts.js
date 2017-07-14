@@ -40,13 +40,13 @@ router.post('/:cohort/pairs', (req, res, next) => {
 
   fs.writeFile(fileName, JSON.stringify(newPastPairs), (err) => {
     if (err) {
-      next(err)
+      return next(err)
     }
     res.json(newPairs)
   })
 })
 
-router.get('/:cohort/pairs/new', (req, res, next) => {
+router.get('/:cohort/pairs/new', (req, res) => {
   const students = cohorts[req.params.cohort]
   const shuffledStudents = shuffle(students.map((student) => student.name))
   const pastPairs = getPastPairs(req.params.cohort)
@@ -54,9 +54,66 @@ router.get('/:cohort/pairs/new', (req, res, next) => {
   res.json(newPairs)
 })
 
-router.get('/:cohort/git-pairs', (req, res, next) => {
-  let students = cohorts[req.params.cohort]
+router.post('/:cohort/retro', (req, res, next) => {
+  const pastPairs = getPastRetro(req.params.cohort)
 
+  req.body.createdOn = new Date().getTime()
+
+  const newPastRetro = pastPairs.concat(req.body)
+
+  const fileName = path.resolve('data/retro/' + req.params.cohort + '.json')
+
+  fs.writeFile(fileName, JSON.stringify(newPastRetro), (err) => {
+    if (err) {
+      return next(err)
+    }
+    res.json(req.body)
+  })
+})
+
+router.get('/:cohort/retro/new', (req, res) => {
+  const pastRetro = getPastRetro(req.params.cohort).map((student) => student.name)
+  const students = cohorts[req.params.cohort]
+  let filteredStudents = students.filter((student) => pastRetro.indexOf(student.name) === -1)
+  if (filteredStudents.length === 0) {
+    filteredStudents = students
+  }
+  const shuffledStudents = shuffle(filteredStudents.map((student) => student.name))
+  res.json({ name: shuffledStudents[0] })
+})
+
+
+router.post('/:cohort/standup', (req, res, next) => {
+  const pastStandUp = getPastStandup(req.params.cohort)
+
+  req.body.createdOn = new Date().getTime()
+
+  const newPastStandup = pastStandUp.concat(req.body)
+
+  const fileName = path.resolve('data/standup/' + req.params.cohort + '.json')
+
+  fs.writeFile(fileName, JSON.stringify(newPastStandup), (err) => {
+    if (err) {
+      return next(err)
+    }
+    res.json(req.body)
+  })
+})
+
+router.get('/:cohort/standup/new', (req, res) => {
+  const pastStandup = getPastStandup(req.params.cohort).map((student) => student.name)
+  const students = cohorts[req.params.cohort]
+  let filteredStudents = students.filter((student) => pastStandup.indexOf(student.name) === -1)
+  if (filteredStudents.length === 0) {
+    filteredStudents = students
+  }
+  const shuffledStudents = shuffle(filteredStudents.map((student) => student.name))
+  res.json({ name: shuffledStudents[0] })
+})
+
+
+router.get('/:cohort/git-pairs', (req, res) => {
+  let students = cohorts[req.params.cohort]
 
   students = students
     .sort().map((student) => {
@@ -64,7 +121,6 @@ router.get('/:cohort/git-pairs', (req, res, next) => {
       student.initials = ((initialMatches.shift() || '') + (initialMatches.pop() || '')).toUpperCase()
       return student
     })
-
 
   res.json(students)
 })
@@ -82,3 +138,22 @@ function getPastPairs (cohort) {
     return []
   }
 }
+
+function getPastStandup (cohort) {
+  try {
+    return require(path.resolve('data/standup/' + cohort))
+  } catch (error) {
+    return []
+  }
+}
+
+function getPastRetro (cohort) {
+  try {
+    return require(path.resolve('data/retro/' + cohort))
+  } catch (error) {
+    return []
+  }
+}
+
+
+
