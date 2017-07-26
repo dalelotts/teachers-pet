@@ -3,9 +3,9 @@
 'use strict'
 
 const path = require('path')
-const Pair = require(path.resolve('util/pair'))
+const Pair = require(path.resolve('pairs/pair'))
 
-const makePairs = require(path.resolve('util/makePairs'))
+const makePairs = require(path.resolve('pairs/makePairs'))
 
 describe('Given a MakePairs function', () => {
   describe('When given', () => {
@@ -21,7 +21,7 @@ describe('Given a MakePairs function', () => {
     })
   })
 
-  describe('When given an even number of students', () => {
+  fdescribe('When given an even number of students', () => {
     describe('AND no previous pairing', () => {
       it('AND exactly two students, Then return one pair', () => {
         const pairList = makePairs(['Jay', 'Thomas'])
@@ -38,7 +38,6 @@ describe('Given a MakePairs function', () => {
         const pairList = makePairs(['Jay', 'Thomas', 'James', 'Fred'], [{
           members: ['Jay', 'Thomas']
         }])
-
         expect(pairList.length).toEqual(2)
         expect(new Pair('Jay', 'James').inArray(pairList)).toEqual(true)
         expect(new Pair('Thomas', 'Fred').inArray(pairList)).toEqual(true)
@@ -51,7 +50,6 @@ describe('Given a MakePairs function', () => {
         }])
 
         expect(pairList.length).toEqual(2)
-        console.log('pair list ----------\n', pairList)
         expect(new Pair('Jay', 'Fred').inArray(pairList)).toEqual(true)
         expect(new Pair('Thomas', 'James').inArray(pairList)).toEqual(true)
       })

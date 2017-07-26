@@ -2,7 +2,7 @@
 
 const path = require('path')
 
-const Pair = require(path.resolve('util/pair'));
+const Pair = require(path.resolve('pairs/pair'));
 
 describe('Given a Pair', function () {
 
