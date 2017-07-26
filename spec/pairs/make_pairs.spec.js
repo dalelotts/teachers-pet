@@ -13,7 +13,7 @@ describe('Given a MakePairs function', () => {
       expect(makePairs).toThrowError('No students')
     })
     it('empty students array Then throw "No Students" error', () => {
-      function emptyStudentsArray() {
+      function emptyStudentsArray () {
         makePairs([])
       }
 
@@ -94,7 +94,7 @@ describe('Given a MakePairs function', () => {
         expect(new Pair('James', 'Alex').inArray(pairList)).toEqual(true)
       })
 
-      it('if there is no possible match, return a duplicate using the next member in the cohort', () => {
+      it('if there is no possible match, return a duplicate using the last member in the cohort', () => {
         const cohort = ['James', 'Jenny', 'Thomas', 'Jay']
         const previousPairs = [{
           members: ['James', 'Jenny']
@@ -119,16 +119,17 @@ describe('Given a MakePairs function', () => {
       })
 
       it('if there are duplicate students in the input array, duplicate should not be matched twice', () => {
+        // the first 'James' get's filtered out immediately so Jenny is matched first
         const cohort = ['James', 'Jenny', 'Thomas', 'Fred', 'James']
         const pairList = makePairs(cohort)
 
         expect(pairList.length).toEqual(2)
-        expect(new Pair('James', 'Jenny').inArray(pairList)).toEqual(true)
-        expect(new Pair('Thomas', 'Fred').inArray(pairList)).toEqual(true)
+        expect(new Pair('Jenny', 'Thomas').inArray(pairList)).toEqual(true)
+        expect(new Pair('Fred', 'James').inArray(pairList)).toEqual(true)
       })
 
       it('if there are triple past pairs and there is no match left, past pairing is ignored', () => {
-        const cohort = ['James', 'Jenny', 'Thomas', 'Fred', 'James']
+        const cohort = ['James', 'Jenny', 'Thomas', 'Fred', 'Jay']
         const previousPairs = [{
           members: ['James', 'Jenny', 'Thomas']
         }, {
@@ -158,6 +159,43 @@ describe('Given a MakePairs function', () => {
         expect(pairList.length).toEqual(2)
         expect(new Pair('James', 'Danny').inArray(pairList)).toEqual(true)
         expect(new Pair('Jenny', 'Fred', 'Thomas').inArray(pairList)).toEqual(true)
+      })
+      it('if there are no matches left, select from remaining students (otherwise duplicates can happen)', () => {
+        const cohort = ['James', 'Jenny', 'Thomas', 'Fred', 'Danny']
+        const previousPairs = [{
+          members: ['James', 'Jenny', 'Thomas']
+        }, {
+          members: ['James', 'Fred']
+        }, {
+          members: ['James', 'Jay']
+        }, {
+          members: ['James', 'Danny']
+        }]
+
+        const pairList = makePairs(cohort, previousPairs)
+
+        expect(pairList.length).toEqual(2)
+        expect(new Pair('James', 'Jenny').inArray(pairList)).toEqual(true)
+        expect(new Pair('Danny', 'Fred', 'Thomas').inArray(pairList)).toEqual(true)
+      })
+      it('if there are duplicates in the input array and no matches left, select from remaining students without duplication', () => {
+        // the first 'James' get's filtered out immediately so Jenny is matched first
+        const cohort = ['James', 'Jenny', 'Thomas', 'Fred', 'James']
+        const previousPairs = [{
+          members: ['James', 'Jenny', 'Thomas']
+        }, {
+          members: ['James', 'Fred']
+        }, {
+          members: ['James', 'Jay']
+        }, {
+          members: ['James', 'Danny']
+        }]
+
+        const pairList = makePairs(cohort, previousPairs)
+
+        expect(pairList.length).toEqual(2)
+        expect(new Pair('Jenny', 'Fred').inArray(pairList)).toEqual(true)
+        expect(new Pair('Thomas', 'James').inArray(pairList)).toEqual(true)
       })
     })
   })

@@ -1,3 +1,4 @@
+/* eslint-env jasmine */
 'use strict'
 
 const path = require('path')
@@ -22,21 +23,23 @@ describe('Given a Pair', function () {
   })
 
   describe('When compared to', function () {
-   it('undefined, equals returns false', function() {
-     const firstPair = new Pair('One', 'Two')
-     expect(firstPair.equals(undefined)).toEqual(false)
-   })
-    it('null, equals returns false', function() {
+    it('undefined, equals returns false', function () {
+      const firstPair = new Pair('One', 'Two')
+      expect(firstPair.equals(undefined)).toEqual(false)
+    })
+    it('null, equals returns false', function () {
       const firstPair = new Pair('One', 'Two')
       expect(firstPair.equals(null)).toEqual(false)
     })
-    it('empty object, equals returns false', function() {
+    it('empty object, equals returns false', function () {
       const firstPair = new Pair('One', 'Two')
       expect(firstPair.equals({})).toEqual(false)
     })
-    it('object with members property that is not an array, equals returns false', function() {
+    it('object with members property that is not an array, equals returns false', function () {
       const firstPair = new Pair('One', 'Two')
-      expect(firstPair.equals({members: 'some string value'})).toEqual(false)
+      expect(firstPair.equals({
+        members: 'some string value'
+      })).toEqual(false)
     })
   })
   describe('When compared to another pair', function () {

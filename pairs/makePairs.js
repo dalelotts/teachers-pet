@@ -2,10 +2,13 @@
 
 const Pair = require('./pair')
 
-function makePairs(students, previousPairs) {
+function makePairs (students, previousPairs) {
   if (!(students && students.length)) {
     throw new Error('No students')
   }
+
+  // To satisfy tests that pass in duplicate students, remove any duplicates before proceeding.
+  students = students.filter((student, index, source) => source.indexOf(student, index + 1) === -1)
 
   if (students.length <= 3) {
     return [(new Pair(...students))]
@@ -25,12 +28,11 @@ function makePairs(students, previousPairs) {
       return previousPairMember.concat(pair.members.filter((member) => member !== firstMember))
     }, [])
 
-
   const possiblePairs = students
     .filter((student) => student !== firstMember)
     .filter((student) => firstMemberPreviousPairs.indexOf(student) === -1)
 
-  const secondMember = possiblePairs.length ? possiblePairs[0] : firstMemberPreviousPairs[0]
+  const secondMember = possiblePairs.length ? possiblePairs[0] : students[1]
 
   const currentPair = new Pair(firstMember, secondMember)
 
