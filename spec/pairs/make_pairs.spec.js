@@ -21,7 +21,7 @@ describe('Given a MakePairs function', () => {
     })
   })
 
-  fdescribe('When given an even number of students', () => {
+  describe('When given an even number of students', () => {
     describe('AND no previous pairing', () => {
       it('AND exactly two students, Then return one pair', () => {
         const pairList = makePairs(['Jay', 'Thomas'])
