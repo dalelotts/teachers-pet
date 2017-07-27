@@ -27,7 +27,7 @@ function studentsToPairs (allPreviousPairs) {
     if (pairedStudents.indexOf(currentStudent) === -1) {
       const previouslyPairedStudents = findPreviouslyPairedStudents(currentStudent, allPreviousPairs)
       const unPairedStudents = allStudents.filter((student) => pairedStudents.indexOf(student) === -1)
-      const newPair = makePairForStudent(currentStudent, previouslyPairedStudents, unPairedStudents);
+      const newPair = makePairForStudent(currentStudent, previouslyPairedStudents, unPairedStudents)
       pairs.push(newPair)
     }
 
