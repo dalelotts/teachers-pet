@@ -7,15 +7,14 @@ function makePairs (students, allPreviousPairs) {
     throw new Error('No students')
   }
 
-  // To satisfy tests that pass in duplicate students, remove any duplicates before proceeding.
+  if (!(allPreviousPairs && allPreviousPairs.length)) {
+    allPreviousPairs = []
+  }
+
   students = students.filter(removeDuplicates)
 
   if (students.length <= 3) {
     return [(new Pair(...students))]
-  }
-
-  if (!(allPreviousPairs && allPreviousPairs.length)) {
-    allPreviousPairs = []
   }
 
   return students.reduce(studentsToPairs(allPreviousPairs), [])
@@ -23,16 +22,12 @@ function makePairs (students, allPreviousPairs) {
 
 function studentsToPairs (allPreviousPairs) {
   return function reducer (pairs, currentStudent, index, allStudents) {
-    const matchedStudents = pairs.reduce(pairsToStudents, [])
+    const pairedStudents = pairs.reduce(pairsToStudents, [])
 
-    if (matchedStudents.indexOf(currentStudent) === -1) {
-      const previousPairs = findPreviousPairsForStudent(currentStudent, allPreviousPairs)
-      const unmatchedStudents = allStudents.filter((student) => matchedStudents.indexOf(student) === -1)
-
-      const newPair = unmatchedStudents.length <= 3
-        ? new Pair(...unmatchedStudents)
-        : findPairForStudent(currentStudent, previousPairs, unmatchedStudents);
-
+    if (pairedStudents.indexOf(currentStudent) === -1) {
+      const previouslyPairedStudents = findPreviouslyPairedStudents(currentStudent, allPreviousPairs)
+      const unPairedStudents = allStudents.filter((student) => pairedStudents.indexOf(student) === -1)
+      const newPair = makePairForStudent(currentStudent, previouslyPairedStudents, unPairedStudents);
       pairs.push(newPair)
     }
 
@@ -40,7 +35,7 @@ function studentsToPairs (allPreviousPairs) {
   }
 }
 
-function findPreviousPairsForStudent (currentStudent, allPreviousPairs) {
+function findPreviouslyPairedStudents (currentStudent, allPreviousPairs) {
   // You may be tempted sort the list first!! Don't! It will break the algorithm.
   return allPreviousPairs
     .filter((pair) => pair.members.indexOf(currentStudent) > -1)
@@ -49,8 +44,7 @@ function findPreviousPairsForStudent (currentStudent, allPreviousPairs) {
     .filter((student) => student !== currentStudent)
 }
 
-function findPairForStudent (currentStudent, previousPairs, students) {
-
+function makePairForStudent (currentStudent, previousPairs, students) {
   if (students.length <= 3) {
     return (new Pair(...students))
   }
