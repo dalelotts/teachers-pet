@@ -20,21 +20,6 @@ function makePairs (students, allPreviousPairs) {
   return students.reduce(studentsToPairs(allPreviousPairs), [])
 }
 
-function studentsToPairs (allPreviousPairs) {
-  return function reducer (pairs, currentStudent, index, allStudents) {
-    const pairedStudents = pairs.reduce(pairsToStudents, [])
-
-    if (pairedStudents.indexOf(currentStudent) === -1) {
-      const previouslyPairedStudents = findPreviouslyPairedStudents(currentStudent, allPreviousPairs)
-      const unPairedStudents = allStudents.filter((student) => pairedStudents.indexOf(student) === -1)
-      const newPair = makePairForStudent(currentStudent, previouslyPairedStudents, unPairedStudents)
-      pairs.push(newPair)
-    }
-
-    return pairs
-  }
-}
-
 function findPreviouslyPairedStudents (currentStudent, allPreviousPairs) {
   // You may be tempted sort the list first!! Don't! It will break the algorithm.
   return allPreviousPairs
@@ -64,6 +49,21 @@ function pairsToStudents (students, pair) {
 
 function removeDuplicates (student, index, source) {
   return source.indexOf(student, index + 1) === -1
+}
+
+function studentsToPairs (allPreviousPairs) {
+  return function reducer (pairs, currentStudent, index, allStudents) {
+    const pairedStudents = pairs.reduce(pairsToStudents, [])
+
+    if (pairedStudents.indexOf(currentStudent) === -1) {
+      const previouslyPairedStudents = findPreviouslyPairedStudents(currentStudent, allPreviousPairs)
+      const unPairedStudents = allStudents.filter((student) => pairedStudents.indexOf(student) === -1)
+      const newPair = makePairForStudent(currentStudent, previouslyPairedStudents, unPairedStudents)
+      pairs.push(newPair)
+    }
+
+    return pairs
+  }
 }
 
 module.exports = makePairs
