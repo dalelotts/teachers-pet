@@ -22,8 +22,8 @@ function makePairs (students, allPreviousPairs) {
 }
 
 function studentsToPairs (allPreviousPairs) {
-  return function reducer (accumulator, currentStudent, index, allStudents) {
-    const matchedStudents = accumulator.reduce(pairsToStudents, [])
+  return function reducer (pairs, currentStudent, index, allStudents) {
+    const matchedStudents = pairs.reduce(pairsToStudents, [])
 
     if (matchedStudents.indexOf(currentStudent) === -1) {
       const previousPairs = findPreviousPairsForStudent(currentStudent, allPreviousPairs)
@@ -33,10 +33,10 @@ function studentsToPairs (allPreviousPairs) {
         ? new Pair(...unmatchedStudents)
         : findPairForStudent(currentStudent, previousPairs, unmatchedStudents);
 
-      accumulator.push(newPair)
+      pairs.push(newPair)
     }
 
-    return accumulator
+    return pairs
   }
 }
 
