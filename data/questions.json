@@ -1,7 +1,7 @@
 [
   {
-    "stem": "What is the result of following markup:<br><br><code>&lt;div class='row'&gt;<br>&nbsp;&nbsp;&lt;div class='col-md-6'&gt;Hello&lt;/div&gt;<br>&nbsp;&nbsp;&lt;div class='col-md-6'&gt;World&lt;/div&gt;<br>&lt;/div&gt;<code>",
-    "answer": "Twitter Bootstrap's grid layout will show both divs as two equal sized sections. On larger screens next to each other, on smaller screens on top of each other.",
+    "stem": "What is a downside of using Twitter Bootstrap?",
+    "answer": "All websites look the same if no effort is put into customizations.",
     "subject": "Fullstack: Bootstrap"
   },
   {
@@ -10,34 +10,14 @@
     "subject": "Fullstack: Bootstrap"
   },
   {
-    "stem": "What is a downside of using Twitter Bootstrap?",
-    "answer": "All websites look the same if no effort is put into customizations.",
-    "subject": "Fullstack: Bootstrap"
-  },
-  {
     "stem": "What is the benefit of using Twitter Bootstrap?",
     "answer": "It allows styling a website very quickly and represents the XP value Simplicity.",
     "subject": "Fullstack: Bootstrap"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Fullstack: CRUD"
-  },
-  {
-    "stem": "What is a template engine?",
-    "answer": "Combines one or more templates with a data model",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "What is the most significant advantage of TDD over EDD?",
-    "answer": "No extra cost or effort to re-validate the behavior of the system. Able to re-execute the tests with no manual effort.",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "When would you use EDD instead of TDD?",
-    "answer": "Never for production, but most commonly for learning new frameworks / API's that you don't yet know how to test.",
-    "subject": "Fullstack: Express"
+    "stem": "What is the result of following markup:<br><br><code>&lt;div class='row'&gt;<br>&nbsp;&nbsp;&lt;div class='col-md-6'&gt;Hello&lt;/div&gt;<br>&nbsp;&nbsp;&lt;div class='col-md-6'&gt;World&lt;/div&gt;<br>&lt;/div&gt;<code>",
+    "answer": "Twitter Bootstrap's grid layout will show both divs as two equal sized sections. On larger screens next to each other, on smaller screens on top of each other.",
+    "subject": "Fullstack: Bootstrap"
   },
   {
     "stem": "How are EDD and TDD similar?",
@@ -45,73 +25,13 @@
     "subject": "Fullstack: Express"
   },
   {
-    "stem": "What is an Express Route in relation to MVC?",
-    "answer": "The controller",
+    "stem": "How do you get query parameters in Express.js?",
+    "answer": "req.params.parameterName or req.query[paramater-name]",
     "subject": "Fullstack: Express"
   },
   {
-    "stem": "MVC: What is the responsibility of a model?",
-    "answer": "It contains the business logic and/or deals with persistance of data.",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "What is the purpose of the 'next' parameter?",
-    "answer": "Provides access to next middleware function in the application's request-response cycle.",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "What is middleware? List some examples of middleware we have used.",
-    "answer": "Any number of functions that are invoked by the Express.js routing layer before the final request handler, and thus sits in the middle between a raw request and the final intended route.",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "What is the default template engine used in Express?",
-    "answer": "Jade or Pug",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "MVC: What is the responsibility of a controller in Express?",
-    "answer": "Interpreting requests and preparing responses.",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "MVC: What is the responsibility of a controller?",
-    "answer": "Directing 'traffic' between view and model.",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "MVC: What is the responsibility of a view?",
-    "answer": "Displaying or presenting data to the user and reacting to user input or interactions.",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "MVC: Where can I find the models in express?",
-    "answer": "Potentially in a 'src', 'model' or 'services' directory. Express does not generate any model for you.",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "MVC: Where can I find the controllers in express?",
-    "answer": "In the 'routes' directory.",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "MVC: Where can I find the views in express?",
-    "answer": "In the 'views' directory.",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "What does MVC stand for?",
-    "answer": "Model, View, Controller",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "What XP Value does using the express-generator espouse?",
-    "answer": "Simplicity",
-    "subject": "Fullstack: Express"
-  },
-  {
-    "stem": "What does REST mean?",
-    "answer": "Representational state transfer",
+    "stem": "How do you get URL parameters in Express.js?",
+    "answer": "req.params.parameterName or req.params[paramater-name]",
     "subject": "Fullstack: Express"
   },
   {
@@ -125,18 +45,38 @@
     "subject": "Fullstack: Express"
   },
   {
-    "stem": "What is the parameter 'next' used for in Express?",
-    "answer": "A function to pass control to one of the subsequent route handlers",
+    "stem": "MVC: What is the responsibility of a controller in Express?",
+    "answer": "Interpreting requests and preparing responses.",
     "subject": "Fullstack: Express"
   },
   {
-    "stem": "How do you get URL parameters in Express.js?",
-    "answer": "req.params.parameterName or req.params[paramater-name]",
+    "stem": "MVC: What is the responsibility of a controller?",
+    "answer": "Directing 'traffic' between view and model.",
     "subject": "Fullstack: Express"
   },
   {
-    "stem": "How do you get query parameters in Express.js?",
-    "answer": "req.params.parameterName or req.query[paramater-name]",
+    "stem": "MVC: What is the responsibility of a model?",
+    "answer": "It contains the business logic and/or deals with persistance of data.",
+    "subject": "Fullstack: Express"
+  },
+  {
+    "stem": "MVC: What is the responsibility of a view?",
+    "answer": "Displaying or presenting data to the user and reacting to user input or interactions.",
+    "subject": "Fullstack: Express"
+  },
+  {
+    "stem": "MVC: Where can I find the controllers in express?",
+    "answer": "In the 'routes' directory.",
+    "subject": "Fullstack: Express"
+  },
+  {
+    "stem": "MVC: Where can I find the models in express?",
+    "answer": "Potentially in a 'src', 'model' or 'services' directory. Express does not generate any model for you.",
+    "subject": "Fullstack: Express"
+  },
+  {
+    "stem": "MVC: Where can I find the views in express?",
+    "answer": "In the 'views' directory.",
     "subject": "Fullstack: Express"
   },
   {
@@ -145,13 +85,68 @@
     "subject": "Fullstack: Express"
   },
   {
+    "stem": "What does MVC stand for?",
+    "answer": "Model, View, Controller",
+    "subject": "Fullstack: Express"
+  },
+  {
+    "stem": "What does REST mean?",
+    "answer": "Representational state transfer",
+    "subject": "Fullstack: Express"
+  },
+  {
     "stem": "What function arguments are available to Express.js route handlers?",
     "answer": "req - the request object, res - the response object, next (optional) - a function to pass control to one of the subsequent route handlers",
     "subject": "Fullstack: Express"
   },
   {
+    "stem": "What is a template engine?",
+    "answer": "Combines one or more templates with a data model",
+    "subject": "Fullstack: Express"
+  },
+  {
+    "stem": "What is an Express Route in relation to MVC?",
+    "answer": "The controller",
+    "subject": "Fullstack: Express"
+  },
+  {
+    "stem": "What is middleware? List some examples of middleware we have used.",
+    "answer": "Any number of functions that are invoked by the Express.js routing layer before the final request handler, and thus sits in the middle between a raw request and the final intended route.",
+    "subject": "Fullstack: Express"
+  },
+  {
     "stem": "What is req.body? How did it get there?",
     "answer": "A JavaScript Object representation of the submitted form.  Added to the reqest by the bodyparser. ",
+    "subject": "Fullstack: Express"
+  },
+  {
+    "stem": "What is the default template engine used in Express?",
+    "answer": "Jade or Pug",
+    "subject": "Fullstack: Express"
+  },
+  {
+    "stem": "What is the most significant advantage of TDD over EDD?",
+    "answer": "No extra cost or effort to re-validate the behavior of the system. Able to re-execute the tests with no manual effort.",
+    "subject": "Fullstack: Express"
+  },
+  {
+    "stem": "What is the parameter 'next' used for in Express?",
+    "answer": "A function to pass control to one of the subsequent route handlers",
+    "subject": "Fullstack: Express"
+  },
+  {
+    "stem": "What is the purpose of the 'next' parameter?",
+    "answer": "Provides access to next middleware function in the application's request-response cycle.",
+    "subject": "Fullstack: Express"
+  },
+  {
+    "stem": "What XP Value does using the express-generator espouse?",
+    "answer": "Simplicity",
+    "subject": "Fullstack: Express"
+  },
+  {
+    "stem": "When would you use EDD instead of TDD?",
+    "answer": "Never for production, but most commonly for learning new frameworks / API's that you don't yet know how to test.",
     "subject": "Fullstack: Express"
   },
   {
@@ -165,13 +160,23 @@
     "subject": "Fullstack: HTTP"
   },
   {
+    "stem": "What happens to the first word in a line of a Pug file when followed by a space?",
+    "answer": "It will be rendered as HTML opening and closing tag (containing everything else in that line after the space).",
+    "subject": "Fullstack: Pug/Jade"
+  },
+  {
+    "stem": "What is the benefit of using Pug over writing plain HTML?",
+    "answer": "HTML is static. With Pug it becomes possible to render HTML pages with dynamic (variable) content.",
+    "subject": "Fullstack: Pug/Jade"
+  },
+  {
     "stem": "What is the difference between Jade and Pug?",
     "answer": "No difference. Jade is just the old name for Pug.",
     "subject": "Fullstack: Pug/Jade"
   },
   {
-    "stem": "What is the output format when rendering a page with Pug?",
-    "answer": "HTML",
+    "stem": "What is the generic name for tools like Pug?",
+    "answer": "Template engine",
     "subject": "Fullstack: Pug/Jade"
   },
   {
@@ -180,8 +185,8 @@
     "subject": "Fullstack: Pug/Jade"
   },
   {
-    "stem": "Why would someone use Pug mixins?",
-    "answer": "To reduce pug code duplication (DRY principle).",
+    "stem": "What is the output format when rendering a page with Pug?",
+    "answer": "HTML",
     "subject": "Fullstack: Pug/Jade"
   },
   {
@@ -195,28 +200,13 @@
     "subject": "Fullstack: Pug/Jade"
   },
   {
-    "stem": "What happens to the first word in a line of a Pug file when followed by a space?",
-    "answer": "It will be rendered as HTML opening and closing tag (containing everything else in that line after the space).",
+    "stem": "Why would someone use Pug mixins?",
+    "answer": "To reduce pug code duplication (DRY principle).",
     "subject": "Fullstack: Pug/Jade"
   },
   {
-    "stem": "What is the generic name for tools like Pug?",
-    "answer": "Template engine",
-    "subject": "Fullstack: Pug/Jade"
-  },
-  {
-    "stem": "What is the benefit of using Pug over writing plain HTML?",
-    "answer": "HTML is static. With Pug it becomes possible to render HTML pages with dynamic (variable) content.",
-    "subject": "Fullstack: Pug/Jade"
-  },
-  {
-    "stem": "What is so special about React events?",
-    "answer": "They are synthetic events - wrappers around native browser events.",
-    "subject": "Fullstack: React - Events, State, Refs"
-  },
-  {
-    "stem": "What happens when you call 'setState(..)' in a React component?",
-    "answer": "React merges the given value into the previous state and schedules an asynchronous update of the Shadow DOM. Eventually the Browser DOM gets updated - but only the element nodes that changed.",
+    "stem": "How do you modify state within a React component?",
+    "answer": "Using 'setState()'. Do not modify state directly.",
     "subject": "Fullstack: React - Events, State, Refs"
   },
   {
@@ -225,23 +215,13 @@
     "subject": "Fullstack: React - Events, State, Refs"
   },
   {
-    "stem": "How do you pass data 'up' to a React parent component?",
-    "answer": "By passing 'down' a callback property.",
-    "subject": "Fullstack: React - Events, State, Refs"
-  },
-  {
-    "stem": "How do you modify state within a React component?",
-    "answer": "Using 'setState()'. Do not modify state directly.",
-    "subject": "Fullstack: React - Events, State, Refs"
-  },
-  {
-    "stem": "Which React feature can be used to access DOM elements?",
-    "answer": "References: 'this.refs'",
-    "subject": "Fullstack: React - Events, State, Refs"
-  },
-  {
     "stem": "How do you pass data 'down' to a React child component?",
     "answer": "As value properties.",
+    "subject": "Fullstack: React - Events, State, Refs"
+  },
+  {
+    "stem": "How do you pass data 'up' to a React parent component?",
+    "answer": "By passing 'down' a callback property.",
     "subject": "Fullstack: React - Events, State, Refs"
   },
   {
@@ -250,13 +230,23 @@
     "subject": "Fullstack: React - Events, State, Refs"
   },
   {
-    "stem": "How do you access arguments, passed into a React components?",
-    "answer": "this.props.argumentName",
-    "subject": "Fullstack: React - JSX, Components, Properties"
+    "stem": "What happens when you call 'setState(..)' in a React component?",
+    "answer": "React merges the given value into the previous state and schedules an asynchronous update of the Shadow DOM. Eventually the Browser DOM gets updated - but only the element nodes that changed.",
+    "subject": "Fullstack: React - Events, State, Refs"
   },
   {
-    "stem": "What is a PropType?",
-    "answer": "A declaration to add type checking for properties.",
+    "stem": "What is so special about React events?",
+    "answer": "They are synthetic events - wrappers around native browser events.",
+    "subject": "Fullstack: React - Events, State, Refs"
+  },
+  {
+    "stem": "Which React feature can be used to access DOM elements?",
+    "answer": "References: 'this.refs'",
+    "subject": "Fullstack: React - Events, State, Refs"
+  },
+  {
+    "stem": "How do you access arguments, passed into a React components?",
+    "answer": "this.props.argumentName",
     "subject": "Fullstack: React - JSX, Components, Properties"
   },
   {
@@ -265,8 +255,8 @@
     "subject": "Fullstack: React - JSX, Components, Properties"
   },
   {
-    "stem": "What is JSX?",
-    "answer": "A preprocessor step that adds XML syntax to JavaScript. JSX has been developed and is maintained by the React team.",
+    "stem": "How do you pass arguments to React components?",
+    "answer": "As properties, by adding element attributes to a child component.",
     "subject": "Fullstack: React - JSX, Components, Properties"
   },
   {
@@ -275,13 +265,48 @@
     "subject": "Fullstack: React - JSX, Components, Properties"
   },
   {
-    "stem": "How do you pass arguments to React components?",
-    "answer": "As properties, by adding element attributes to a child component.",
+    "stem": "What is a PropType?",
+    "answer": "A declaration to add type checking for properties.",
     "subject": "Fullstack: React - JSX, Components, Properties"
+  },
+  {
+    "stem": "What is JSX?",
+    "answer": "A preprocessor step that adds XML syntax to JavaScript. JSX has been developed and is maintained by the React team.",
+    "subject": "Fullstack: React - JSX, Components, Properties"
+  },
+  {
+    "stem": "Can the remote origin repository be ahead of the local repository?",
+    "answer": "Yes.",
+    "subject": "Git: Advanced"
+  },
+  {
+    "stem": "How can a 'merge conflict' be resolved?",
+    "answer": "Edit the files manually to fix the conflicting changes and then add the resolved files using 'git add'. Then run 'git rebase --continue' or 'git commit'",
+    "subject": "Git: Advanced"
+  },
+  {
+    "stem": "How can you bring a new feature in the main branch?",
+    "answer": "'git merge' or 'git pull'",
+    "subject": "Git: Advanced"
+  },
+  {
+    "stem": "How many 'remotes' can a repository have?",
+    "answer": "Unlimited",
+    "subject": "Git: Advanced"
   },
   {
     "stem": "What does 'git remote -v' do?",
     "answer": "List the remote repositories associated with the local repository.",
+    "subject": "Git: Advanced"
+  },
+  {
+    "stem": "What is a 'merge conflict' in git?",
+    "answer": "The commit that has to be merged has some change in one place, and the current commit also has a change at the same place. Git will not be able to predict which change should take precedence.",
+    "subject": "Git: Advanced"
+  },
+  {
+    "stem": "What is the function of 'git push'?",
+    "answer": "Pushes your changes to the remote repository. Technically it Updates remote refs along with associated objects.",
     "subject": "Git: Advanced"
   },
   {
@@ -295,98 +320,13 @@
     "subject": "Git: Advanced"
   },
   {
-    "stem": "How can you bring a new feature in the main branch?",
-    "answer": "'git merge' or 'git pull'",
-    "subject": "Git: Advanced"
-  },
-  {
-    "stem": "What is a 'merge conflict' in git?",
-    "answer": "The commit that has to be merged has some change in one place, and the current commit also has a change at the same place. Git will not be able to predict which change should take precedence.",
-    "subject": "Git: Advanced"
-  },
-  {
-    "stem": "How can a 'merge conflict' be resolved?",
-    "answer": "Edit the files manually to fix the conflicting changes and then add the resolved files using 'git add'. Then run 'git rebase --continue' or 'git commit'",
-    "subject": "Git: Advanced"
-  },
-  {
-    "stem": "How many 'remotes' can a repository have?",
-    "answer": "Unlimited",
-    "subject": "Git: Advanced"
-  },
-  {
-    "stem": "What is the function of 'git push'?",
-    "answer": "Pushes your changes to the remote repository. Technically it Updates remote refs along with associated objects.",
-    "subject": "Git: Advanced"
-  },
-  {
     "stem": "Which git commands interact with the remote server?",
     "answer": "fetch, pull, push. No other commands connect to the remote server. Unlike SVN, Perforce, etc, no server is required.",
     "subject": "Git: Advanced"
   },
   {
-    "stem": "Can the remote origin repository be ahead of the local repository?",
-    "answer": "Yes.",
-    "subject": "Git: Advanced"
-  },
-  {
-    "stem": "What does the .gitignore file do?",
-    "answer": "Tells git which files should not be included in the repository",
-    "subject": "Git: Basics"
-  },
-  {
-    "stem": "What does 'git init' do?",
-    "answer": "Initializes any directory to a new git repository.",
-    "subject": "Git: Basics"
-  },
-  {
-    "stem": "Is 'Updated about page' a good commit message? Why or why not?",
-    "answer": "No, it does not tell you WHY it changed. Was it a bug, a story, or something else?",
-    "subject": "Git: Basics"
-  },
-  {
-    "stem": "What does 'git status' do?",
-    "answer": "Shows the states of the files in a git repository",
-    "subject": "Git: Basics"
-  },
-  {
-    "stem": "What is 'git add' used for?",
-    "answer": "Changes the tracking state of the files from Modified or Untracked to Staged.",
-    "subject": "Git: Basics"
-  },
-  {
     "stem": "Can any directory be a git repository?",
     "answer": "Yes. git init works in any directory.",
-    "subject": "Git: Basics"
-  },
-  {
-    "stem": "What is 'git status' used for?",
-    "answer": "Shows the difference between the working directory and the index (committed files).",
-    "subject": "Git: Basics"
-  },
-  {
-    "stem": "What does commit object contain??",
-    "answer": "1) A set of files, representing the state of the entire repository at a given point of time. 2) Reference to parent commit objects. 3) An SHA name, a 40 character string that uniquely identifies the commit object.",
-    "subject": "Git: Basics"
-  },
-  {
-    "stem": "What is the difference between a local and remote repository?",
-    "answer": "The local repository lives on your local machine and is a complete copy of the remote repository which is located on a remote server.",
-    "subject": "Git: Basics"
-  },
-  {
-    "stem": "What are the four states of a file in git?",
-    "answer": "Untracked, Unmodified (Committed), Modified, Staged (Added)",
-    "subject": "Git: Basics"
-  },
-  {
-    "stem": "What does 'git diff' do?",
-    "answer": "Shows the changes to all modified files in the repository",
-    "subject": "Git: Basics"
-  },
-  {
-    "stem": "Which git command(s) will work outside of a git repository?",
-    "answer": "git init",
     "subject": "Git: Basics"
   },
   {
@@ -405,33 +345,63 @@
     "subject": "Git: Basics"
   },
   {
+    "stem": "Is 'Updated about page' a good commit message? Why or why not?",
+    "answer": "No, it does not tell you WHY it changed. Was it a bug, a story, or something else?",
+    "subject": "Git: Basics"
+  },
+  {
+    "stem": "What are the four states of a file in git?",
+    "answer": "Untracked, Unmodified (Committed), Modified, Staged (Added)",
+    "subject": "Git: Basics"
+  },
+  {
+    "stem": "What does 'git diff' do?",
+    "answer": "Shows the changes to all modified files in the repository",
+    "subject": "Git: Basics"
+  },
+  {
+    "stem": "What does 'git init' do?",
+    "answer": "Initializes any directory to a new git repository.",
+    "subject": "Git: Basics"
+  },
+  {
+    "stem": "What does 'git status' do?",
+    "answer": "Shows the states of the files in a git repository",
+    "subject": "Git: Basics"
+  },
+  {
+    "stem": "What does commit object contain??",
+    "answer": "1) A set of files, representing the state of the entire repository at a given point of time. 2) Reference to parent commit objects. 3) An SHA name, a 40 character string that uniquely identifies the commit object.",
+    "subject": "Git: Basics"
+  },
+  {
+    "stem": "What does the .gitignore file do?",
+    "answer": "Tells git which files should not be included in the repository",
+    "subject": "Git: Basics"
+  },
+  {
+    "stem": "What is 'git add' used for?",
+    "answer": "Changes the tracking state of the files from Modified or Untracked to Staged.",
+    "subject": "Git: Basics"
+  },
+  {
+    "stem": "What is 'git status' used for?",
+    "answer": "Shows the difference between the working directory and the index (committed files).",
+    "subject": "Git: Basics"
+  },
+  {
+    "stem": "What is the difference between a local and remote repository?",
+    "answer": "The local repository lives on your local machine and is a complete copy of the remote repository which is located on a remote server.",
+    "subject": "Git: Basics"
+  },
+  {
+    "stem": "Which git command(s) will work outside of a git repository?",
+    "answer": "git init",
+    "subject": "Git: Basics"
+  },
+  {
     "stem": "DOM is what kind of a representation of an HTML document?",
     "answer": "It is a tree-based representation; where HTML tags are nodes and its nested tags are children nodes.",
-    "subject": "HTML: DOM"
-  },
-  {
-    "stem": "What gets generated in response to specific actions on a page?",
-    "answer": "Events are generated in response to specific on page actions",
-    "subject": "HTML: DOM"
-  },
-  {
-    "stem": "True or False: the DOM is language and platform agnostic.",
-    "answer": "True",
-    "subject": "HTML: DOM"
-  },
-  {
-    "stem": "What is the DOM API?",
-    "answer": "It is the interface through which Javascript can access and change DOM elements.",
-    "subject": "HTML: DOM"
-  },
-  {
-    "stem": "What is the global Javascript object used to manipulate the DOM?",
-    "answer": "The <code>document</code> object",
-    "subject": "HTML: DOM"
-  },
-  {
-    "stem": "Under what condition would the DOM differ from the HTML file?",
-    "answer": "Javascript could be used on page load to modify DOM contents.",
     "subject": "HTML: DOM"
   },
   {
@@ -440,8 +410,18 @@
     "subject": "HTML: DOM"
   },
   {
-    "stem": "What is the difference between an HTML file and DOM?",
-    "answer": "The DOM is a _representation_ of an HTML file. It doesn't exist in a file but in the browser.",
+    "stem": "True or False: the DOM is language and platform agnostic.",
+    "answer": "True",
+    "subject": "HTML: DOM"
+  },
+  {
+    "stem": "Under what condition would the DOM differ from the HTML file?",
+    "answer": "Javascript could be used on page load to modify DOM contents.",
+    "subject": "HTML: DOM"
+  },
+  {
+    "stem": "What are some examples of page events?",
+    "answer": "Some examples are: onLoad, onChange, onClick, and onUpload",
     "subject": "HTML: DOM"
   },
   {
@@ -455,28 +435,28 @@
     "subject": "HTML: DOM"
   },
   {
-    "stem": "What are some examples of page events?",
-    "answer": "Some examples are: onLoad, onChange, onClick, and onUpload",
+    "stem": "What gets generated in response to specific actions on a page?",
+    "answer": "Events are generated in response to specific on page actions",
     "subject": "HTML: DOM"
   },
   {
-    "stem": "When do static members of an object get initialized?",
-    "answer": "The first time the object is instantiated or invoked. NOT at application startup.",
-    "subject": "Java: Advanced"
+    "stem": "What is the difference between an HTML file and DOM?",
+    "answer": "The DOM is a _representation_ of an HTML file. It doesn't exist in a file but in the browser.",
+    "subject": "HTML: DOM"
   },
   {
-    "stem": "When is type checking performed on generic classes?",
-    "answer": "Compile time",
-    "subject": "Java: Advanced"
+    "stem": "What is the DOM API?",
+    "answer": "It is the interface through which Javascript can access and change DOM elements.",
+    "subject": "HTML: DOM"
+  },
+  {
+    "stem": "What is the global Javascript object used to manipulate the DOM?",
+    "answer": "The <code>document</code> object",
+    "subject": "HTML: DOM"
   },
   {
     "stem": "Explain checked exceptions vs. unchecked exceptions",
     "answer": "Checked exceptions must be caught or declared as thrown, unchecked do not need to be caught",
-    "subject": "Java: Advanced"
-  },
-  {
-    "stem": "If two objects are equal (using the equals method), will they have the same hash code? Why?",
-    "answer": "Yes, the contract for equals states the hash code must be equal for objects that are equal.",
     "subject": "Java: Advanced"
   },
   {
@@ -490,8 +470,8 @@
     "subject": "Java: Advanced"
   },
   {
-    "stem": "What is the difference between an inner class and a static inner class?",
-    "answer": "Inner class has a reference to its enclosing class and cannot be instantiated independent of its enclosing class. Static inner class does not have a reference to its enclosing instance and can be instantiated directly.",
+    "stem": "Explain the final keyword for a method of a class.",
+    "answer": "The method cannot be overridden in subclasses.",
     "subject": "Java: Advanced"
   },
   {
@@ -500,18 +480,8 @@
     "subject": "Java: Advanced"
   },
   {
-    "stem": "Why would you declare a private constructor?",
-    "answer": "So the object cannot be externally instantiated.",
-    "subject": "Java: Advanced"
-  },
-  {
-    "stem": "What is the difference between abstract classes and interfaces?",
-    "answer": "Abstract classes can contain code/implementation. Interfaces are simply a declarative structure",
-    "subject": "Java: Advanced"
-  },
-  {
-    "stem": "What is reflection and when do you use it?",
-    "answer": "Reflection is when an application has the ability to examine and modify its own structure and behavior at runtime. Allows the runtime variation of the concrete implementation, method called, or variable modified to vary at runtime.",
+    "stem": "If two objects are equal (using the equals method), will they have the same hash code? Why?",
+    "answer": "Yes, the contract for equals states the hash code must be equal for objects that are equal.",
     "subject": "Java: Advanced"
   },
   {
@@ -520,13 +490,8 @@
     "subject": "Java: Advanced"
   },
   {
-    "stem": "Why would you declare a serial version UID field?",
-    "answer": "SUID is used to inform the Java serialization mechanism which version of the class is compatible with this serialized object.",
-    "subject": "Java: Advanced"
-  },
-  {
-    "stem": "What is the difference between the .equals method and the '==' operator?",
-    "answer": "'==' performs a comparison of the object reference, .equals performs a class specific comparison.",
+    "stem": "What is reflection and when do you use it?",
+    "answer": "Reflection is when an application has the ability to examine and modify its own structure and behavior at runtime. Allows the runtime variation of the concrete implementation, method called, or variable modified to vary at runtime.",
     "subject": "Java: Advanced"
   },
   {
@@ -535,14 +500,74 @@
     "subject": "Java: Advanced"
   },
   {
-    "stem": "Explain the final keyword for a method of a class.",
-    "answer": "The method cannot be overridden in subclasses.",
+    "stem": "What is the difference between abstract classes and interfaces?",
+    "answer": "Abstract classes can contain code/implementation. Interfaces are simply a declarative structure",
     "subject": "Java: Advanced"
   },
   {
     "stem": "What is the difference between an anonymous class and an inner class?",
     "answer": "Anonymous classes are declared within a method body and cannot be reused. Inner classes are declared within a class body and can be reused.",
     "subject": "Java: Advanced"
+  },
+  {
+    "stem": "What is the difference between an inner class and a static inner class?",
+    "answer": "Inner class has a reference to its enclosing class and cannot be instantiated independent of its enclosing class. Static inner class does not have a reference to its enclosing instance and can be instantiated directly.",
+    "subject": "Java: Advanced"
+  },
+  {
+    "stem": "What is the difference between the .equals method and the '==' operator?",
+    "answer": "'==' performs a comparison of the object reference, .equals performs a class specific comparison.",
+    "subject": "Java: Advanced"
+  },
+  {
+    "stem": "When do static members of an object get initialized?",
+    "answer": "The first time the object is instantiated or invoked. NOT at application startup.",
+    "subject": "Java: Advanced"
+  },
+  {
+    "stem": "When is type checking performed on generic classes?",
+    "answer": "Compile time",
+    "subject": "Java: Advanced"
+  },
+  {
+    "stem": "Why would you declare a private constructor?",
+    "answer": "So the object cannot be externally instantiated.",
+    "subject": "Java: Advanced"
+  },
+  {
+    "stem": "Why would you declare a serial version UID field?",
+    "answer": "SUID is used to inform the Java serialization mechanism which version of the class is compatible with this serialized object.",
+    "subject": "Java: Advanced"
+  },
+  {
+    "stem": "Does Java have global functions?",
+    "answer": "No. Object methods only.",
+    "subject": "Java: Basics"
+  },
+  {
+    "stem": "How do you declare a JUnit test?",
+    "answer": "By annotating a void test method without parameters with '@Test'.",
+    "subject": "Java: Basics"
+  },
+  {
+    "stem": "How do you indicate in Java that a method does not return anything?",
+    "answer": "Declare method with a return type of 'void'.",
+    "subject": "Java: Basics"
+  },
+  {
+    "stem": "Name a common library for unit testing in Java.",
+    "answer": "JUnit",
+    "subject": "Java: Basics"
+  },
+  {
+    "stem": "Name a common TDD assertion library for Java.",
+    "answer": "Hamcrest, FEST assert",
+    "subject": "Java: Basics"
+  },
+  {
+    "stem": "What does 'this' refer to in Java?",
+    "answer": "The current instance. Always.",
+    "subject": "Java: Basics"
   },
   {
     "stem": "What happens in Java if you forgot to terminate a statement with a semicolon?",
@@ -555,41 +580,6 @@
     "subject": "Java: Basics"
   },
   {
-    "stem": "What does 'this' refer to in Java?",
-    "answer": "The current instance. Always.",
-    "subject": "Java: Basics"
-  },
-  {
-    "stem": "How do you declare a JUnit test?",
-    "answer": "By annotating a void test method without parameters with '@Test'.",
-    "subject": "Java: Basics"
-  },
-  {
-    "stem": "Name a common TDD assertion library for Java.",
-    "answer": "Hamcrest, FEST assert",
-    "subject": "Java: Basics"
-  },
-  {
-    "stem": "Name a common library for unit testing in Java.",
-    "answer": "JUnit",
-    "subject": "Java: Basics"
-  },
-  {
-    "stem": "Does Java have global functions?",
-    "answer": "No. Object methods only.",
-    "subject": "Java: Basics"
-  },
-  {
-    "stem": "How do you indicate in Java that a method does not return anything?",
-    "answer": "Declare method with a return type of 'void'.",
-    "subject": "Java: Basics"
-  },
-  {
-    "stem": "What design pattern is preferred over inheritance?",
-    "answer": "Composition",
-    "subject": "Java: Inheritance"
-  },
-  {
     "stem": "Does the Java language allow multiple inheritance?",
     "answer": "Yes. It allows multiple interface inheritance. It does disallow multiple implementation inheritance though.",
     "subject": "Java: Inheritance"
@@ -597,6 +587,11 @@
   {
     "stem": "What can happen if the <code>@Override</code> annotation is omitted from an overriding method?",
     "answer": "A future change to the super-class method could result in the sub-class method no-longer overriding a method and the compiler will not catch it.",
+    "subject": "Java: Inheritance"
+  },
+  {
+    "stem": "What design pattern is preferred over inheritance?",
+    "answer": "Composition",
     "subject": "Java: Inheritance"
   },
   {
@@ -610,38 +605,13 @@
     "subject": "Java: Inheritance"
   },
   {
-    "stem": "The term <code>class variable</code> is another name for ___.",
-    "answer": "a static field",
+    "stem": "A local variable stores temporary state; it is declared inside a ___.",
+    "answer": "Method",
     "subject": "Java: Scope"
   },
   {
-    "stem": "The term <code>instance variable</code> is another name for ___.",
-    "answer": "a non-static field",
-    "subject": "Java: Scope"
-  },
-  {
-    "stem": "What best describes the scope system in Java?",
-    "answer": "Java has <code>block scope</code>",
-    "subject": "Java: Scope"
-  },
-  {
-    "stem": "How long does an <code>instance variable</code> live?",
-    "answer": "the life of the  instance",
-    "subject": "Java: Scope"
-  },
-  {
-    "stem": "How long does a <code>class variable</code> live?",
-    "answer": "the life of the JVM",
-    "subject": "Java: Scope"
-  },
-  {
-    "stem": "How long does a <code>method parameter</code> live?",
-    "answer": "the duration of the method invocation",
-    "subject": "Java: Scope"
-  },
-  {
-    "stem": "What is the scope of a protected class? (Class,Package,Subclass,World)",
-    "answer": "Subclass",
+    "stem": "A variable declared within the opening and closing parenthesis of a method is called a ___.",
+    "answer": "Parameter",
     "subject": "Java: Scope"
   },
   {
@@ -655,18 +625,43 @@
     "subject": "Java: Scope"
   },
   {
+    "stem": "How long does a <code>class variable</code> live?",
+    "answer": "the life of the JVM",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "How long does a <code>method parameter</code> live?",
+    "answer": "the duration of the method invocation",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "How long does an <code>instance variable</code> live?",
+    "answer": "the life of the  instance",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "The term <code>class variable</code> is another name for ___.",
+    "answer": "a static field",
+    "subject": "Java: Scope"
+  },
+  {
+    "stem": "The term <code>instance variable</code> is another name for ___.",
+    "answer": "a non-static field",
+    "subject": "Java: Scope"
+  },
+  {
     "stem": "What are the eight primitive data types supported by the Java programming language?",
     "answer": "byte, short, int, long, float, double, boolean, char",
     "subject": "Java: Scope"
   },
   {
-    "stem": "A variable declared within the opening and closing parenthesis of a method is called a ___.",
-    "answer": "Parameter",
+    "stem": "What best describes the scope system in Java?",
+    "answer": "Java has <code>block scope</code>",
     "subject": "Java: Scope"
   },
   {
-    "stem": "A local variable stores temporary state; it is declared inside a ___.",
-    "answer": "Method",
+    "stem": "What is the scope of a protected class? (Class,Package,Subclass,World)",
+    "answer": "Subclass",
     "subject": "Java: Scope"
   },
   {
@@ -675,13 +670,13 @@
     "subject": "JS: Async"
   },
   {
-    "stem": "What is the output of this code?<code><p>const myOutput = [10, 11, 13].map(console.log)</p><p>console.log(myOutput)</p></code>",
-    "answer": "<p>10 0 [ 10, 11, 13 ]<br />11 1 [ 10, 11, 13 ]<br />13 2 [ 10, 11, 13 ]<br />[ undefined, undefined, undefined ]</p>",
+    "stem": "What is the output of this code?<code><p>&nbsp; var myOutput = &#39;&#39;;</p><p>&nbsp; var contents = fs.readFile(&#39;foo.txt&#39;, (err, data) => {<br />&nbsp; &nbsp; myOutput += data.toString()<br />&nbsp; });</p><p>&nbsp; console.log(contents);<br />&nbsp; console.log(myOutput);</p></code>",
+    "answer": "undefined<br>undefined",
     "subject": "JS: Async"
   },
   {
-    "stem": "What is the output of this code?<code><p>var myOutput = fs.readFile(&#39;someFile.txt&#39;)</p><p>console.log(myOutput)</p></code>",
-    "answer": "undefined",
+    "stem": "What is the output of this code?<code><p>const myOutput = [10, 11, 13].map(console.log)</p><p>console.log(myOutput)</p></code>",
+    "answer": "<p>10 0 [ 10, 11, 13 ]<br />11 1 [ 10, 11, 13 ]<br />13 2 [ 10, 11, 13 ]<br />[ undefined, undefined, undefined ]</p>",
     "subject": "JS: Async"
   },
   {
@@ -690,28 +685,23 @@
     "subject": "JS: Async"
   },
   {
-    "stem": "What is the output of this code?<code><p>&nbsp; var myOutput = &#39;&#39;;</p><p>&nbsp; var contents = fs.readFile(&#39;foo.txt&#39;, (err, data) => {<br />&nbsp; &nbsp; myOutput += data.toString()<br />&nbsp; });</p><p>&nbsp; console.log(contents);<br />&nbsp; console.log(myOutput);</p></code>",
-    "answer": "undefined<br>undefined",
+    "stem": "What is the output of this code?<code><p>var myOutput = fs.readFile(&#39;someFile.txt&#39;)</p><p>console.log(myOutput)</p></code>",
+    "answer": "undefined",
     "subject": "JS: Async"
   },
   {
-    "stem": "What is the output of 'console.log({} === {})?",
-    "answer": "false - objects cannot be compared using === or ==",
-    "subject": "JS: Basics"
-  },
-  {
-    "stem": "What is the difference Boolean and boolean?",
-    "answer": "Booleean's are instances. boolean is a literal.",
-    "subject": "JS: Basics"
-  },
-  {
-    "stem": "What are the benefits of including 'use strict' at the beginning of the file?",
-    "answer": "Prevents accidental globals; Disallows duplicate property names or parameter values; More benefits covered later in the course",
+    "stem": "Is NaN === NaN?",
+    "answer": "NaN === NaN evaluates to false",
     "subject": "JS: Basics"
   },
   {
     "stem": "Is there a potential pitfall with using typeof bar === 'object' to determine if bar is an object? If so, how can this pitfall be avoided?",
     "answer": "typeof null === 'object' evaluates to true, so does typeof [].  Avoid this by checking for bar being null or an array.",
+    "subject": "JS: Basics"
+  },
+  {
+    "stem": "What are the benefits of including 'use strict' at the beginning of the file?",
+    "answer": "Prevents accidental globals; Disallows duplicate property names or parameter values; More benefits covered later in the course",
     "subject": "JS: Basics"
   },
   {
@@ -725,8 +715,13 @@
     "subject": "JS: Basics"
   },
   {
-    "stem": "Is NaN === NaN?",
-    "answer": "NaN === NaN evaluates to false",
+    "stem": "What is the difference Boolean and boolean?",
+    "answer": "Booleean's are instances. boolean is a literal.",
+    "subject": "JS: Basics"
+  },
+  {
+    "stem": "What is the output of 'console.log({} === {})?",
+    "answer": "false - objects cannot be compared using === or ==",
     "subject": "JS: Basics"
   },
   {
@@ -735,8 +730,8 @@
     "subject": "JS: Basics"
   },
   {
-    "stem": "Which keyword can be used in ES6 to inherite from a certain super type?",
-    "answer": "extends",
+    "stem": "Does ES6 use classic inheritance?",
+    "answer": "No. It's still based on Prototypal Inheritance. The new keywords are just 'syntactical sugar'",
     "subject": "JS: Classes"
   },
   {
@@ -750,9 +745,19 @@
     "subject": "JS: Classes"
   },
   {
-    "stem": "Does ES6 use classic inheritance?",
-    "answer": "No. It's still based on Prototypal Inheritance. The new keywords are just 'syntactical sugar'",
+    "stem": "Which keyword can be used in ES6 to inherite from a certain super type?",
+    "answer": "extends",
     "subject": "JS: Classes"
+  },
+  {
+    "stem": "Name at least 2 contexts of 'this' in JavaScript.",
+    "answer": "Global, Object Method, Constructor, apply & call",
+    "subject": "JS: Contexts"
+  },
+  {
+    "stem": "What is 'this' when invoking a global function in node.js?",
+    "answer": "The 'global' object.",
+    "subject": "JS: Contexts"
   },
   {
     "stem": "What is 'this' when invoking a global JavaScript function in a browser?",
@@ -765,28 +770,8 @@
     "subject": "JS: Contexts"
   },
   {
-    "stem": "What is 'this' when used within an JavaScript object method?",
-    "answer": "The object, having the method.",
-    "subject": "JS: Contexts"
-  },
-  {
-    "stem": "What is 'this' when invoking a global function in node.js?",
-    "answer": "The 'global' object.",
-    "subject": "JS: Contexts"
-  },
-  {
-    "stem": "Name at least 2 contexts of 'this' in JavaScript.",
-    "answer": "Global, Object Method, Constructor, apply & call",
-    "subject": "JS: Contexts"
-  },
-  {
     "stem": "What is 'this' when used within a JavaScript constructor function?",
     "answer": "The object, being created.",
-    "subject": "JS: Contexts"
-  },
-  {
-    "stem": "What is 'this' when used within a JavaScript function, added to the prototype of a constructor function?",
-    "answer": "The object, constructed with the construtor function.",
     "subject": "JS: Contexts"
   },
   {
@@ -795,14 +780,14 @@
     "subject": "JS: Contexts"
   },
   {
-    "stem": "When using the map function, can the resulting array contain FEWER elements than the original array?",
-    "answer": "No, the array will be of equal size",
-    "subject": "JS: Higher Order Functions"
+    "stem": "What is 'this' when used within a JavaScript function, added to the prototype of a constructor function?",
+    "answer": "The object, constructed with the construtor function.",
+    "subject": "JS: Contexts"
   },
   {
-    "stem": "What is the return type of the reduce function?",
-    "answer": "Any data type - array, object, number, string, etc.",
-    "subject": "JS: Higher Order Functions"
+    "stem": "What is 'this' when used within an JavaScript object method?",
+    "answer": "The object, having the method.",
+    "subject": "JS: Contexts"
   },
   {
     "stem": "If a function takes another function?",
@@ -810,13 +795,18 @@
     "subject": "JS: Higher Order Functions"
   },
   {
-    "stem": "What is an  advantage of a higher order function?",
-    "answer": "Change behavior of callee by passing in a function. ",
+    "stem": "What are the parts of a function?",
+    "answer": "name (optional in some cases), parameters, body",
     "subject": "JS: Higher Order Functions"
   },
   {
     "stem": "What do you call a function that has at least one bound variable?",
     "answer": "Closure",
+    "subject": "JS: Higher Order Functions"
+  },
+  {
+    "stem": "What is a bound variable?",
+    "answer": "A variable is bound when the value of the variable has been substituted by a specific value. i.e. in a closure instance",
     "subject": "JS: Higher Order Functions"
   },
   {
@@ -830,23 +820,23 @@
     "subject": "JS: Higher Order Functions"
   },
   {
-    "stem": "What is a bound variable?",
-    "answer": "A variable is bound when the value of the variable has been substituted by a specific value. i.e. in a closure instance",
-    "subject": "JS: Higher Order Functions"
-  },
-  {
-    "stem": "What are the parts of a function?",
-    "answer": "name (optional in some cases), parameters, body",
-    "subject": "JS: Higher Order Functions"
-  },
-  {
     "stem": "What is a higher order function?",
     "answer": "A function that accepts a function as a parameter, returns a function, or both.",
     "subject": "JS: Higher Order Functions"
   },
   {
+    "stem": "What is an  advantage of a higher order function?",
+    "answer": "Change behavior of callee by passing in a function. ",
+    "subject": "JS: Higher Order Functions"
+  },
+  {
     "stem": "What is the contract of the filter function callback?",
     "answer": "If the callback returns true, the element will be included in the returned array, otherwise it will excluded.",
+    "subject": "JS: Higher Order Functions"
+  },
+  {
+    "stem": "What is the return type of the reduce function?",
+    "answer": "Any data type - array, object, number, string, etc.",
     "subject": "JS: Higher Order Functions"
   },
   {
@@ -857,6 +847,11 @@
   {
     "stem": "When using the filter function, can the resulting array contain MORE elements than the original array?",
     "answer": "No, the array will be of equal size or smaller.",
+    "subject": "JS: Higher Order Functions"
+  },
+  {
+    "stem": "When using the map function, can the resulting array contain FEWER elements than the original array?",
+    "answer": "No, the array will be of equal size",
     "subject": "JS: Higher Order Functions"
   },
   {
@@ -880,23 +875,18 @@
     "subject": "JS: Prototype Chain"
   },
   {
-    "stem": "Is it possible to add value properties to JavaScript object instances after they have been created?",
-    "answer": "Only static properties, that are shared between all instances.",
-    "subject": "JS: Prototype Chain"
-  },
-  {
-    "stem": "What is the type of Object.prototype?",
-    "answer": "object",
-    "subject": "JS: Prototype Chain"
-  },
-  {
     "stem": "Is it possible to add behavior to JavaScript object instances after they have been created?",
     "answer": "Yes. By adding a function to one of the objects in the Prototype Chain.",
     "subject": "JS: Prototype Chain"
   },
   {
-    "stem": "Where is the end of the Prototype Chain pointing to?",
-    "answer": "Nowhere (null).",
+    "stem": "Is it possible to add value properties to JavaScript object instances after they have been created?",
+    "answer": "Only static properties, that are shared between all instances.",
+    "subject": "JS: Prototype Chain"
+  },
+  {
+    "stem": "What is the last element of the Prototype Chain?",
+    "answer": "The Object prototype.",
     "subject": "JS: Prototype Chain"
   },
   {
@@ -905,8 +895,13 @@
     "subject": "JS: Prototype Chain"
   },
   {
-    "stem": "What is the last element of the Prototype Chain?",
-    "answer": "The Object prototype.",
+    "stem": "What is the type of Object.prototype?",
+    "answer": "object",
+    "subject": "JS: Prototype Chain"
+  },
+  {
+    "stem": "Where is the end of the Prototype Chain pointing to?",
+    "answer": "Nowhere (null).",
     "subject": "JS: Prototype Chain"
   },
   {
@@ -927,33 +922,8 @@
     "subject": "SWE: Design Patterns"
   },
   {
-    "stem": "Why would you follow the SOLID design principles?",
-    "answer": "When code is designed carefully and follows these principles, it is easier to maintain, modify and refactor.",
-    "subject": "SWE: SOLID Design Principles"
-  },
-  {
-    "stem": "What does the acronym SOLID stand for?",
-    "answer": "5 software engineering design principles: SRP, OCP, LSP, ISP, DIP",
-    "subject": "SWE: SOLID Design Principles"
-  },
-  {
-    "stem": "SOLID: How many responsibilities does the class containing this method seem to have?<br><br><code>router.post('/students', (req, res) => {<br>&nbsp;&nbsp;if (req.body.name.count > 50) {<br>&nbsp;&nbsp;&nbsp;res.send(400)<br>&nbsp;&nbsp;&nbsp;return<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;db.get('students').insert(req.body, (err, docs) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (err) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(err)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.send(503, 'Failed!')<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;res.send('&lt;html&gt;&lt;h1&gt;Success!&lt;/h1&gt;&lt;/html&gt;')<br>&nbsp;&nbsp;})<br>})</code>",
-    "answer": "5: Request Handling, Validation, Persistance, Error Handling, Response Rendering",
-    "subject": "SWE: SOLID Design Principles"
-  },
-  {
-    "stem": "SOLID: How does this code violate the Dependency Inversion Principle (DIP)?<br><br><code>class BookService {<br><br>&nbsp;&nbsp;ServerSideBookValidator validator =<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new ServerSideBookValidator();<br>&nbsp;&nbsp;&nbsp;&nbsp;DbConnection connection =<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App.config.getDatabaseConnection();<br><br>&nbsp;&nbsp;void saveBook(Book book) {<br>&nbsp;&nbsp;&nbsp;&nbsp;validator.validateBook(book);<br>&nbsp;&nbsp;&nbsp;&nbsp;connection.insert(book);<br>&nbsp;&nbsp;}<br>}</code>",
-    "answer": "The BookService does not depend on an abstract BookValidator and it knows about an App, an App's config and the config's database connection.",
-    "subject": "SWE: SOLID Design Principles"
-  },
-  {
-    "stem": "SOLID: Which rule of thumb is related to the Dependency Inversion Principle (DIP) and much easier to understand?",
-    "answer": "Program to interfaces, not implementations!",
-    "subject": "SWE: SOLID Design Principles"
-  },
-  {
-    "stem": "SOLID: What is the Single Responsibility Principle (SRP)?",
-    "answer": "Every class should have one single responsibility. There should never be more than one reason to change.",
+    "stem": "Name two SOLID design principles?",
+    "answer": "Single Responsibility Principle (SRP), Open/Closed Principle (OCP), Liskov Substitution Principle (LSP), Interface Segregation Principle (ISP), Dependency Inversion Principle (DIP)",
     "subject": "SWE: SOLID Design Principles"
   },
   {
@@ -962,23 +932,8 @@
     "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "SOLID: What does OCP stand for?",
-    "answer": "Open/Closed Principle",
-    "subject": "SWE: SOLID Design Principles"
-  },
-  {
-    "stem": "SOLID: What is the Open/Closed Principle (OCP)?",
-    "answer": "Software entities should be open for extension and closed for modification.",
-    "subject": "SWE: SOLID Design Principles"
-  },
-  {
-    "stem": "SOLID: What does SRP stand for?",
-    "answer": "Single Responsibility Principle",
-    "subject": "SWE: SOLID Design Principles"
-  },
-  {
-    "stem": "SOLID: How does this code violate the Open/Closed Principle (OCP)?<br><br><code>class Customer {<br><br>&nbsp;&nbsp;List&lt;Double&gt; drinks = new ArrayList&lt;&gt;();<br>&nbsp;&nbsp;boolean isHappyHour;<br><br>&nbsp;&nbsp;void orderDrinks(double price, int quantity) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (isHappyHour) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drinks.add(price * quantity * 0.5);<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drinks.add(price * quantity);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;double getTotalDue() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return drinks.stream()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mapToDouble(Double::doubleValue)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.sum();<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;void setHappyHour(boolean isHappyHour) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.isHappyHour = isHappyHour;<br>&nbsp;&nbsp;}<br>}</code>",
-    "answer": "If the requirements change and we would have to add a new promotion like '3 for 2', we would have to touch at least 3 code locations. The Customer class is not open for extenstion and closed for modification.",
+    "stem": "SOLID: How could you describe the Interface Segregation Principle (ISP) in simple words?",
+    "answer": "No client should be forced to depend on methods it does not use.",
     "subject": "SWE: SOLID Design Principles"
   },
   {
@@ -987,33 +942,8 @@
     "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "Name two SOLID design principles?",
-    "answer": "Single Responsibility Principle (SRP), Open/Closed Principle (OCP), Liskov Substitution Principle (LSP), Interface Segregation Principle (ISP), Dependency Inversion Principle (DIP)",
-    "subject": "SWE: SOLID Design Principles"
-  },
-  {
-    "stem": "SOLID: What is the Liskov Substitution Principle (LSP) about if it's not about inheritance?",
-    "answer": "(strong) behavioural sub typing",
-    "subject": "SWE: SOLID Design Principles"
-  },
-  {
-    "stem": "SOLID: How does this code violate the Liskov Substitution Principle (LSP)?<br><br><code>List&lt;Duck&gt; ducks = asList(<br>&nbsp;&nbsp;&nbsp;&nbsp;new Duck(),<br>&nbsp;&nbsp;&nbsp;&nbsp;new Duck(),<br>&nbsp;&nbsp;&nbsp;&nbsp;new ToyDuck()<br>);<br><br>ducks.forEach(duck -&gt; {<br>&nbsp;&nbsp;if (duck instanceof ToyDuck) {<br>&nbsp;&nbsp;&nbsp;&nbsp;((ToyDuck) duck).batteries.add(&quot;2&quot;);<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;System.out.println(duck.toString());<br>&nbsp;&nbsp;System.out.println(duck.quack());<br>&nbsp;&nbsp;System.out.println(duck.swim());<br>});</code>",
-    "answer": "The code apparently needs to care about 'ToyDucks', a subtype of 'Duck'. A 'ToyDuck' is a 'Duck' but does not behave like a 'Duck' when it comes to executing 'ToyDuck' methods without batteries.",
-    "subject": "SWE: SOLID Design Principles"
-  },
-  {
-    "stem": "SOLID: What does ISP stand for?",
-    "answer": "Interface Segregation Principle",
-    "subject": "SWE: SOLID Design Principles"
-  },
-  {
-    "stem": "SOLID: What is the Interface Segregation Principle (ISP)?",
-    "answer": "Many client-specific interfaces are better than one general-purpose interface.",
-    "subject": "SWE: SOLID Design Principles"
-  },
-  {
-    "stem": "SOLID: How could you describe the Interface Segregation Principle (ISP) in simple words?",
-    "answer": "No client should be forced to depend on methods it does not use.",
+    "stem": "SOLID: How does this code violate the Dependency Inversion Principle (DIP)?<br><br><code>class BookService {<br><br>&nbsp;&nbsp;ServerSideBookValidator validator =<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new ServerSideBookValidator();<br>&nbsp;&nbsp;&nbsp;&nbsp;DbConnection connection =<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App.config.getDatabaseConnection();<br><br>&nbsp;&nbsp;void saveBook(Book book) {<br>&nbsp;&nbsp;&nbsp;&nbsp;validator.validateBook(book);<br>&nbsp;&nbsp;&nbsp;&nbsp;connection.insert(book);<br>&nbsp;&nbsp;}<br>}</code>",
+    "answer": "The BookService does not depend on an abstract BookValidator and it knows about an App, an App's config and the config's database connection.",
     "subject": "SWE: SOLID Design Principles"
   },
   {
@@ -1022,13 +952,28 @@
     "subject": "SWE: SOLID Design Principles"
   },
   {
+    "stem": "SOLID: How does this code violate the Liskov Substitution Principle (LSP)?<br><br><code>List&lt;Duck&gt; ducks = asList(<br>&nbsp;&nbsp;&nbsp;&nbsp;new Duck(),<br>&nbsp;&nbsp;&nbsp;&nbsp;new Duck(),<br>&nbsp;&nbsp;&nbsp;&nbsp;new ToyDuck()<br>);<br><br>ducks.forEach(duck -&gt; {<br>&nbsp;&nbsp;if (duck instanceof ToyDuck) {<br>&nbsp;&nbsp;&nbsp;&nbsp;((ToyDuck) duck).batteries.add(&quot;2&quot;);<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;System.out.println(duck.toString());<br>&nbsp;&nbsp;System.out.println(duck.quack());<br>&nbsp;&nbsp;System.out.println(duck.swim());<br>});</code>",
+    "answer": "The code apparently needs to care about 'ToyDucks', a subtype of 'Duck'. A 'ToyDuck' is a 'Duck' but does not behave like a 'Duck' when it comes to executing 'ToyDuck' methods without batteries.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: How does this code violate the Open/Closed Principle (OCP)?<br><br><code>class Customer {<br><br>&nbsp;&nbsp;List&lt;Double&gt; drinks = new ArrayList&lt;&gt;();<br>&nbsp;&nbsp;boolean isHappyHour;<br><br>&nbsp;&nbsp;void orderDrinks(double price, int quantity) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (isHappyHour) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drinks.add(price * quantity * 0.5);<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drinks.add(price * quantity);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;double getTotalDue() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return drinks.stream()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mapToDouble(Double::doubleValue)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.sum();<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;void setHappyHour(boolean isHappyHour) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.isHappyHour = isHappyHour;<br>&nbsp;&nbsp;}<br>}</code>",
+    "answer": "If the requirements change and we would have to add a new promotion like '3 for 2', we would have to touch at least 3 code locations. The Customer class is not open for extenstion and closed for modification.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: How many responsibilities does the class containing this method seem to have?<br><br><code>router.post('/students', (req, res) => {<br>&nbsp;&nbsp;if (req.body.name.count > 50) {<br>&nbsp;&nbsp;&nbsp;res.send(400)<br>&nbsp;&nbsp;&nbsp;return<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;db.get('students').insert(req.body, (err, docs) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (err) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(err)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.send(503, 'Failed!')<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;res.send('&lt;html&gt;&lt;h1&gt;Success!&lt;/h1&gt;&lt;/html&gt;')<br>&nbsp;&nbsp;})<br>})</code>",
+    "answer": "5: Request Handling, Validation, Persistance, Error Handling, Response Rendering",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
     "stem": "SOLID: What does DIP stand for?",
     "answer": "Dependency Inversion Principle",
     "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "SOLID: What is the Dependency Inversion Principle (DIP)?",
-    "answer": "A. High-level modules should not depend on low-level modules. Both should depend on abstractions. B. Abstractions should not depend on details. Details should depend on abstractions.",
+    "stem": "SOLID: What does ISP stand for?",
+    "answer": "Interface Segregation Principle",
     "subject": "SWE: SOLID Design Principles"
   },
   {
@@ -1037,13 +982,63 @@
     "subject": "SWE: SOLID Design Principles"
   },
   {
+    "stem": "SOLID: What does OCP stand for?",
+    "answer": "Open/Closed Principle",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: What does SRP stand for?",
+    "answer": "Single Responsibility Principle",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: What is the Dependency Inversion Principle (DIP)?",
+    "answer": "A. High-level modules should not depend on low-level modules. Both should depend on abstractions. B. Abstractions should not depend on details. Details should depend on abstractions.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: What is the Interface Segregation Principle (ISP)?",
+    "answer": "Many client-specific interfaces are better than one general-purpose interface.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: What is the Liskov Substitution Principle (LSP) about if it's not about inheritance?",
+    "answer": "(strong) behavioural sub typing",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
     "stem": "SOLID: What is the Liskov Substitution Principle (LSP)?",
     "answer": "In order for a type system to be sane, subtypes must be substitutable for their super types.",
     "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "What is TDD about?",
-    "answer": "Creating a reason for writing production code.",
+    "stem": "SOLID: What is the Open/Closed Principle (OCP)?",
+    "answer": "Software entities should be open for extension and closed for modification.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: What is the Single Responsibility Principle (SRP)?",
+    "answer": "Every class should have one single responsibility. There should never be more than one reason to change.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: Which rule of thumb is related to the Dependency Inversion Principle (DIP) and much easier to understand?",
+    "answer": "Program to interfaces, not implementations!",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "What does the acronym SOLID stand for?",
+    "answer": "5 software engineering design principles: SRP, OCP, LSP, ISP, DIP",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "Why would you follow the SOLID design principles?",
+    "answer": "When code is designed carefully and follows these principles, it is easier to maintain, modify and refactor.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "Describe the basic flow of TDD",
+    "answer": "Red, Green, Refactor (Write failing test, Run test(s), Write minimal code to make test pass, Run test(s), Clean up code without breaking tests, Run test(s))",
     "subject": "TDD: Basics"
   },
   {
@@ -1057,18 +1052,18 @@
     "subject": "TDD: Basics"
   },
   {
+    "stem": "What does TDD stand for?",
+    "answer": "Test-Driven Development",
+    "subject": "TDD: Basics"
+  },
+  {
     "stem": "What is a Unit Test?",
     "answer": "The a test that verifies the smallest unit of software.",
     "subject": "TDD: Basics"
   },
   {
-    "stem": "Which pairing styles did you use yesterday, and why?",
-    "answer": "Ping Pong, ",
-    "subject": "TDD: Basics"
-  },
-  {
-    "stem": "What does TDD stand for?",
-    "answer": "Test-Driven Development",
+    "stem": "What is TDD about?",
+    "answer": "Creating a reason for writing production code.",
     "subject": "TDD: Basics"
   },
   {
@@ -1077,13 +1072,13 @@
     "subject": "TDD: Basics"
   },
   {
-    "stem": "Why do we always write tests first?",
-    "answer": "Define the specification first. i.e. blueprints.",
+    "stem": "Which pairing styles did you use yesterday, and why?",
+    "answer": "Ping Pong, ",
     "subject": "TDD: Basics"
   },
   {
-    "stem": "Describe the basic flow of TDD",
-    "answer": "Red, Green, Refactor (Write failing test, Run test(s), Write minimal code to make test pass, Run test(s), Clean up code without breaking tests, Run test(s))",
+    "stem": "Why do we always write tests first?",
+    "answer": "Define the specification first. i.e. blueprints.",
     "subject": "TDD: Basics"
   },
   {
@@ -1092,13 +1087,13 @@
     "subject": "TDD: Integration Testing"
   },
   {
-    "stem": "Why do we need Integration Testing?",
-    "answer": "To ensure that units or components work together.",
+    "stem": "What is the difference between a unit test and an integration test?",
+    "answer": "Unit tests validate a class or method in isolation. Integration tests include dependencies",
     "subject": "TDD: Integration Testing"
   },
   {
-    "stem": "What is the difference between a unit test and an integration test?",
-    "answer": "Unit tests validate a class or method in isolation. Integration tests include dependencies",
+    "stem": "Why do we need Integration Testing?",
+    "answer": "To ensure that units or components work together.",
     "subject": "TDD: Integration Testing"
   },
   {
@@ -1107,33 +1102,8 @@
     "subject": "TDD: Mocking"
   },
   {
-    "stem": "What is user acceptance testing?",
-    "answer": "The process of writing automated user acceptance tests in order to verify if a user story is implemented according to the user acceptance criteria.",
-    "subject": "TDD: Protractor"
-  },
-  {
-    "stem": "Does protractor interact directly with the server?",
-    "answer": "No, only the browser.",
-    "subject": "TDD: Protractor"
-  },
-  {
-    "stem": "You are using a jquery plugin on the page, should the acceptance tests execute all of the behavior of the plugin?",
-    "answer": "No, the developer of the plugin should have tested it. Only test code 'you' write.",
-    "subject": "TDD: Protractor"
-  },
-  {
-    "stem": "What underlying tool does protractor use to drive the browswer?",
-    "answer": "Selenium, a web browser automation tool.",
-    "subject": "TDD: Protractor"
-  },
-  {
-    "stem": "What is the difference between 'mocha' and 'jasmine'?",
-    "answer": "Both are test runners. Jasmine comes with integrated Matcher/Expectation and Mocking functionality. Mocha relies on other modules like 'chai' or 'sinon' to do that job.",
-    "subject": "TDD: Protractor"
-  },
-  {
-    "stem": "What is the difference between acceptance testing and UI testing?",
-    "answer": "User Interface (UI) testing is about testing user interfaces while the backend is mocked out. Acceptance testing is about testing the application from end to end.",
+    "stem": "Are protractor by.* methods asynchronous?",
+    "answer": "Yes",
     "subject": "TDD: Protractor"
   },
   {
@@ -1142,38 +1112,13 @@
     "subject": "TDD: Protractor"
   },
   {
-    "stem": "Are protractor by.* methods asynchronous?",
-    "answer": "Yes",
-    "subject": "TDD: Protractor"
-  },
-  {
-    "stem": "What are the by.* functions in protractor?",
-    "answer": "Matcher",
-    "subject": "TDD: Protractor"
-  },
-  {
-    "stem": "You are starting a new feature, which type of test do you write first? Unit, Integration, or Acceptance? And why?",
-    "answer": "Follow the outside-in approach and you know your done with the feature the moment the acceptance test passes.",
-    "subject": "TDD: Protractor"
-  },
-  {
-    "stem": "What are the objectives of a User Acceptance Test?",
-    "answer": "To automate the test if a User Acceptance Criteria is met or not.",
-    "subject": "TDD: Protractor"
-  },
-  {
     "stem": "Do you include negative path tests in acceptance tests?",
     "answer": "It depends. Only if it is important to the end user.",
     "subject": "TDD: Protractor"
   },
   {
-    "stem": "Should acceptance tests verify the state of the JavaScript data objects in the page?",
-    "answer": "Only indirectly through observing content on the page.",
-    "subject": "TDD: Protractor"
-  },
-  {
-    "stem": "When should you use by.xpath(...)?",
-    "answer": "This should be avoided because it makes the tests brittle. Use only when another method will not work.",
+    "stem": "Does protractor interact directly with the server?",
+    "answer": "No, only the browser.",
     "subject": "TDD: Protractor"
   },
   {
@@ -1182,8 +1127,23 @@
     "subject": "TDD: Protractor"
   },
   {
-    "stem": "What is the difference between acceptance testing and unit testing?",
-    "answer": "Unit testing is about testing the smallest aspect of our production code. Acceptance testing is about testing if user acceptance criteria are meet or not.",
+    "stem": "Should acceptance tests verify the state of the JavaScript data objects in the page?",
+    "answer": "Only indirectly through observing content on the page.",
+    "subject": "TDD: Protractor"
+  },
+  {
+    "stem": "What are the by.* functions in protractor?",
+    "answer": "Matcher",
+    "subject": "TDD: Protractor"
+  },
+  {
+    "stem": "What are the objectives of a User Acceptance Test?",
+    "answer": "To automate the test if a User Acceptance Criteria is met or not.",
+    "subject": "TDD: Protractor"
+  },
+  {
+    "stem": "What is the difference between 'mocha' and 'jasmine'?",
+    "answer": "Both are test runners. Jasmine comes with integrated Matcher/Expectation and Mocking functionality. Mocha relies on other modules like 'chai' or 'sinon' to do that job.",
     "subject": "TDD: Protractor"
   },
   {
@@ -1192,13 +1152,43 @@
     "subject": "TDD: Protractor"
   },
   {
-    "stem": "Name at least two benefits of the Adapter and/or Facade Pattern?",
-    "answer": "Isolates code into one location. Simplifies behaviour for rest of application. Enables easy mocking.",
-    "subject": "TDD: With External Dependencies"
+    "stem": "What is the difference between acceptance testing and UI testing?",
+    "answer": "User Interface (UI) testing is about testing user interfaces while the backend is mocked out. Acceptance testing is about testing the application from end to end.",
+    "subject": "TDD: Protractor"
   },
   {
-    "stem": "What problem do we encounter when it comes to testing applications with external dependencies? How do we address it?",
-    "answer": "Communication with external dependencies slows down our tests drastically. This problem can be addresses by using a mock that intercepts the communication with external dependencies and responds quickly with fake responses.",
+    "stem": "What is the difference between acceptance testing and unit testing?",
+    "answer": "Unit testing is about testing the smallest aspect of our production code. Acceptance testing is about testing if user acceptance criteria are meet or not.",
+    "subject": "TDD: Protractor"
+  },
+  {
+    "stem": "What is user acceptance testing?",
+    "answer": "The process of writing automated user acceptance tests in order to verify if a user story is implemented according to the user acceptance criteria.",
+    "subject": "TDD: Protractor"
+  },
+  {
+    "stem": "What underlying tool does protractor use to drive the browswer?",
+    "answer": "Selenium, a web browser automation tool.",
+    "subject": "TDD: Protractor"
+  },
+  {
+    "stem": "When should you use by.xpath(...)?",
+    "answer": "This should be avoided because it makes the tests brittle. Use only when another method will not work.",
+    "subject": "TDD: Protractor"
+  },
+  {
+    "stem": "You are starting a new feature, which type of test do you write first? Unit, Integration, or Acceptance? And why?",
+    "answer": "Follow the outside-in approach and you know your done with the feature the moment the acceptance test passes.",
+    "subject": "TDD: Protractor"
+  },
+  {
+    "stem": "You are using a jquery plugin on the page, should the acceptance tests execute all of the behavior of the plugin?",
+    "answer": "No, the developer of the plugin should have tested it. Only test code 'you' write.",
+    "subject": "TDD: Protractor"
+  },
+  {
+    "stem": "Name at least two benefits of the Adapter and/or Facade Pattern?",
+    "answer": "Isolates code into one location. Simplifies behaviour for rest of application. Enables easy mocking.",
     "subject": "TDD: With External Dependencies"
   },
   {
@@ -1209,6 +1199,11 @@
   {
     "stem": "What are typical issues with external software dependencies?",
     "answer": "Slow, Not available, Not accessable, Not existent, Limited rate/quota",
+    "subject": "TDD: With External Dependencies"
+  },
+  {
+    "stem": "What problem do we encounter when it comes to testing applications with external dependencies? How do we address it?",
+    "answer": "Communication with external dependencies slows down our tests drastically. This problem can be addresses by using a mock that intercepts the communication with external dependencies and responds quickly with fake responses.",
     "subject": "TDD: With External Dependencies"
   },
   {
@@ -1232,33 +1227,8 @@
     "subject": "User Stories: Agile Refinement"
   },
   {
-    "stem": "What makes a User Story estimable?",
-    "answer": "TODO",
-    "subject": "User Stories: INVEST"
-  },
-  {
-    "stem": "What makes a User Story testable?",
-    "answer": "TODO",
-    "subject": "User Stories: INVEST"
-  },
-  {
-    "stem": "What makes a User Story negotiable?",
-    "answer": "TODO",
-    "subject": "User Stories: INVEST"
-  },
-  {
-    "stem": "What makes a User Story valuable?",
-    "answer": "TODO",
-    "subject": "User Stories: INVEST"
-  },
-  {
     "stem": "How could you check if a User Story is a good User Story?",
     "answer": "Check if INVEST criteria are given.",
-    "subject": "User Stories: INVEST"
-  },
-  {
-    "stem": "What makes a User Story independent?",
-    "answer": "TODO",
     "subject": "User Stories: INVEST"
   },
   {
@@ -1267,23 +1237,43 @@
     "subject": "User Stories: INVEST"
   },
   {
-    "stem": "What makes a User Story small?",
+    "stem": "What makes a User Story estimable?",
+    "answer": "There are no (or very few) unknowns AND the complexity is well understood.",
+    "subject": "User Stories: INVEST"
+  },
+  {
+    "stem": "What makes a User Story independent?",
     "answer": "TODO",
     "subject": "User Stories: INVEST"
   },
   {
-    "stem": "Which of the three User Story parts is optinoal?",
-    "answer": "None!",
+    "stem": "What makes a User Story negotiable?",
+    "answer": "Everyone agrees that the actual result is defined by collaborative negotiation between the customer (or Product Owner) and the developer (others may be involved)",
+    "subject": "User Stories: INVEST"
+  },
+  {
+    "stem": "What makes a User Story small?",
+    "answer": "1 to 3 days work (at most) to meet the definition of done.",
+    "subject": "User Stories: INVEST"
+  },
+  {
+    "stem": "What makes a User Story testable?",
+    "answer": "The acceptance criteria is written or can be written immediately.",
+    "subject": "User Stories: INVEST"
+  },
+  {
+    "stem": "What makes a User Story valuable?",
+    "answer": "It has discernible value to a person (Ideally the customer)",
+    "subject": "User Stories: INVEST"
+  },
+  {
+    "stem": "Name the three parts of a User Story title.",
+    "answer": "Role, Goal, Benefit",
     "subject": "User Stories: Title"
   },
   {
     "stem": "What is the Benefit part of a User Story title about?",
     "answer": "It is about the 'why'. What does the end user in the Role part gain from this User Story.",
-    "subject": "User Stories: Title"
-  },
-  {
-    "stem": "Name the three parts of a User Story title.",
-    "answer": "Role, Goal, Benefit",
     "subject": "User Stories: Title"
   },
   {
@@ -1297,18 +1287,13 @@
     "subject": "User Stories: Title"
   },
   {
-    "stem": "What is the goal of the Pre-IPM?",
-    "answer": "To get enough User Stories ready for the IPM - ready according to the Definition of Ready (usually INVEST criteria).",
-    "subject": "XP: Ceremonies"
+    "stem": "Which of the three User Story parts is optinoal?",
+    "answer": "None!",
+    "subject": "User Stories: Title"
   },
   {
     "stem": "How can we estimate User Stories without talking about the 'How'?",
     "answer": "Relative Estimation - Sizing of User Story relative to reference User Stories.",
-    "subject": "XP: Ceremonies"
-  },
-  {
-    "stem": "What are the goals of the IPM?",
-    "answer": "1) Define an iteration goal. 2) Team to commit to deliver a set of User Stories until the end of the iteration. 3) Each team member to fully understand what should be delivered and why.",
     "subject": "XP: Ceremonies"
   },
   {
@@ -1317,33 +1302,8 @@
     "subject": "XP: Ceremonies"
   },
   {
-    "stem": "What can you do if the quality of User Stories, presented by the Product Manager seems to be low during the IPM?",
-    "answer": "Reject working on these User Stories and suggest to help improving them first. A Pre-IPM ceremony well in advance to the IPM can be used to achieve exactly that.",
-    "subject": "XP: Ceremonies"
-  },
-  {
     "stem": "IPM: Your Iteration Goal seems to not contain any value for the end user (e.g. User Stories). How should you react?",
     "answer": "Suggest to work on at least one User Story of high quality. If there are no User Stories, interrupt the IPM ceremony and do a Pre-IPM instead.",
-    "subject": "XP: Ceremonies"
-  },
-  {
-    "stem": "Who hosts the Team Standup?",
-    "answer": "The team.",
-    "subject": "XP: Ceremonies"
-  },
-  {
-    "stem": "What could you do if the Product Manager asks for a status report in the Team Standup?",
-    "answer": "You could remind him about the actual goal of the Team Standup and ask him to talk to the team once the Standup is over.",
-    "subject": "XP: Ceremonies"
-  },
-  {
-    "stem": "Who is the target audience of the Team Standup?",
-    "answer": "The team.",
-    "subject": "XP: Ceremonies"
-  },
-  {
-    "stem": "What is one goal of the Inception?",
-    "answer": "Ensure that the whole teams understands the Business Goals, Anti-Goals and Risks, User Roles/Personas, Workflows and Activities.",
     "subject": "XP: Ceremonies"
   },
   {
@@ -1357,6 +1317,36 @@
     "subject": "XP: Ceremonies"
   },
   {
+    "stem": "What are the goals of the IPM?",
+    "answer": "1) Define an iteration goal. 2) Team to commit to deliver a set of User Stories until the end of the iteration. 3) Each team member to fully understand what should be delivered and why.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "What are the goals of the Team Standup?",
+    "answer": "1) To synchronize work with other team members. 2) To clarify if team is on track to meet Iteration Goal. 3) To identify blockers.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "What can you do if the quality of User Stories, presented by the Product Manager seems to be low during the IPM?",
+    "answer": "Reject working on these User Stories and suggest to help improving them first. A Pre-IPM ceremony well in advance to the IPM can be used to achieve exactly that.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "What could you do if the Product Manager asks for a status report in the Team Standup?",
+    "answer": "You could remind him about the actual goal of the Team Standup and ask him to talk to the team once the Standup is over.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "What is one goal of the Inception?",
+    "answer": "Ensure that the whole teams understands the Business Goals, Anti-Goals and Risks, User Roles/Personas, Workflows and Activities.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "What is the goal of the Pre-IPM?",
+    "answer": "To get enough User Stories ready for the IPM - ready according to the Definition of Ready (usually INVEST criteria).",
+    "subject": "XP: Ceremonies"
+  },
+  {
     "stem": "When are the goals of the Retrospective?",
     "answer": "To create actionable Action Items for improvement during the next Iteration.",
     "subject": "XP: Ceremonies"
@@ -1367,8 +1357,13 @@
     "subject": "XP: Ceremonies"
   },
   {
-    "stem": "What are the goals of the Team Standup?",
-    "answer": "1) To synchronize work with other team members. 2) To clarify if team is on track to meet Iteration Goal. 3) To identify blockers.",
+    "stem": "Who hosts the Team Standup?",
+    "answer": "The team.",
+    "subject": "XP: Ceremonies"
+  },
+  {
+    "stem": "Who is the target audience of the Team Standup?",
+    "answer": "The team.",
     "subject": "XP: Ceremonies"
   },
   {
@@ -1382,13 +1377,13 @@
     "subject": "XP: Iteration"
   },
   {
-    "stem": "What is the output of an XP Iteration cycle?",
-    "answer": "A production-ready product increment with additional value to the end user.",
+    "stem": "What is the input to an XP Iteration cycle?",
+    "answer": "User Stories, ready according to Definiton of Ready",
     "subject": "XP: Iteration"
   },
   {
-    "stem": "What is the input to an XP Iteration cycle?",
-    "answer": "User Stories, ready according to Definiton of Ready",
+    "stem": "What is the output of an XP Iteration cycle?",
+    "answer": "A production-ready product increment with additional value to the end user.",
     "subject": "XP: Iteration"
   },
   {
@@ -1397,9 +1392,19 @@
     "subject": "XP: Iteration"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "XP: Practices"
+    "stem": "How does the value of 'Communication' helps us build better software?",
+    "answer": "We communicate to create the best solution to our problem that we can together.",
+    "subject": "XP: Values"
+  },
+  {
+    "stem": "How does the value of 'Courage' helps us build better software?",
+    "answer": "We will tell the truth about progress and estimates. We don't document excuses for failure because we plan to succeed. We don't fear anything because no one ever works alone. We will adapt to changes when ever they happen.",
+    "subject": "XP: Values"
+  },
+  {
+    "stem": "How does the value of 'Feedback' helps us build better software?",
+    "answer": "Lots of feedback allows for frequent and small course corrections.",
+    "subject": "XP: Values"
   },
   {
     "stem": "How does the value of 'Respect' helps us build better software?",
@@ -1412,21 +1417,6 @@
     "subject": "XP: Values"
   },
   {
-    "stem": "How does the value of 'Courage' helps us build better software?",
-    "answer": "We will tell the truth about progress and estimates. We don't document excuses for failure because we plan to succeed. We don't fear anything because no one ever works alone. We will adapt to changes when ever they happen.",
-    "subject": "XP: Values"
-  },
-  {
-    "stem": "How does the value of 'Communication' helps us build better software?",
-    "answer": "We communicate to create the best solution to our problem that we can together.",
-    "subject": "XP: Values"
-  },
-  {
-    "stem": "How does the value of 'Feedback' helps us build better software?",
-    "answer": "Lots of feedback allows for frequent and small course corrections.",
-    "subject": "XP: Values"
-  },
-  {
     "stem": "What are some common types of 'Feedback' we have in XP?",
     "answer": "Pair programming, TDD, iteration, retrospectives, demo's, releases.",
     "subject": "XP: Values"
@@ -1435,6 +1425,11 @@
     "stem": "TODO?",
     "answer": "TODO.",
     "subject": "Z-Fullstack: Bookshelf, Knex, SQL"
+  },
+  {
+    "stem": "TODO?",
+    "answer": "TODO.",
+    "subject": "Z-Fullstack: CRUD"
   },
   {
     "stem": "TODO?",
@@ -1500,6 +1495,11 @@
     "stem": "TODO?",
     "answer": "TODO.",
     "subject": "Z-XP: Pairing"
+  },
+  {
+    "stem": "TODO?",
+    "answer": "TODO.",
+    "subject": "Z-XP: Practices"
   },
   {
     "stem": "TODO?",

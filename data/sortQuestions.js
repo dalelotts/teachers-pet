@@ -7,7 +7,12 @@ fs.readFile(path.join(__dirname, 'questions.json'), (err, data) => {
   const questions = JSON.parse(data);
 
   const sortedQuestions = questions.sort((sourceQuestion, targetQuestion) => {
-    return sourceQuestion.subject.localeCompare(targetQuestion.subject);
+    let result = sourceQuestion.subject.localeCompare(targetQuestion.subject);
+
+    if (result === 0) {
+      result = sourceQuestion.stem.localeCompare(targetQuestion.stem)
+    }
+    return result;
   });
 
   const sortedData = JSON.stringify(sortedQuestions, null, 2);
