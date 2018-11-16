@@ -1,4 +1,5 @@
-[{
+[
+  {
     "stem": "You have a performance problem with your application, what do you do first?",
     "answer": "Run a profiler to gather data about exactly where the problem is located. (Don't guess!)",
     "subject": "SWE: Debugging"
@@ -18,67 +19,117 @@
   {
     "stem": "What does the acronym SOLID stand for?",
     "answer": "5 software engineering design principles: SRP, OCP, LSP, ISP, DIP",
-    "subject": "SWE: Design Principles"
+    "subject": "SWE: SOLID Design Principles"
   },
   {
     "stem": "Why would you follow the SOLID design principles?",
     "answer": "When code is designed carefully and follows these principles, it is easier to maintain, modify and refactor.",
-    "subject": "SWE: Design Principles"
+    "subject": "SWE: SOLID Design Principles"
   },
   {
     "stem": "Name two SOLID design principles?",
     "answer": "Single Responsibility Principle (SRP), Open/Closed Principle (OCP), Liskov Substitution Principle (LSP), Interface Segregation Principle (ISP), Dependency Inversion Principle (DIP)",
-    "subject": "SWE: Design Principles"
+    "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "SOLID design Principles: What does SRP stand for?",
+    "stem": "SOLID: What does SRP stand for?",
     "answer": "Single Responsibility Principle",
-    "subject": "SWE: Design Principles"
+    "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "SOLID design Principles: What does OCP stand for?",
+    "stem": "SOLID: What is the Single Responsibility Principle (SRP)?",
+    "answer": "Every class should have one single responsibility. There should never be more than one reason to change.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: Describing a class can be used to check if there is a violation of the Single Responsibility Principle (SRP). How?",
+    "answer": "By counting the 'and's required to describe the behavior of the class.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: How many responsibilities does the class containing this method seem to have?<br><br><code>router.post('/students', (req, res) => {<br>&nbsp;&nbsp;if (req.body.name.count > 50) {<br>&nbsp;&nbsp;&nbsp;res.send(400)<br>&nbsp;&nbsp;&nbsp;return<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;db.get('students').insert(req.body, (err, docs) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (err) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(err)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.send(503, 'Failed!')<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;res.send('&lt;html&gt;&lt;h1&gt;Success!&lt;/h1&gt;&lt;/html&gt;')<br>&nbsp;&nbsp;})<br>})</code>",
+    "answer": "5: Request Handling, Validation, Persistance, Error Handling, Response Rendering",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: What does OCP stand for?",
     "answer": "Open/Closed Principle",
-    "subject": "SWE: Design Principles"
+    "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "SOLID design Principles: What does LSP stand for?",
+    "stem": "SOLID: What is the Open/Closed Principle (OCP)?",
+    "answer": "Software entities should be open for extension and closed for modification.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: How could you describe the Open/Closed Principle (OCP) in simple words?",
+    "answer": "We should strive to write code that doesn’t have to be changed every time the requirements change.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: How does this code violate the Open/Closed Principle (OCP)?<br><br><code>class Customer {<br><br>&nbsp;&nbsp;List&lt;Double&gt; drinks = new ArrayList&lt;&gt;();<br>&nbsp;&nbsp;boolean isHappyHour;<br><br>&nbsp;&nbsp;void orderDrinks(double price, int quantity) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (isHappyHour) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drinks.add(price * quantity * 0.5);<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drinks.add(price * quantity);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;double getTotalDue() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return drinks.stream()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.mapToDouble(Double::doubleValue)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.sum();<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;void setHappyHour(boolean isHappyHour) {<br>&nbsp;&nbsp;&nbsp;&nbsp;this.isHappyHour = isHappyHour;<br>&nbsp;&nbsp;}<br>}</code>",
+    "answer": "If the requirements change and we would have to add a new promotion like '3 for 2', we would have to touch at least 3 code locations. The Customer class is not open for extenstion and closed for modification.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: What does LSP stand for?",
     "answer": "Liskov Substitution Principle",
-    "subject": "SWE: Design Principles"
+    "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "SOLID design Principles: What does ISP stand for?",
+    "stem": "SOLID: What is the Liskov Substitution Principle (LSP)?",
+    "answer": "In order for a type system to be sane, subtypes must be substitutable for their super types.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: What is the Liskov Substitution Principle (LSP) about if it's not about inheritance?",
+    "answer": "(strong) behavioural sub typing",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: How does this code violate the Liskov Substitution Principle (LSP)?<br><br><code>List&lt;Duck&gt; ducks = asList(<br>&nbsp;&nbsp;&nbsp;&nbsp;new Duck(),<br>&nbsp;&nbsp;&nbsp;&nbsp;new Duck(),<br>&nbsp;&nbsp;&nbsp;&nbsp;new ToyDuck()<br>);<br><br>ducks.forEach(duck -&gt; {<br>&nbsp;&nbsp;if (duck instanceof ToyDuck) {<br>&nbsp;&nbsp;&nbsp;&nbsp;((ToyDuck) duck).batteries.add(&quot;2&quot;);<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;System.out.println(duck.toString());<br>&nbsp;&nbsp;System.out.println(duck.quack());<br>&nbsp;&nbsp;System.out.println(duck.swim());<br>});</code>",
+    "answer": "The code apparently needs to care about 'ToyDucks', a subtype of 'Duck'. A 'ToyDuck' is a 'Duck' but does not behave like a 'Duck' when it comes to executing 'ToyDuck' methods without batteries.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: What does ISP stand for?",
     "answer": "Interface Segregation Principle",
-    "subject": "SWE: Design Principles"
+    "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "SOLID design Principles: What does DIP stand for?",
+    "stem": "SOLID: What is the Interface Segregation Principle (ISP)?",
+    "answer": "Many client-specific interfaces are better than one general-purpose interface.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: How could you describe the Interface Segregation Principle (ISP) in simple words?",
+    "answer": "No client should be forced to depend on methods it does not use.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: How does this code violate the Interface Segregation Principle (ISP)?<br><br><code>interface Bird {<br>&nbsp;&nbsp;default void eat() {<br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(&quot;Eating ...&quot;);<br>&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;default void fly() {<br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(&quot;Flying ...&quot;);<br>&nbsp;&nbsp;}<br>}<br><br>class Crow implements Bird { }<br><br>class Eagle implements Bird { }<br><br>class Ostrich implements Bird {<br>&nbsp;&nbsp;void fly() {<br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(&quot;Walking ...&quot;);<br>&nbsp;&nbsp;}<br>}</code>",
+    "answer": "An 'Ostrich' can not fly. Yet we are forced to implement this 'Bird' method. Also the client might have to care about the specific behavior of an 'Ostrich' 'Bird'. This code also violates the LSP.",
+    "subject": "SWE: SOLID Design Principles"
+  },
+  {
+    "stem": "SOLID: What does DIP stand for?",
     "answer": "Dependency Inversion Principle",
-    "subject": "SWE: Design Principles"
+    "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "SOLID design Principles: What is the Single Responsibility Principle (SRP)?",
-    "answer": "Every class should have one single responsiblity. There should never be more than one reason to change.",
-    "subject": "SWE: Design Principles"
+    "stem": "SOLID: What is the Dependency Inversion Principle (DIP)?",
+    "answer": "A. High-level modules should not depend on low-level modules. Both should depend on abstractions. B. Abstractions should not depend on details. Details should depend on abstractions.",
+    "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "SOLID design Principles: What is the Open/Closed Principle (OCP)?",
-    "answer": "TODO",
-    "subject": "SWE: Design Principles"
+    "stem": "SOLID: Which rule of thumb is related to the Dependency Inversion Principle (DIP) and much easier to understand?",
+    "answer": "Program to interfaces, not implementations!",
+    "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "SOLID design Principles: What is the Interface Segregation Principle (ISP)?",
-    "answer": "TODO",
-    "subject": "SWE: Design Principles"
-  },
-  {
-    "stem": "SOLID design Principles: What is the Liskov Substitution Principle (LSP)?",
-    "answer": "TODO",
-    "subject": "SWE: Design Principles"
-  },
-  {
-    "stem": "SOLID design Principles: What is the Dependency Inversion Principle (DIP)?",
-    "answer": "TODO",
-    "subject": "SWE: Design Principles"
+    "stem": "SOLID: How does this code violate the Dependency Inversion Principle (DIP)?<br><br><code>class BookService {<br><br>&nbsp;&nbsp;ServerSideBookValidator validator =<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new ServerSideBookValidator();<br>&nbsp;&nbsp;&nbsp;&nbsp;DbConnection connection =<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App.config.getDatabaseConnection();<br><br>&nbsp;&nbsp;void saveBook(Book book) {<br>&nbsp;&nbsp;&nbsp;&nbsp;validator.validateBook(book);<br>&nbsp;&nbsp;&nbsp;&nbsp;connection.insert(book);<br>&nbsp;&nbsp;}<br>}</code>",
+    "answer": "The BookService does not depend on an abstract BookValidator and it knows about an App, an App's config and the config's database connection.",
+    "subject": "SWE: SOLID Design Principles"
   },
   {
     "stem": "What is the difference between a class and an instance?",
@@ -810,13 +861,11 @@
     "answer": "Yes. The result can be any size array or any data type.",
     "subject": "JS: Higher Order Functions"
   },
-
   {
     "stem": "If a function takes another function?",
     "answer": "Yes. The result can be any size array or any data type.",
     "subject": "JS: Higher Order Functions"
   },
-
   {
     "stem": "What is an  advantage of a higher order function?",
     "answer": "Change behavior of callee by passing in a function. ",
@@ -837,7 +886,6 @@
     "answer": "A free variable is any variable that is neither local to the function, nor a parameter of the function.",
     "subject": "JS: Higher Order Functions"
   },
-
   {
     "stem": "What is a bound variable?",
     "answer": "A variable is bound when the value of the variable has been substituted by a specific value. i.e. in a closure instance",
@@ -848,7 +896,6 @@
     "answer": "name (optional in some cases), parameters, body",
     "subject": "JS: Higher Order Functions"
   },
-
   {
     "stem": "What is the output of this code?<code><p>var myOutput = fs.readFile(&#39;someFile.txt&#39;)</p><p>console.log(myOutput)</p></code>",
     "answer": "undefined",
@@ -863,7 +910,8 @@
     "stem": "What is the output of this code?<code><p>var myOutput = &#39;&#39;;</p><p>var contents = fs.readFile(&#39;someFile.txt&#39;, (err, data) =&gt; {<br />&nbsp; console.log(data.toString());<br />});</p><p>console.log(contents);</p></code>",
     "answer": "undefined<br><code>contents of the file</code>",
     "subject": "JS: Async"
-  }, {
+  },
+  {
     "stem": "What is the output of this code?<code><p>const myOutput = [10, 11, 13].map(console.log)</p><p>console.log(myOutput)</p></code>",
     "answer": "<p>10 0 [ 10, 11, 13 ]<br />11 1 [ 10, 11, 13 ]<br />13 2 [ 10, 11, 13 ]<br />[ undefined, undefined, undefined ]</p>",
     "subject": "JS: Async"
