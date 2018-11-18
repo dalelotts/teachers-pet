@@ -1392,6 +1392,81 @@
     "subject": "XP: Iteration"
   },
   {
+    "stem": "Are the XP principles the only possible principles to guide your teams software development practices?",
+    "answer": "No. You team can add any principles needed to guide your team’s practices, but these are the principles that guide XP.",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Accepted Responsibility' helps us build better software?",
+    "answer": "One example is that management cannot tell you to skip testing to meet a deadline. The pair that accepts responsibly for implementing a story is ultimately responsible for the design, implementation, and testing of the story.",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Baby Steps' helps us build better software?",
+    "answer": "Baby steps acknowledge that the overhead of small steps is much less than when a team wastefully recoils from aborted big changes.",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Diversity' helps us build better software?",
+    "answer": "Teams need diversity to bring together a variety of skills, attitudes, and perspectives to see problems and pitfalls, to think of multiple ways to solve problems, and to implement the solutions.",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Economics' helps us build better software?",
+    "answer": "It helps make sure what you are doing has business value, meets business goals, and serves business needs",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Failure' helps us build better software?",
+    "answer": "Use failure to impart knowledge. Knowledge is valuable and sometimes failure is the only way to gain knowledge.",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Flow' helps us build better software?",
+    "answer": "We provide more business value when delivering a steady flow of software by engaging in all the activities of development simultaneously.",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Humanity' helps us build better software?",
+    "answer": "So the software we write meets human needs, acknowledges human frailty, and leverages human strength.",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Improvement' helps us build better software?",
+    "answer": "Do the best you can today, striving to do better tomorrow. Waiting for perfection stops the flow of business value.",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Mutual Benefit' helps us build better software?",
+    "answer": "It causes us to search for practices that benefit the team now, the team later, and the customer as well",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Opportunity' helps us build better software?",
+    "answer": "Strive for excellence by turning problems into opportunities for learning and improvement",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Quality' helps us build better software?",
+    "answer": "Pushing quality higher often results in faster delivery; while lowering quality standards often results in later, less predictable delivery.",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Redundancy' helps us build better software?",
+    "answer": "The cost of the redundancy is more than paid for by the savings from not having the disaster.",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Reflection' helps us build better software?",
+    "answer": "We expose mistakes to learn from them. No one stumbles into excellence",
+    "subject": "XP: Principles"
+  },
+  {
+    "stem": "How does the principle of 'Self-Similarity' helps us build better software?",
+    "answer": "When we find a solution that works, we uses it everywhere we can.",
+    "subject": "XP: Principles"
+  },
+  {
     "stem": "How does the value of 'Communication' helps us build better software?",
     "answer": "We communicate to create the best solution to our problem that we can together.",
     "subject": "XP: Values"
@@ -1500,10 +1575,5 @@
     "stem": "TODO?",
     "answer": "TODO.",
     "subject": "Z-XP: Practices"
-  },
-  {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-XP: Principles"
   }
 ]
