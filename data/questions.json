@@ -1392,6 +1392,31 @@
     "subject": "XP: Iteration"
   },
   {
+    "stem": "Your navigator on their phone or another computer. What do you do?",
+    "answer": "Does anyone have a different answer?",
+    "subject": "XP: Pairing"
+  },
+  {
+    "stem": "Your pair goes silent. What do you do?",
+    "answer": "Does anyone have a different answer?",
+    "subject": "XP: Pairing"
+  },
+  {
+    "stem": "Your pair is telling you what to type and corrects every syntax error immediately. What do you do?",
+    "answer": "Does anyone have a different answer?",
+    "subject": "XP: Pairing"
+  },
+  {
+    "stem": "Your pair keeps the keeps the keyboard the whole time, or takes over inappropriately. What do you do?",
+    "answer": "Does anyone have a different answer?",
+    "subject": "XP: Pairing"
+  },
+  {
+    "stem": "Your pair proposes a great theory for you to test, gives high-level suggestions, asks about edge cases, and thoughtfully answers questions. What do you do?",
+    "answer": "Does anyone have a different answer?",
+    "subject": "XP: Pairing"
+  },
+  {
     "stem": "Are the XP principles the only possible principles to guide your teams software development practices?",
     "answer": "No. You team can add any principles needed to guide your team’s practices, but these are the principles that guide XP.",
     "subject": "XP: Principles"
@@ -1565,11 +1590,6 @@
     "stem": "TODO?",
     "answer": "TODO.",
     "subject": "Z-User Stories: Acceptance Criteria, BDD"
-  },
-  {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-XP: Pairing"
   },
   {
     "stem": "TODO?",
