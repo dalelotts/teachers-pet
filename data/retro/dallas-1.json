@@ -1,1 +1,18 @@
-[{"name":"Jeff Mayer","createdOn":1501247179483}]
+[
+  {
+    "name": "Jeff Mayer",
+    "createdOn": 1501247179483
+  },
+  {
+    "name": "Peter Springer",
+    "createdOn": 1501869469728
+  },
+  {
+    "name": "Mitch Warrenburg",
+    "createdOn": 1501869513212
+  },
+  {
+    "name": "Dennis Kennedy",
+    "createdOn": 1501869538746
+  }
+]
