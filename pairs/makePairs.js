@@ -30,17 +30,23 @@ function findPreviouslyPairedStudents (currentStudent, allPreviousPairs) {
 }
 
 function makePairForStudent (currentStudent, previousPairs, students) {
-  if (students.length <= 3) {
-    return (new Pair(...students))
-  }
-
   const possiblePairs = students
     .filter((student) => student !== currentStudent)
     .filter((student) => previousPairs.indexOf(student) === -1)
 
+  if (students.length <= 3) {
+    const pair = new Pair(...students);
+    pair.possibleDuplicate = possiblePairs.length === 0;
+    return pair
+  }
+
   const secondMember = possiblePairs.length ? possiblePairs[0] : students[1]
 
-  return new Pair(currentStudent, secondMember)
+  const pair = new Pair(currentStudent, secondMember);
+
+  const previousPairing = previousPairs.filter((student) => student === secondMember)
+  pair.possibleDuplicate = previousPairing.length !== 0;
+  return pair
 }
 
 function pairsToStudents (students, pair) {

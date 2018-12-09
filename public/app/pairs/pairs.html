@@ -21,7 +21,7 @@
 <section class="col-sm-9">
 
   <ul class="list-group">
-    <li class="list-group-item" data-ng-repeat="pair in pairs">
+    <li class="list-group-item" data-ng-repeat="pair in pairs"  ng-class="{'list-group-item-danger': pair.possibleDuplicate}">
       <div class="row">
         <div class="col-sm-1">
           {{ $index + 1 }}
