@@ -8,10 +8,8 @@ const router = express.Router()
 const questions = require(path.resolve('data/questions'))
 
 router.get('/', (req, res) => {
-  const response = res.json(questions.filter((question) => {
-    return req.query.subject ? question.subject === req.query.subject : true
-  }))
-  res.json(response)
+  const subjects = req.query.subject;
+  res.json(questions.filter(question => subjects.includes(question.subject)))
 })
 
 router.get('/subjects', (req, res) => {

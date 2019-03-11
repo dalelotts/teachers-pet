@@ -24,15 +24,9 @@ angular.module('apot.pepperController', ['ngResource'])
       $scope.cohorts = CohortAPI.query()
 
       function importNamesAndQuestions () {
-        CohortAPI.query({
+        $scope.students = CohortAPI.query({
           cohort: $scope.cohort
-        }).$promise.then((students) => {
-          var selectedNames = $scope.selected.map((question) => question.name);
-          console.log(selectedNames);
-          var result =  students.filter((student) => selectedNames.indexOf(student.name) === -1);
-          console.log(result);
-          $scope.students = result;
-        });
+        })
 
         $scope.questions = QuestionAPI.query({
           subject: $scope.subject
@@ -47,14 +41,20 @@ angular.module('apot.pepperController', ['ngResource'])
 
       function selectQuestion () {
         if ($scope.students.length && $scope.questions.length) {
-          var rsvpIndex = Math.floor(Math.random() * ($scope.students.length - 1))
+          var studentIndex = Math.floor(Math.random() * ($scope.students.length - 1))
           var questionIndex = Math.floor(Math.random() * ($scope.questions.length - 1))
 
-          var rsvp = $scope.students.splice(rsvpIndex, 1)[0]
+          var student = $scope.students.splice(studentIndex, 1)[0]
           var question = $scope.questions.splice(questionIndex, 1)[0]
-          question.name = rsvp.name
+          question.name = student.name
 
           $scope.selected.unshift(question)
+
+          if ($scope.students.length === 0 && $scope.questions.length > 0) {
+            $scope.students = CohortAPI.query({
+              cohort: $scope.cohort
+            })
+          }
         }
       }
 

@@ -8,21 +8,22 @@
     "test": "jasmine"
   },
   "dependencies": {
-    "@uirouter/angularjs": "^1.0.20",
-    "angular": "^1.7.5",
-    "angular-resource": "^1.7.5",
-    "angular-sanitize": "^1.7.5",
+    "@uirouter/angularjs": "^1.0.22",
+    "angular": "^1.7.7",
+    "angular-resource": "^1.7.7",
+    "angular-sanitize": "^1.7.7",
     "body-parser": "^1.18.3",
-    "bootstrap": "^3.3.7",
-    "bower": "latest",
-    "cookie-parser": "^1.4.3",
-    "debug": "^4.1.0",
+    "bootstrap": "^4.3.1",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "jquery": "^3.3.1",
     "logfmt": "^1.2.1",
     "morgan": "^1.9.1",
-    "nodemon": "^1.18.7",
+    "nodemon": "^1.18.10",
+    "open-iconic": "^1.1.1",
+    "popper.js": "^1.14.7",
     "static-favicon": "^2.0.0-alpha"
   },
   "repository": {
@@ -31,6 +32,6 @@
   },
   "engine": "node >= 0.12",
   "devDependencies": {
-    "jasmine": "^3.3.0"
+    "jasmine": "^3.3.1"
   }
 }

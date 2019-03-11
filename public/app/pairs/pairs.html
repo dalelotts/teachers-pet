@@ -1,36 +1,43 @@
-<section class="col-sm-3">
-  <ng-form name="pairsSetup" role="form">
+<section class="row">
+    <section class="col-3">
+        <ng-form name="pairsSetup" role="form">
 
-    <div class="form-group">
-      <label for="cohort">Cohort</label>
-      <select id="cohort" class="form-control" data-ng-options="cohort for cohort in cohorts" data-ng-model="cohort" required>
-            </select>
-    </div>
+            <div class="form-group">
+                <label for="cohort">Cohort</label>
+                <select id="cohort" class="form-control" data-ng-options="cohort for cohort in cohorts"
+                        data-ng-model="cohort" required>
+                </select>
+            </div>
 
-    <div class="form-group">
-      <button class="btn btn-primary" data-ng-click="generatePairs()" data-ng-disabled="pairsSetup.$invalid">Generate Pairs
-            </button>
-    </div>
-    <div class="form-group" data-ng-show="pairs.length">
-      <button class="btn btn-danger" data-ng-click="savePairs()" data-ng-disabled="pairsSetup.$invalid">Save Pairs
-            </button>
-      <p class="help-block">Saving the pairs will prevent duplicate pairing in the future. Pairs will duplicate after unique combinations are exhausted.</p>
-    </div>
-  </ng-form>
-</section>
-<section class="col-sm-9">
+            <div class="form-group">
+                <button class="btn btn-primary" data-ng-click="generatePairs()" data-ng-disabled="pairsSetup.$invalid">
+                    Generate Pairs
+                </button>
+            </div>
+            <div class="form-group" data-ng-show="pairs.length">
+                <button class="btn btn-danger" data-ng-click="savePairs()" data-ng-disabled="pairsSetup.$invalid">Save
+                    Pairs
+                </button>
+                <p class="help-block">Saving the pairs will prevent duplicate pairing in the future. Pairs will
+                    duplicate after unique combinations are exhausted.</p>
+            </div>
+        </ng-form>
+    </section>
+    <section class="col-9">
 
-  <ul class="list-group">
-    <li class="list-group-item" data-ng-repeat="pair in pairs"  ng-class="{'list-group-item-danger': pair.possibleDuplicate}">
-      <div class="row">
-        <div class="col-sm-1">
-          {{ $index + 1 }}
+        <ul class="list-group">
+            <li class="list-group-item" data-ng-repeat="pair in pairs"
+                ng-class="{'list-group-item-danger': pair.possibleDuplicate}">
+                <div class="row">
+                    <div class="col-sm-1">
+                        {{ $index + 1 }}
+                    </div>
+                    <div class="col-sm-5" data-ng-repeat="member in pair.members">
+                        {{ member }}
+                    </div>
+                </div>
+            </li>
+        </ul>
         </div>
-        <div class="col-sm-5" data-ng-repeat="member in pair.members">
-          {{ member }}
-        </div>
-      </div>
-    </li>
-  </ul>
-  </div>
+    </section>
 </section>

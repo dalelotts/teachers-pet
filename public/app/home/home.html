@@ -1,46 +1,49 @@
-<section class="col-sm-6">
-    <ng-form name="coldCallSetup" role="form">
+<section class="row">
+    <section class="col">
+        <ng-form name="coldCallSetup" role="form">
 
-        <div class="form-group">
-            <label for="cohort">Cohort</label>
-            <select id="cohort"
-                    class="form-control"
-                    data-ng-options="cohort for cohort in cohorts"
-                    data-ng-model="cohort"
-                    required>
-            </select>
+            <div class="form-group">
+                <label for="cohort">Cohort</label>
+                <select id="cohort"
+                        class="form-control"
+                        data-ng-options="cohort for cohort in cohorts"
+                        data-ng-model="cohort"
+                        required>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary" data-ng-click="importNames()" data-ng-disabled="coldCallSetup.$invalid">
+                    Import
+                    Names
+                </button>
+                <button class="btn btn-danger pull-right" data-ng-click="resetEverything()">Reset Everything</button>
+            </div>
+
+            <div class="form-group">
+                <span class="badge badge-dark">{{ students.length }}</span> names available
+            </div>
+
+        </ng-form>
+
+    </section>
+    <section class="col">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <button class="btn btn-primary" data-ng-click="selectStudent()" data-ng-disabled="!students.length">Pick
+                    Name
+                </button>
+                <span class="badge badge-dark">{{ selected.length }}</span> selected
+            </div>
+
+            <div class="panel-body">
+                <ul class="list-unstyled">
+                    <li data-ng-repeat="rsvp in selected ">
+                        <h3>{{ rsvp.name }}</h3>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div class="form-group">
-            <button class="btn btn-primary" data-ng-click="importNames()" data-ng-disabled="coldCallSetup.$invalid">Import
-                Names
-            </button>
-            <button class="btn btn-danger pull-right" data-ng-click="resetEverything()">Reset Everything</button>
-        </div>
-
-        <div class="form-group">
-            <span class="badge">{{ students.length }}</span> names available
-        </div>
-
-    </ng-form>
-
-</section>
-<section class="col-sm-6">
-
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <button class="btn btn-primary" data-ng-click="selectStudent()" data-ng-disabled="!students.length">Pick
-                Name
-            </button>
-            <span class="badge">{{ selected.length }}</span> selected
-        </div>
-
-        <div class="panel-body">
-            <ul class="list-unstyled">
-                <li data-ng-repeat="rsvp in selected ">
-                    <h3>{{ rsvp.name }}</h3>
-                </li>
-            </ul>
-        </div>
-    </div>
+    </section>
 </section>
