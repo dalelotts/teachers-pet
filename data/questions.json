@@ -1,5 +1,35 @@
 [
   {
+    "stem": "What are Docker images?",
+    "answer": "Docker image is the source of Docker container. In other words, Docker images are used to create containers. When a user runs a Docker image, an instance of a container is created. These docker images can be deployed to any Docker environment.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is containerization?",
+    "answer": "Usually, in the software development process, code developed on one machine might not work perfectly fine on any other machine because of the dependencies. This problem was solved by the containerization concept. So basically, an application that is being developed and deployed is bundled and wrapped together with all its configuration files and dependencies. This bundle is called a container. Now when you wish to run the application on another system, the container is deployed which will give a bug-free environment as all the dependencies and libraries are wrapped together. Most famous containerization environments are Docker and Kubernetes.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is Docker?",
+    "answer": "Docker is a containerization platform which packages your application and all its dependencies together in the form of containers so as to ensure that your application works seamlessly in any environment, be it development, test or production. Docker containers, wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries, etc. It wraps basically anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "How is Kubernetes related to Docker?",
+    "answer": "It’s a known fact that Docker provides the lifecycle management of containers and a Docker image builds the runtime containers. But, since these individual containers have to communicate, Kubernetes is used.  So, Docker builds the containers and these containers communicate with each other via Kubernetes. So, containers running on multiple hosts can be manually linked and orchestrated using Kubernetes.",
+    "subject": "Containers: Kubernetes"
+  },
+  {
+    "stem": "What is Container Orchestration?",
+    "answer": "Consider a scenario where you have 5-6 microservices for an application. Now, these microservices are put in individual containers, but won’t be able to communicate without container orchestration. So, as orchestration means the amalgamation of all instruments playing together in harmony in music, similarly container orchestration means all the services in individual containers working together to fulfill the needs of a single server.",
+    "subject": "Containers: Kubernetes"
+  },
+  {
+    "stem": "What is Kubernetes?",
+    "answer": "Kubernetes is an open-source container management tool which holds the responsibilities of container deployment, scaling & descaling of containers & load balancing. Being the Google’s brainchild, it offers excellent community and works brilliantly with all the cloud providers. So, we can say that Kubernetes is not a containerization platform, but it is a multi-container management solution.",
+    "subject": "Containers: Kubernetes"
+  },
+  {
     "stem": "What is a downside of using Twitter Bootstrap?",
     "answer": "All websites look the same if no effort is put into customizations.",
     "subject": "Fullstack: Bootstrap"
