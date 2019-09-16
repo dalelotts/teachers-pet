@@ -60,13 +60,23 @@
     "subject": "Containers: Docker"
   },
   {
+    "stem": "What is a cluster?", 
+    "answer":"Clusters enable high availability, load balancing and parallel processing. A cluster is a logical rather than physical unit. Organizations can include many servers or just a few in a cluster as the application's requirements demand.",
+    "subject": "Containers: Kubernetes"
+  },
+  {
+    "stem": "In the context of Kubernetes, what is a container?", 
+    "answer": "Kubernetes provides users with a management system for container-based applications, which is a relief from controlling each individual container. Containers operate on host machines through a shared OS, but they remain isolated from each other to run applications -- unless the administrator connects them. As opposed to VMs, containers use a service such as Kubernetes rather than a hypervisor, and they also share the same OS rather than use individual guest OSes. Containers are often paired with microservices and a cloud platform or service.",
+    "subject": "Containers: Kubernetes"
+  },
+  {
     "stem": "What type of applications - Stateless or Stateful - are more suitable for Docker Container?",
     "answer": "It is preferable to create Stateless application for Docker Container. We can create a container out of our application and take out the configurable state parameters from application. Now we can run same container in Production as well as QA environments with different parameters. This helps in reusing the same Image in different scenarios. Also a stateless application is much easier to scale with Docker Containers than a stateful application.",
     "subject": "Containers: Docker"
   },
   {
     "stem": "How is Kubernetes related to Docker?",
-    "answer": "It’s a known fact that Docker provides the lifecycle management of containers and a Docker image builds the runtime containers. But, since these individual containers have to communicate, Kubernetes is used.  So, Docker builds the containers and these containers communicate with each other via Kubernetes. So, containers running on multiple hosts can be manually linked and orchestrated using Kubernetes.",
+    "answer": "Kubernetes is a container orchestration system for Docker containers that is more extensive than Docker Swarm and is meant to coordinate clusters of nodes at scale in production in an efficient manner.",
     "subject": "Containers: Kubernetes"
   },
   {
