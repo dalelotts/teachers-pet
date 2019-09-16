@@ -1,16 +1,1 @@
-[{
-    "members": ["Jake", "Josh"]
-  }, 
-  {
-    "members": ["Brandon", "Demers"]
-  },
-  {
-    "members": ["John", "Cameron"]
-  }, 
-  {
-    "members": ["Jeff", "Randy"]
-  }, 
-  {
-    "members": ["Jack", "Daniel"]
-  }
-]
+[{"members":["Jake","Josh"]},{"members":["Brandon","Demers"]},{"members":["John","Cameron"]},{"members":["Jeff","Randy"]},{"members":["Jack","Daniel"]},{"members":["Brandon","Cameron"],"possibleDuplicate":false,"createdOn":1568580758405},{"members":["Demers","Josh"],"possibleDuplicate":false,"createdOn":1568580758405},{"members":["Daniel","John"],"possibleDuplicate":false,"createdOn":1568580758405},{"members":["Jake","Randy"],"possibleDuplicate":false,"createdOn":1568580758405},{"members":["Jack","Jeff"],"possibleDuplicate":false,"createdOn":1568580758405}]

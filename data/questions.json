@@ -5,6 +5,11 @@
     "subject": "Containers: Docker"
   },
   {
+    "stem": "What is a Docker container?",
+    "answer": "Docker containers include the application and all of its dependencies, but share the kernel with other containers, running as isolated processes in user space on the host operating system. Docker containers are not tied to any specific infrastructure: they run on any computer, on any infrastructure, and in any cloud.",
+    "subject": "Containers: Docker"
+  },
+  {
     "stem": "What is containerization?",
     "answer": "Usually, in the software development process, code developed on one machine might not work perfectly fine on any other machine because of the dependencies. This problem was solved by the containerization concept. So basically, an application that is being developed and deployed is bundled and wrapped together with all its configuration files and dependencies. This bundle is called a container. Now when you wish to run the application on another system, the container is deployed which will give a bug-free environment as all the dependencies and libraries are wrapped together. Most famous containerization environments are Docker and Kubernetes.",
     "subject": "Containers: Docker"
@@ -12,6 +17,16 @@
   {
     "stem": "What is Docker?",
     "answer": "Docker is a containerization platform which packages your application and all its dependencies together in the form of containers so as to ensure that your application works seamlessly in any environment, be it development, test or production. Docker containers, wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries, etc. It wraps basically anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is the difference between a Docker image and a Docker container?",
+    "answer": "An instance of an image is called a container. You have an image, which is a set of layers. If you start this image, you have a running container of this image. You can have many running containers of the same image. You can see all your images with docker images whereas you can see your running containers with docker ps (and you can see all containers with docker ps -a). So a running instance of an image is a container.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What type of applications - Stateless or Stateful - are more suitable for Docker Container?",
+    "answer": "It is preferable to create Stateless application for Docker Container. We can create a container out of our application and take out the configurable state parameters from application. Now we can run same container in Production as well as QA environments with different parameters. This helps in reusing the same Image in different scenarios. Also a stateless application is much easier to scale with Docker Containers than a stateful application.",
     "subject": "Containers: Docker"
   },
   {
