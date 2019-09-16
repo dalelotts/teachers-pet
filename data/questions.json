@@ -1,7 +1,17 @@
 [
   {
+    "stem": "How many CMD commands can there be in a Dockerfile?",
+    "answer": "There can only be one. If you list more than one CMD then only the last CMD will take effect. The main purpose of a CMD is to provide defaults for an executing container",
+    "subject": "Containers: Docker"
+  },
+  {
     "stem": "What are Docker images?",
     "answer": "Docker image is the source of Docker container. In other words, Docker images are used to create containers. When a user runs a Docker image, an instance of a container is created. These docker images can be deployed to any Docker environment.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is a 'layer'?",
+    "answer": "Basically, a layer, or image layer is a change on an image, or an intermediate image. Every command you specify (FROM, RUN, COPY, etc.) in your Dockerfile causes the previous image to change, thus creating a new layer. You can think of it as staging changes when you're using git: You add a file's change, then another one, then another one...",
     "subject": "Containers: Docker"
   },
   {
@@ -10,8 +20,28 @@
     "subject": "Containers: Docker"
   },
   {
+    "stem": "What is a docker Registry?",
+    "answer": "A docker Registry is a delivery and storage system for named Docker images. You can use `docker push` and `docker pull` to push and pull images from the registry. Companies usually have private docker registries. It's similar to `maven`, `npm`, and `artifactory`",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is a docker Repository?",
+    "answer": "A repository is a set of Docker images. It's shared by pushing it to a registry server. Different images in the repository can be labeled using tags. Think of it as being similar to a git repository",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is a tag/why do you use tags in Docker?",
+    "answer": "A tag is a label applied to a Docker image in a repository and it's how various images in a repository are distinguished from one another. The tag can be almost anything you want, and it's best ot give it a meaningful, human-readable name",
+    "subject": "Containers: Docker"
+  },
+  {
     "stem": "What is containerization?",
     "answer": "Usually, in the software development process, code developed on one machine might not work perfectly fine on any other machine because of the dependencies. This problem was solved by the containerization concept. So basically, an application that is being developed and deployed is bundled and wrapped together with all its configuration files and dependencies. This bundle is called a container. Now when you wish to run the application on another system, the container is deployed which will give a bug-free environment as all the dependencies and libraries are wrapped together. Most famous containerization environments are Docker and Kubernetes.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is Docker Compose used for?",
+    "answer": "Compose is a tool for defining and running complex applications with Docker. With compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running. The Compose file is a YAML file defining services, networks, and volumes. (The default path for a Compose file is './docker-compose.yml'.",
     "subject": "Containers: Docker"
   },
   {
