@@ -240,6 +240,91 @@
     "subject": "Fullstack: Express"
   },
   {
+    "stem": "What are the VERBS associated with  HTTP requests?",
+    "answer": "Post, Put, Get, Patch, Delete", 
+    "subject": "Fullstack: HTTP",
+  },
+  {
+    "stem": "What does it mean to be idempotent?", 
+    "answer": "This means a client could make the same call repeatedly while producing the same results", 
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What is Hypertext?", 
+    "answer": "A text that contains links to other text",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+   "stem": "What does REST stand for?",
+   "answer": "Representational State Transfer", 
+   "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "In this URL, what is the protocol? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": "https://",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "In this URL, what is the Subdomain? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": "wwww.",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "In this URL, what is the domain? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": "usaa",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "In this URL, what is the top-level domain? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": ".com",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "In this URL, what is the port? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": ":3000/",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "In this URL, what is the path? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": "/path/resource",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "In this URL, what are the query parameters/query string? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": "id=5421",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 1XX response code indicate?",
+    "answer": "Informational (interim response, non-terminal, 101 switch to websocket", 
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 2XX response code indicate?",
+    "answer": "Successful (200 okay)", 
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 3XX response code indicate?",
+    "answer": "Redirect (301 Moved Permanently, 304 Not Modified)", 
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 4XX response code indicate?",
+    "answer": "Client Error (401 Unauthorized, 404 Not Found)", 
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does CRUDL stand for?",
+    "answer": "Create, Read, Update, Delete, List", 
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 5XX response code indicate?",
+    "answer": "Server Error (500 Internal Server Error)", 
+    "subject": "Fullstack: HTTP"
+  },
+  {
     "stem": "What are the components of an HTTP request (not a duplicate)?",
     "answer": "verb, version, url, header(s) (includes cookies), and body",
     "subject": "Fullstack: HTTP"
