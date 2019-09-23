@@ -242,7 +242,7 @@
   {
     "stem": "What are the VERBS associated with  HTTP requests?",
     "answer": "Post, Put, Get, Patch, Delete", 
-    "subject": "Fullstack: HTTP",
+    "subject": "Fullstack: HTTP"
   },
   {
     "stem": "What does it mean to be idempotent?", 
