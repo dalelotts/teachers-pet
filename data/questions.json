@@ -60,16 +60,6 @@
     "subject": "Containers: Docker"
   },
   {
-    "stem": "What is a cluster?", 
-    "answer":"Clusters enable high availability, load balancing and parallel processing. A cluster is a logical rather than physical unit. Organizations can include many servers or just a few in a cluster as the application's requirements demand.",
-    "subject": "Containers: Kubernetes"
-  },
-  {
-    "stem": "In the context of Kubernetes, what is a container?", 
-    "answer": "Kubernetes provides users with a management system for container-based applications, which is a relief from controlling each individual container. Containers operate on host machines through a shared OS, but they remain isolated from each other to run applications -- unless the administrator connects them. As opposed to VMs, containers use a service such as Kubernetes rather than a hypervisor, and they also share the same OS rather than use individual guest OSes. Containers are often paired with microservices and a cloud platform or service.",
-    "subject": "Containers: Kubernetes"
-  },
-  {
     "stem": "What type of applications - Stateless or Stateful - are more suitable for Docker Container?",
     "answer": "It is preferable to create Stateless application for Docker Container. We can create a container out of our application and take out the configurable state parameters from application. Now we can run same container in Production as well as QA environments with different parameters. This helps in reusing the same Image in different scenarios. Also a stateless application is much easier to scale with Docker Containers than a stateful application.",
     "subject": "Containers: Docker"
@@ -77,6 +67,16 @@
   {
     "stem": "How is Kubernetes related to Docker?",
     "answer": "Kubernetes is a container orchestration system for Docker containers that is more extensive than Docker Swarm and is meant to coordinate clusters of nodes at scale in production in an efficient manner.",
+    "subject": "Containers: Kubernetes"
+  },
+  {
+    "stem": "In the context of Kubernetes, what is a container?",
+    "answer": "Kubernetes provides users with a management system for container-based applications, which is a relief from controlling each individual container. Containers operate on host machines through a shared OS, but they remain isolated from each other to run applications -- unless the administrator connects them. As opposed to VMs, containers use a service such as Kubernetes rather than a hypervisor, and they also share the same OS rather than use individual guest OSes. Containers are often paired with microservices and a cloud platform or service.",
+    "subject": "Containers: Kubernetes"
+  },
+  {
+    "stem": "What is a cluster?",
+    "answer": "Clusters enable high availability, load balancing and parallel processing. A cluster is a logical rather than physical unit. Organizations can include many servers or just a few in a cluster as the application's requirements demand.",
     "subject": "Containers: Kubernetes"
   },
   {
@@ -240,24 +240,24 @@
     "subject": "Fullstack: Express"
   },
   {
-    "stem": "What are the VERBS associated with  HTTP requests?",
-    "answer": "Post, Put, Get, Patch, Delete", 
+    "stem": "In this URL, what are the query parameters/query string? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": "id=5421",
     "subject": "Fullstack: HTTP"
   },
   {
-    "stem": "What does it mean to be idempotent?", 
-    "answer": "This means a client could make the same call repeatedly while producing the same results", 
+    "stem": "In this URL, what is the domain? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": "usaa",
     "subject": "Fullstack: HTTP"
   },
   {
-    "stem": "What is Hypertext?", 
-    "answer": "A text that contains links to other text",
+    "stem": "In this URL, what is the path? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": "/path/resource",
     "subject": "Fullstack: HTTP"
   },
   {
-   "stem": "What does REST stand for?",
-   "answer": "Representational State Transfer", 
-   "subject": "Fullstack: HTTP"
+    "stem": "In this URL, what is the port? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": ":3000/",
+    "subject": "Fullstack: HTTP"
   },
   {
     "stem": "In this URL, what is the protocol? https://www.usaa.com:3000/path/resource:?id=5421",
@@ -270,58 +270,8 @@
     "subject": "Fullstack: HTTP"
   },
   {
-    "stem": "In this URL, what is the domain? https://www.usaa.com:3000/path/resource:?id=5421",
-    "answer": "usaa",
-    "subject": "Fullstack: HTTP"
-  },
-  {
     "stem": "In this URL, what is the top-level domain? https://www.usaa.com:3000/path/resource:?id=5421",
     "answer": ".com",
-    "subject": "Fullstack: HTTP"
-  },
-  {
-    "stem": "In this URL, what is the port? https://www.usaa.com:3000/path/resource:?id=5421",
-    "answer": ":3000/",
-    "subject": "Fullstack: HTTP"
-  },
-  {
-    "stem": "In this URL, what is the path? https://www.usaa.com:3000/path/resource:?id=5421",
-    "answer": "/path/resource",
-    "subject": "Fullstack: HTTP"
-  },
-  {
-    "stem": "In this URL, what are the query parameters/query string? https://www.usaa.com:3000/path/resource:?id=5421",
-    "answer": "id=5421",
-    "subject": "Fullstack: HTTP"
-  },
-  {
-    "stem": "What does a 1XX response code indicate?",
-    "answer": "Informational (interim response, non-terminal, 101 switch to websocket", 
-    "subject": "Fullstack: HTTP"
-  },
-  {
-    "stem": "What does a 2XX response code indicate?",
-    "answer": "Successful (200 okay)", 
-    "subject": "Fullstack: HTTP"
-  },
-  {
-    "stem": "What does a 3XX response code indicate?",
-    "answer": "Redirect (301 Moved Permanently, 304 Not Modified)", 
-    "subject": "Fullstack: HTTP"
-  },
-  {
-    "stem": "What does a 4XX response code indicate?",
-    "answer": "Client Error (401 Unauthorized, 404 Not Found)", 
-    "subject": "Fullstack: HTTP"
-  },
-  {
-    "stem": "What does CRUDL stand for?",
-    "answer": "Create, Read, Update, Delete, List", 
-    "subject": "Fullstack: HTTP"
-  },
-  {
-    "stem": "What does a 5XX response code indicate?",
-    "answer": "Server Error (500 Internal Server Error)", 
     "subject": "Fullstack: HTTP"
   },
   {
@@ -332,6 +282,56 @@
   {
     "stem": "What are the components of an HTTP response (not a duplicate)?",
     "answer": "status code & reason phrase, header(s) (includes cookies), and body",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What are the VERBS associated with  HTTP requests?",
+    "answer": "Post, Put, Get, Patch, Delete",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 1XX response code indicate?",
+    "answer": "Informational (interim response, non-terminal, 101 switch to websocket",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 2XX response code indicate?",
+    "answer": "Successful (200 okay)",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 3XX response code indicate?",
+    "answer": "Redirect (301 Moved Permanently, 304 Not Modified)",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 4XX response code indicate?",
+    "answer": "Client Error (401 Unauthorized, 404 Not Found)",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 5XX response code indicate?",
+    "answer": "Server Error (500 Internal Server Error)",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does CRUDL stand for?",
+    "answer": "Create, Read, Update, Delete, List",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does it mean to be idempotent?",
+    "answer": "This means a client could make the same call repeatedly while producing the same results",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does REST stand for?",
+    "answer": "Representational State Transfer",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What is Hypertext?",
+    "answer": "A text that contains links to other text",
     "subject": "Fullstack: HTTP"
   },
   {
@@ -1078,6 +1078,26 @@
     "stem": "Where is the end of the Prototype Chain pointing to?",
     "answer": "Nowhere (null).",
     "subject": "JS: Prototype Chain"
+  },
+  {
+    "stem": "What cannot be mocked in Mokito?",
+    "answer": "hashCode(), equals(), final classes, final methods, static methods",
+    "subject": "Mocking in Java"
+  },
+  {
+    "stem": "What is a mock?",
+    "answer": "A mock object is a replacement for a dependency in a unit test",
+    "subject": "Mocking in Java"
+  },
+  {
+    "stem": "What strategy do we use to isolate a class from its dependencies?",
+    "answer": "Dependency injection",
+    "subject": "Mocking in Java"
+  },
+  {
+    "stem": "What type of tests are you writing when you're using mocks?",
+    "answer": "Unit tests",
+    "subject": "Mocking in Java"
   },
   {
     "stem": "What things tell you that the code is probably well organized and what things tell you it probably isn't?",
