@@ -1084,6 +1084,7 @@
     "answer": "hashCode(), equals(), final classes, final methods, static methods",
     "subject": "Mocking in Java"
   },
+
   {
     "stem": "What is a mock?",
     "answer": "A mock object is a replacement for a dependency in a unit test",
