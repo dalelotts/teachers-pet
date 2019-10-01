@@ -1718,78 +1718,63 @@
     "subject": "XP: Values"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Fullstack: Bookshelf, Knex, SQL"
+    "stem": "What's the major difference between React and Redux",
+    "answer": "State is stored in the 'store' in Redux and state is maintained at component level in React",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Fullstack: CRUD"
+    "stem": "What is Redux?",
+    "answer": "A predicatable state management tool",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Fullstack: Monk, MongoDB"
+    "stem": "Explain one use case for a state management tool like Redux",
+    "answer": "",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Fullstack: REST"
+    "stem": "In Redux, where is the state of your application held?",
+    "answer": "The store",
+    "subject": "Fullstack: Redux"
+  },  
+  {
+    "stem": "What is an action?",
+    "answer": "Payloads of information that send data from your application to your store",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Git: Rebase"
+    "stem": "What are the three methods on the store object that are useful?",
+    "answer": "getState(), dispatch(), subscribe()",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-JS: Inheritance"
+    "stem": "What is a reducer?",
+    "answer": "A function taht takes state and an action as arguments and returns a new state. This should NOT mutate state, but instead makes a new state.",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-JS: this"
+    "stem": "What is a pure function?",
+    "answer": "A function where the return value is always the same for the same arguments and invoking it has no side effects.",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Node: export/requires"
+    "stem": "What's the major difference between React and Redux",
+    "answer": "State is stored in the 'store' in Redux and state is maintained at component level in React",
+    "subject": "Fullstack: Redux"
+  },  
+  {
+    "stem": "What is state?",
+    "answer": "The data within your application",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Node: Filesystem"
+    "stem": "How is state changed in Redux?",
+    "answer": "Reducers",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Node: Streams"
-  },
-  {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-TDD: Acceptance Testing"
-  },
-  {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-TDD: Refactoring"
-  },
-  {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-TDD: Unit Testing"
-  },
-  {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-User Stories: Acceptance Criteria, BDD"
-  },
-  {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-XP: Practices"
+    "stem": "What component is used to allow a React app to know about the store?",
+    "answer": "<Provider />",
+    "subject": "Fullstack: Redux"
   }
 ]
