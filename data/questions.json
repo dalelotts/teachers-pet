@@ -1233,7 +1233,7 @@
     "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "Describe the basic flow of TDD",
+    "stem": "What is the basic flow of TDD?",
     "answer": "Red, Green, Refactor (Write failing test, Run test(s), Write minimal code to make test pass, Run test(s), Clean up code without breaking tests, Run test(s))",
     "subject": "TDD: Basics"
   },
@@ -1483,7 +1483,7 @@
     "subject": "User Stories: Title"
   },
   {
-    "stem": "Which of the three User Story parts is optinoal?",
+    "stem": "Which of the three User Story parts is optional?",
     "answer": "None!",
     "subject": "User Stories: Title"
   },
@@ -1728,8 +1728,8 @@
     "subject": "Fullstack: Redux"
   },
   {
-    "stem": "Explain one use case for a state management tool like Redux",
-    "answer": "",
+    "stem": "What is one use case for a state management tool like Redux?",
+    "answer": "When a React application becomes extremely complex with lots of parent/child components",
     "subject": "Fullstack: Redux"
   },
   {
@@ -1738,7 +1738,7 @@
     "subject": "Fullstack: Redux"
   },  
   {
-    "stem": "What is an action?",
+    "stem": "In Redux, what is an action?",
     "answer": "Payloads of information that send data from your application to your store",
     "subject": "Fullstack: Redux"
   },
@@ -1749,7 +1749,12 @@
   },
   {
     "stem": "What is a reducer?",
-    "answer": "A function taht takes state and an action as arguments and returns a new state. This should NOT mutate state, but instead makes a new state.",
+    "answer": "A function that takes state and an action as arguments and returns a new state.",
+    "subject": "Fullstack: Redux"
+  },
+  {
+    "stem": "Does a reducer mutate state?",
+    "answer": "No! Reducers should NOT mutate state, but instead makes a new state.",
     "subject": "Fullstack: Redux"
   },
   {
@@ -1773,7 +1778,7 @@
     "subject": "Fullstack: Redux"
   },
   {
-    "stem": "What component is used to allow a React app to know about the store?",
+    "stem": "Which component is used to allow a React app to know about the store?",
     "answer": "<Provider />",
     "subject": "Fullstack: Redux"
   }
