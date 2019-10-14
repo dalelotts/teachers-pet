@@ -10,7 +10,7 @@
     "subject": "Containers: Docker"
   },
   {
-    "stem": "What is a 'layer'?",
+    "stem": "In Docker, what is a 'layer'?",
     "answer": "Basically, a layer, or image layer is a change on an image, or an intermediate image. Every command you specify (FROM, RUN, COPY, etc.) in your Dockerfile causes the previous image to change, thus creating a new layer. You can think of it as staging changes when you're using git: You add a file's change, then another one, then another one...",
     "subject": "Containers: Docker"
   },
@@ -20,12 +20,12 @@
     "subject": "Containers: Docker"
   },
   {
-    "stem": "What is a docker Registry?",
+    "stem": "What is a Docker Registry?",
     "answer": "A docker Registry is a delivery and storage system for named Docker images. You can use `docker push` and `docker pull` to push and pull images from the registry. Companies usually have private docker registries. It's similar to `maven`, `npm`, and `artifactory`",
     "subject": "Containers: Docker"
   },
   {
-    "stem": "What is a docker Repository?",
+    "stem": "What is a Docker Repository?",
     "answer": "A repository is a set of Docker images. It's shared by pushing it to a registry server. Different images in the repository can be labeled using tags. Think of it as being similar to a git repository",
     "subject": "Containers: Docker"
   },
