@@ -1,3 +1,5 @@
+/* globals angular */
+
 angular.module('apot', [
   'apot.homeController',
   'apot.pepperController',

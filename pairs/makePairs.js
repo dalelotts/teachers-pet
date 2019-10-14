@@ -1,75 +1,53 @@
-'use strict'
+const randomMatcher = (student, possiblePairs) => {
+  const index = Math.floor(Math.random() * possiblePairs.length)
+  return possiblePairs[index]
+}
 
-const Pair = require('./pair')
-
-function makePairs (students, allPreviousPairs) {
-  if (!(students && students.length)) {
-    throw new Error('No students')
+module.exports = (students, previousPairs, matcher = randomMatcher) => {
+  if (!students || students.length < 2) {
+    throw new Error(`Must be at least two students: Received ${students}`)
   }
 
-  if (!(allPreviousPairs && allPreviousPairs.length)) {
-    allPreviousPairs = []
-  }
+  return students.reduce((accumulator, student) => {
+    const studentsInPairs = accumulator.flatMap(pair => pair.members)
 
-  students = students.filter(removeDuplicates)
+    const alreadyMatched = studentsInPairs.includes(student)
 
-  if (students.length <= 3) {
-    return [(new Pair(...students))]
-  }
-
-  return students.reduce(studentsToPairs(allPreviousPairs), [])
-}
-
-function findPreviouslyPairedStudents (currentStudent, allPreviousPairs) {
-  // You may be tempted sort the list first!! Don't! It will break the algorithm.
-  return allPreviousPairs
-    .filter((pair) => pair.members.indexOf(currentStudent) > -1)
-    .reduce(pairsToStudents, [])
-    .filter(removeDuplicates) // optimization not under test - tests will not fail if removed
-    .filter((student) => student !== currentStudent)
-}
-
-function makePairForStudent (currentStudent, previousPairs, students) {
-  const possiblePairs = students
-    .filter((student) => student !== currentStudent)
-    .filter((student) => previousPairs.indexOf(student) === -1)
-
-  if (students.length <= 3) {
-    const pair = new Pair(...students);
-    pair.possibleDuplicate = possiblePairs.length === 0;
-    return pair
-  }
-
-  const secondMember = possiblePairs.length ? possiblePairs[0] : students[1]
-
-  const pair = new Pair(currentStudent, secondMember);
-
-  const previousPairing = previousPairs.filter((student) => student === secondMember)
-  pair.possibleDuplicate = previousPairing.length !== 0;
-  return pair
-}
-
-function pairsToStudents (students, pair) {
-  return students.concat(pair.members)
-}
-
-function removeDuplicates (student, index, source) {
-  return source.indexOf(student, index + 1) === -1
-}
-
-function studentsToPairs (allPreviousPairs) {
-  return function reducer (pairs, currentStudent, index, allStudents) {
-    const pairedStudents = pairs.reduce(pairsToStudents, [])
-
-    if (pairedStudents.indexOf(currentStudent) === -1) {
-      const previouslyPairedStudents = findPreviouslyPairedStudents(currentStudent, allPreviousPairs)
-      const unPairedStudents = allStudents.filter((student) => pairedStudents.indexOf(student) === -1)
-      const newPair = makePairForStudent(currentStudent, previouslyPairedStudents, unPairedStudents)
-      pairs.push(newPair)
+    if (alreadyMatched) {
+      return accumulator
     }
 
-    return pairs
-  }
-}
+    const studentsNotYetPaired = students.filter(currentStudent => !studentsInPairs.includes(currentStudent))
 
-module.exports = makePairs
+    if (studentsNotYetPaired.length === 3) {
+      return accumulator.concat({
+        members: [...studentsNotYetPaired],
+        possibleDuplicate: false
+      })
+    }
+
+    const previouslyPairedWith = previousPairs
+      .filter(pair => pair.members.includes(student))
+      .flatMap(pair => pair.members)
+      .filter(name => name !== student)
+
+    const unmatchedStudents = students
+      .filter(currentStudent => currentStudent !== student)
+      .filter(currentStudent => !studentsInPairs.includes(currentStudent))
+
+    let possibleDuplicate = false
+    let possiblePairs = unmatchedStudents.filter(currentStudent => !previouslyPairedWith.includes(currentStudent))
+
+    if (possiblePairs.length === 0) {
+      possiblePairs = unmatchedStudents
+      possibleDuplicate = true
+    }
+
+    const matchedPair = matcher(student, possiblePairs)
+
+    return accumulator.concat({
+      members: [student, matchedPair],
+      possibleDuplicate
+    })
+  }, [])
+}

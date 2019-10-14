@@ -5,13 +5,13 @@
     "subject": "Containers: Docker"
   },
   {
-    "stem": "What are Docker images?",
-    "answer": "Docker image is the source of Docker container. In other words, Docker images are used to create containers. When a user runs a Docker image, an instance of a container is created. These docker images can be deployed to any Docker environment.",
+    "stem": "In Docker, what is a 'layer'?",
+    "answer": "Basically, a layer, or image layer is a change on an image, or an intermediate image. Every command you specify (FROM, RUN, COPY, etc.) in your Dockerfile causes the previous image to change, thus creating a new layer. You can think of it as staging changes when you're using git: You add a file's change, then another one, then another one...",
     "subject": "Containers: Docker"
   },
   {
-    "stem": "In Docker, what is a 'layer'?",
-    "answer": "Basically, a layer, or image layer is a change on an image, or an intermediate image. Every command you specify (FROM, RUN, COPY, etc.) in your Dockerfile causes the previous image to change, thus creating a new layer. You can think of it as staging changes when you're using git: You add a file's change, then another one, then another one...",
+    "stem": "What are Docker images?",
+    "answer": "Docker image is the source of Docker container. In other words, Docker images are used to create containers. When a user runs a Docker image, an instance of a container is created. These docker images can be deployed to any Docker environment.",
     "subject": "Containers: Docker"
   },
   {
@@ -448,6 +448,71 @@
     "stem": "What is JSX?",
     "answer": "A preprocessor step that adds XML syntax to JavaScript. JSX has been developed and is maintained by the React team.",
     "subject": "Fullstack: React - JSX, Components, Properties"
+  },
+  {
+    "stem": "Does a reducer mutate state?",
+    "answer": "No! Reducers should NOT mutate state, but instead makes a new state.",
+    "subject": "Fullstack: Redux"
+  },
+  {
+    "stem": "How is state changed in Redux?",
+    "answer": "Reducers",
+    "subject": "Fullstack: Redux"
+  },
+  {
+    "stem": "In Redux, what is an action?",
+    "answer": "Payloads of information that send data from your application to your store",
+    "subject": "Fullstack: Redux"
+  },
+  {
+    "stem": "In Redux, where is the state of your application held?",
+    "answer": "The store",
+    "subject": "Fullstack: Redux"
+  },
+  {
+    "stem": "What are the three methods on the store object that are useful?",
+    "answer": "getState(), dispatch(), subscribe()",
+    "subject": "Fullstack: Redux"
+  },
+  {
+    "stem": "What is a pure function?",
+    "answer": "A function where the return value is always the same for the same arguments and invoking it has no side effects.",
+    "subject": "Fullstack: Redux"
+  },
+  {
+    "stem": "What is a reducer?",
+    "answer": "A function that takes state and an action as arguments and returns a new state.",
+    "subject": "Fullstack: Redux"
+  },
+  {
+    "stem": "What is one use case for a state management tool like Redux?",
+    "answer": "When a React application becomes extremely complex with lots of parent/child components",
+    "subject": "Fullstack: Redux"
+  },
+  {
+    "stem": "What is Redux?",
+    "answer": "A predicatable state management tool",
+    "subject": "Fullstack: Redux"
+  },
+  {
+    "stem": "What is state?",
+    "answer": "The data within your application",
+    "subject": "Fullstack: Redux"
+  },
+  {
+    "stem": "What's the major difference between React and Redux",
+    "answer": "State is stored in the 'store' in Redux and state is maintained at component level in React",
+    "subject": "Fullstack: Redux"
+  },
+  {
+    "stem": "What's the major difference between React and Redux",
+    "answer": "State is stored in the 'store' in Redux and state is maintained at component level in React",
+    "subject": "Fullstack: Redux"
+  },
+  {
+    "stem": "Which component is used to allow a React app to know about the store?",
+    "answer": "<Provider />",
+    "subject": "Fullstack: Redux"
   },
   {
     "stem": "Can the remote origin repository be ahead of the local repository?",
@@ -1084,7 +1149,6 @@
     "answer": "hashCode(), equals(), final classes, final methods, static methods",
     "subject": "Mocking in Java"
   },
-
   {
     "stem": "What is a mock?",
     "answer": "A mock object is a replacement for a dependency in a unit test",
@@ -1233,11 +1297,6 @@
     "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "What is the basic flow of TDD?",
-    "answer": "Red, Green, Refactor (Write failing test, Run test(s), Write minimal code to make test pass, Run test(s), Clean up code without breaking tests, Run test(s))",
-    "subject": "TDD: Basics"
-  },
-  {
     "stem": "List at least 3 benefits of TDD",
     "answer": "Validation (of production code), Increases Productivity, Acts as Safety Net (for refactoring), Increases Quality, Improves Modularity, Produces Documentation",
     "subject": "TDD: Basics"
@@ -1265,6 +1324,11 @@
   {
     "stem": "What is the 1st rule of TDD",
     "answer": "You are not allowed to write any production code unless it is to make a failing test pass.",
+    "subject": "TDD: Basics"
+  },
+  {
+    "stem": "What is the basic flow of TDD?",
+    "answer": "Red, Green, Refactor (Write failing test, Run test(s), Write minimal code to make test pass, Run test(s), Clean up code without breaking tests, Run test(s))",
     "subject": "TDD: Basics"
   },
   {
@@ -1716,70 +1780,5 @@
     "stem": "What are some common types of 'Feedback' we have in XP?",
     "answer": "Pair programming, TDD, iteration, retrospectives, demo's, releases.",
     "subject": "XP: Values"
-  },
-  {
-    "stem": "What's the major difference between React and Redux",
-    "answer": "State is stored in the 'store' in Redux and state is maintained at component level in React",
-    "subject": "Fullstack: Redux"
-  },
-  {
-    "stem": "What is Redux?",
-    "answer": "A predicatable state management tool",
-    "subject": "Fullstack: Redux"
-  },
-  {
-    "stem": "What is one use case for a state management tool like Redux?",
-    "answer": "When a React application becomes extremely complex with lots of parent/child components",
-    "subject": "Fullstack: Redux"
-  },
-  {
-    "stem": "In Redux, where is the state of your application held?",
-    "answer": "The store",
-    "subject": "Fullstack: Redux"
-  },  
-  {
-    "stem": "In Redux, what is an action?",
-    "answer": "Payloads of information that send data from your application to your store",
-    "subject": "Fullstack: Redux"
-  },
-  {
-    "stem": "What are the three methods on the store object that are useful?",
-    "answer": "getState(), dispatch(), subscribe()",
-    "subject": "Fullstack: Redux"
-  },
-  {
-    "stem": "What is a reducer?",
-    "answer": "A function that takes state and an action as arguments and returns a new state.",
-    "subject": "Fullstack: Redux"
-  },
-  {
-    "stem": "Does a reducer mutate state?",
-    "answer": "No! Reducers should NOT mutate state, but instead makes a new state.",
-    "subject": "Fullstack: Redux"
-  },
-  {
-    "stem": "What is a pure function?",
-    "answer": "A function where the return value is always the same for the same arguments and invoking it has no side effects.",
-    "subject": "Fullstack: Redux"
-  },
-  {
-    "stem": "What's the major difference between React and Redux",
-    "answer": "State is stored in the 'store' in Redux and state is maintained at component level in React",
-    "subject": "Fullstack: Redux"
-  },  
-  {
-    "stem": "What is state?",
-    "answer": "The data within your application",
-    "subject": "Fullstack: Redux"
-  },
-  {
-    "stem": "How is state changed in Redux?",
-    "answer": "Reducers",
-    "subject": "Fullstack: Redux"
-  },
-  {
-    "stem": "Which component is used to allow a React app to know about the store?",
-    "answer": "<Provider />",
-    "subject": "Fullstack: Redux"
   }
 ]

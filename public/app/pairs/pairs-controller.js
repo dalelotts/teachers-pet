@@ -1,9 +1,11 @@
+/* globals angular */
+
 angular.module('apot.pairsController', ['ngResource'])
   .controller('pairsController', [
     '$scope',
     '$resource',
     '$q',
-    function($scope, $resource) {
+    function ($scope, $resource) {
       'use strict'
 
       const CohortAPI = $resource('/cohorts/:cohort', {
@@ -19,6 +21,16 @@ angular.module('apot.pairsController', ['ngResource'])
       $scope.savePairs = savePairs
       $scope.generatePairs = generatePairs
       $scope.cohorts = CohortAPI.query()
+      $scope.excludedStudents = []
+
+      $scope.importNames = () => {
+        $scope.students = CohortAPI.query({ cohort: $scope.cohort })
+      }
+
+      $scope.removeStudent = (index) => {
+        const deletedStudent = $scope.students.splice(index, 1)[0]
+        $scope.excludedStudents = $scope.excludedStudents.concat(deletedStudent.name)
+      }
 
       $scope.$watch(
         () => {
@@ -27,18 +39,20 @@ angular.module('apot.pairsController', ['ngResource'])
         (newValue, oldValue) => {
           if (newValue !== oldValue) {
             delete $scope.pairs
+            delete $scope.students
           }
         }
       )
 
-      function generatePairs() {
+      function generatePairs () {
         $scope.pairs = PairAPI.query({
           cohort: $scope.cohort,
-          pair: 'new'
+          pair: 'new',
+          exclude: $scope.excludedStudents
         })
       }
 
-      function savePairs() {
+      function savePairs () {
         const SavePairs = $resource(`/cohorts/${$scope.cohort}/pairs/`, {}, {
           save: {
             method: 'POST',
@@ -46,12 +60,12 @@ angular.module('apot.pairsController', ['ngResource'])
           }
         })
         SavePairs.save($scope.pairs, (response) => {
-            console.log(response)
-            alert('Saved ' + response.length + ' pairs')
-          }, (err) => {
-            console.log(err)
-            alert('Error ' + err)
-          })
+          console.log(response)
+          alert('Saved ' + response.length + ' pairs')
+        }, (err) => {
+          console.log(err)
+          alert('Error ' + err)
+        })
       }
     }
   ])

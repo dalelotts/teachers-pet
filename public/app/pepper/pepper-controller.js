@@ -1,3 +1,5 @@
+/* globals angular */
+
 angular.module('apot.pepperController', ['ngResource'])
   .controller('pepperController', [
     '$scope',
@@ -7,11 +9,12 @@ angular.module('apot.pepperController', ['ngResource'])
 
       $scope.controllerName = 'pepperController'
 
-      var CohortAPI = $resource('/cohorts/:cohort', {
+      const CohortAPI = $resource('/cohorts/:cohort', {
         cohort: '@cohort'
       })
-      var SubjectAPI = $resource('/questions/subjects')
-      var QuestionAPI = $resource('/questions/')
+
+      const SubjectAPI = $resource('/questions/subjects')
+      const QuestionAPI = $resource('/questions/')
 
       $scope.importNamesAndQuestions = importNamesAndQuestions
       $scope.resetEverything = resetEverything
@@ -41,11 +44,11 @@ angular.module('apot.pepperController', ['ngResource'])
 
       function selectQuestion () {
         if ($scope.students.length && $scope.questions.length) {
-          var studentIndex = Math.floor(Math.random() * ($scope.students.length - 1))
-          var questionIndex = Math.floor(Math.random() * ($scope.questions.length - 1))
+          const studentIndex = Math.floor(Math.random() * ($scope.students.length - 1))
+          const questionIndex = Math.floor(Math.random() * ($scope.questions.length - 1))
 
-          var student = $scope.students.splice(studentIndex, 1)[0]
-          var question = $scope.questions.splice(questionIndex, 1)[0]
+          const student = $scope.students.splice(studentIndex, 1)[0]
+          const question = $scope.questions.splice(questionIndex, 1)[0]
           question.name = student.name
 
           $scope.selected.unshift(question)

@@ -14,13 +14,31 @@
                     Generate Pairs
                 </button>
             </div>
+
             <div class="form-group" data-ng-show="pairs.length">
                 <button class="btn btn-danger" data-ng-click="savePairs()" data-ng-disabled="pairsSetup.$invalid">Save
                     Pairs
                 </button>
-                <p class="help-block">Saving the pairs will prevent duplicate pairing in the future. Pairs will
-                    duplicate after unique combinations are exhausted.</p>
+                <small class="form-text text-muted">Saving the pairs will prevent duplicate pairing in the future. Pairs will
+                    duplicate after unique combinations are exhausted.</small>
             </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary" data-ng-click="importNames()" data-ng-disabled="pairsSetup.$invalid">
+                    Show Student List
+                </button>
+                <small class="form-text text-muted">To exclude some students from pairing (i.e. Someone is absent)</small>
+            </div>
+
+            <div class="form-group">
+                <ul class="list-group">
+                    <li class="list-group-item" data-ng-repeat="student in students ">
+                        <button type="button" class="btn btn-danger" data-ng-click="removeStudent($index)"><span class="oi oi-icon-x" title="Remove" aria-hidden="true">X</span></button>
+                        &nbsp;{{student.name}}
+                    </li>
+                </ul>
+            </div>
+
         </ng-form>
     </section>
     <section class="col-9">
