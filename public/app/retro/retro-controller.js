@@ -1,30 +1,31 @@
+/* globals angular */
+
 angular.module('apot.retroController', ['ngResource'])
   .controller('retroController', [
     '$scope',
     '$resource',
     '$q',
     function ($scope, $resource) {
-      'use strict';
-      $scope.controllerName = 'retroController';
-      $scope.saveSelectedStudent = saveSelectedStudent;
+      'use strict'
+      $scope.controllerName = 'retroController'
+      $scope.saveSelectedStudent = saveSelectedStudent
 
-
-      const CohortAPI = $resource('/cohorts/:cohort', {cohort:'@cohort'});
-      $scope.cohorts = CohortAPI.query();
+      const CohortAPI = $resource('/cohorts/:cohort', { cohort: '@cohort' })
+      $scope.cohorts = CohortAPI.query()
 
       const RetroAPI = $resource('/cohorts/:cohort/retro/:retro', {
         cohort: '@cohort',
         retro: '@retro'
       })
 
-      $scope.selectStudent = function () {
+      $scope.selectStudent = () => {
         $scope.student = RetroAPI.get({
           cohort: $scope.cohort,
           retro: 'new'
         })
       }
 
-      function saveSelectedStudent() {
+      function saveSelectedStudent () {
         const SaveRetro = $resource(`/cohorts/${$scope.cohort}/retro/`)
 
         SaveRetro.save($scope.student, (response) => {
@@ -36,4 +37,4 @@ angular.module('apot.retroController', ['ngResource'])
         })
       }
     }
-  ]);
+  ])

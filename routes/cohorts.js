@@ -27,7 +27,7 @@ router.get('/:cohort/pairs', (req, res) => {
 router.post('/:cohort/pairs', (req, res, next) => {
   const pastPairs = getPastPairs(req.params.cohort)
 
-  const createdOn = new Date().getTime()
+  const createdOn = new Date().toISOString()
 
   const newPairs = req.body.map((pair) => {
     pair.createdOn = createdOn
@@ -47,8 +47,13 @@ router.post('/:cohort/pairs', (req, res, next) => {
 })
 
 router.get('/:cohort/pairs/new', (req, res) => {
+  const excludedStudents = req.query.exclude || []
   const students = cohorts[req.params.cohort]
-  const shuffledStudents = shuffle(students.map((student) => student.name))
+  const shuffledStudents = shuffle(
+    students
+      .map((student) => student.name)
+      .filter(studentName => !excludedStudents.includes(studentName))
+  )
   const pastPairs = getPastPairs(req.params.cohort)
   const newPairs = makePairs(shuffledStudents, pastPairs)
   res.json(newPairs)
@@ -82,7 +87,6 @@ router.get('/:cohort/retro/new', (req, res) => {
   res.json({ name: shuffledStudents[0] })
 })
 
-
 router.post('/:cohort/standup', (req, res, next) => {
   const pastStandUp = getPastStandup(req.params.cohort)
 
@@ -110,7 +114,6 @@ router.get('/:cohort/standup/new', (req, res) => {
   const shuffledStudents = shuffle(filteredStudents.map((student) => student.name))
   res.json({ name: shuffledStudents[0] })
 })
-
 
 router.get('/:cohort/git-pairs', (req, res) => {
   let students = cohorts[req.params.cohort]
@@ -154,6 +157,3 @@ function getPastRetro (cohort) {
     return []
   }
 }
-
-
-

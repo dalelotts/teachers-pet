@@ -8,7 +8,7 @@ const router = express.Router()
 const questions = require(path.resolve('data/questions'))
 
 router.get('/', (req, res) => {
-  const subjects = req.query.subject;
+  const subjects = req.query.subject
   res.json(questions.filter(question => subjects.includes(question.subject)))
 })
 
