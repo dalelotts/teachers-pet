@@ -1,5 +1,95 @@
 [
   {
+    "stem": "How many CMD commands can there be in a Dockerfile?",
+    "answer": "There can only be one. If you list more than one CMD then only the last CMD will take effect. The main purpose of a CMD is to provide defaults for an executing container",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What are Docker images?",
+    "answer": "Docker image is the source of Docker container. In other words, Docker images are used to create containers. When a user runs a Docker image, an instance of a container is created. These docker images can be deployed to any Docker environment.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "In Docker, what is a 'layer'?",
+    "answer": "Basically, a layer, or image layer is a change on an image, or an intermediate image. Every command you specify (FROM, RUN, COPY, etc.) in your Dockerfile causes the previous image to change, thus creating a new layer. You can think of it as staging changes when you're using git: You add a file's change, then another one, then another one...",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is a Docker container?",
+    "answer": "Docker containers include the application and all of its dependencies, but share the kernel with other containers, running as isolated processes in user space on the host operating system. Docker containers are not tied to any specific infrastructure: they run on any computer, on any infrastructure, and in any cloud.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is a Docker Registry?",
+    "answer": "A docker Registry is a delivery and storage system for named Docker images. You can use `docker push` and `docker pull` to push and pull images from the registry. Companies usually have private docker registries. It's similar to `maven`, `npm`, and `artifactory`",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is a Docker Repository?",
+    "answer": "A repository is a set of Docker images. It's shared by pushing it to a registry server. Different images in the repository can be labeled using tags. Think of it as being similar to a git repository",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is a tag/why do you use tags in Docker?",
+    "answer": "A tag is a label applied to a Docker image in a repository and it's how various images in a repository are distinguished from one another. The tag can be almost anything you want, and it's best ot give it a meaningful, human-readable name",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is containerization?",
+    "answer": "Usually, in the software development process, code developed on one machine might not work perfectly fine on any other machine because of the dependencies. This problem was solved by the containerization concept. So basically, an application that is being developed and deployed is bundled and wrapped together with all its configuration files and dependencies. This bundle is called a container. Now when you wish to run the application on another system, the container is deployed which will give a bug-free environment as all the dependencies and libraries are wrapped together. Most famous containerization environments are Docker and Kubernetes.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is Docker Compose used for?",
+    "answer": "Compose is a tool for defining and running complex applications with Docker. With compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running. The Compose file is a YAML file defining services, networks, and volumes. (The default path for a Compose file is './docker-compose.yml'.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is Docker?",
+    "answer": "Docker is a containerization platform which packages your application and all its dependencies together in the form of containers so as to ensure that your application works seamlessly in any environment, be it development, test or production. Docker containers, wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries, etc. It wraps basically anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is in a Dockerfile?",
+    "answer": "A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Using docker build users can create an automated build that executes several command-line instructions in succession.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What is the difference between a Docker image and a Docker container?",
+    "answer": "An instance of an image is called a container. You have an image, which is a set of layers. If you start this image, you have a running container of this image. You can have many running containers of the same image. You can see all your images with docker images whereas you can see your running containers with docker ps (and you can see all containers with docker ps -a). So a running instance of an image is a container.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "What type of applications - Stateless or Stateful - are more suitable for Docker Container?",
+    "answer": "It is preferable to create Stateless application for Docker Container. We can create a container out of our application and take out the configurable state parameters from application. Now we can run same container in Production as well as QA environments with different parameters. This helps in reusing the same Image in different scenarios. Also a stateless application is much easier to scale with Docker Containers than a stateful application.",
+    "subject": "Containers: Docker"
+  },
+  {
+    "stem": "How is Kubernetes related to Docker?",
+    "answer": "Kubernetes is a container orchestration system for Docker containers that is more extensive than Docker Swarm and is meant to coordinate clusters of nodes at scale in production in an efficient manner.",
+    "subject": "Containers: Kubernetes"
+  },
+  {
+    "stem": "In the context of Kubernetes, what is a container?",
+    "answer": "Kubernetes provides users with a management system for container-based applications, which is a relief from controlling each individual container. Containers operate on host machines through a shared OS, but they remain isolated from each other to run applications -- unless the administrator connects them. As opposed to VMs, containers use a service such as Kubernetes rather than a hypervisor, and they also share the same OS rather than use individual guest OSes. Containers are often paired with microservices and a cloud platform or service.",
+    "subject": "Containers: Kubernetes"
+  },
+  {
+    "stem": "What is a cluster?",
+    "answer": "Clusters enable high availability, load balancing and parallel processing. A cluster is a logical rather than physical unit. Organizations can include many servers or just a few in a cluster as the application's requirements demand.",
+    "subject": "Containers: Kubernetes"
+  },
+  {
+    "stem": "What is Container Orchestration?",
+    "answer": "Consider a scenario where you have 5-6 microservices for an application. Now, these microservices are put in individual containers, but won’t be able to communicate without container orchestration. So, as orchestration means the amalgamation of all instruments playing together in harmony in music, similarly container orchestration means all the services in individual containers working together to fulfill the needs of a single server.",
+    "subject": "Containers: Kubernetes"
+  },
+  {
+    "stem": "What is Kubernetes?",
+    "answer": "Kubernetes is an open-source container management tool which holds the responsibilities of container deployment, scaling & descaling of containers & load balancing. Being the Google’s brainchild, it offers excellent community and works brilliantly with all the cloud providers. So, we can say that Kubernetes is not a containerization platform, but it is a multi-container management solution.",
+    "subject": "Containers: Kubernetes"
+  },
+  {
     "stem": "What is a downside of using Twitter Bootstrap?",
     "answer": "All websites look the same if no effort is put into customizations.",
     "subject": "Fullstack: Bootstrap"
@@ -150,6 +240,41 @@
     "subject": "Fullstack: Express"
   },
   {
+    "stem": "In this URL, what are the query parameters/query string? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": "id=5421",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "In this URL, what is the domain? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": "usaa",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "In this URL, what is the path? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": "/path/resource",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "In this URL, what is the port? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": ":3000/",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "In this URL, what is the protocol? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": "https://",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "In this URL, what is the Subdomain? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": "wwww.",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "In this URL, what is the top-level domain? https://www.usaa.com:3000/path/resource:?id=5421",
+    "answer": ".com",
+    "subject": "Fullstack: HTTP"
+  },
+  {
     "stem": "What are the components of an HTTP request (not a duplicate)?",
     "answer": "verb, version, url, header(s) (includes cookies), and body",
     "subject": "Fullstack: HTTP"
@@ -157,6 +282,56 @@
   {
     "stem": "What are the components of an HTTP response (not a duplicate)?",
     "answer": "status code & reason phrase, header(s) (includes cookies), and body",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What are the VERBS associated with  HTTP requests?",
+    "answer": "Post, Put, Get, Patch, Delete",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 1XX response code indicate?",
+    "answer": "Informational (interim response, non-terminal, 101 switch to websocket",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 2XX response code indicate?",
+    "answer": "Successful (200 okay)",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 3XX response code indicate?",
+    "answer": "Redirect (301 Moved Permanently, 304 Not Modified)",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 4XX response code indicate?",
+    "answer": "Client Error (401 Unauthorized, 404 Not Found)",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does a 5XX response code indicate?",
+    "answer": "Server Error (500 Internal Server Error)",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does CRUDL stand for?",
+    "answer": "Create, Read, Update, Delete, List",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does it mean to be idempotent?",
+    "answer": "This means a client could make the same call repeatedly while producing the same results",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What does REST stand for?",
+    "answer": "Representational State Transfer",
+    "subject": "Fullstack: HTTP"
+  },
+  {
+    "stem": "What is Hypertext?",
+    "answer": "A text that contains links to other text",
     "subject": "Fullstack: HTTP"
   },
   {
@@ -905,6 +1080,27 @@
     "subject": "JS: Prototype Chain"
   },
   {
+    "stem": "What cannot be mocked in Mokito?",
+    "answer": "hashCode(), equals(), final classes, final methods, static methods",
+    "subject": "Mocking in Java"
+  },
+
+  {
+    "stem": "What is a mock?",
+    "answer": "A mock object is a replacement for a dependency in a unit test",
+    "subject": "Mocking in Java"
+  },
+  {
+    "stem": "What strategy do we use to isolate a class from its dependencies?",
+    "answer": "Dependency injection",
+    "subject": "Mocking in Java"
+  },
+  {
+    "stem": "What type of tests are you writing when you're using mocks?",
+    "answer": "Unit tests",
+    "subject": "Mocking in Java"
+  },
+  {
     "stem": "What things tell you that the code is probably well organized and what things tell you it probably isn't?",
     "subject": "SWE: Code Quality"
   },
@@ -1037,7 +1233,7 @@
     "subject": "SWE: SOLID Design Principles"
   },
   {
-    "stem": "Describe the basic flow of TDD",
+    "stem": "What is the basic flow of TDD?",
     "answer": "Red, Green, Refactor (Write failing test, Run test(s), Write minimal code to make test pass, Run test(s), Clean up code without breaking tests, Run test(s))",
     "subject": "TDD: Basics"
   },
@@ -1287,7 +1483,7 @@
     "subject": "User Stories: Title"
   },
   {
-    "stem": "Which of the three User Story parts is optinoal?",
+    "stem": "Which of the three User Story parts is optional?",
     "answer": "None!",
     "subject": "User Stories: Title"
   },
@@ -1522,78 +1718,68 @@
     "subject": "XP: Values"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Fullstack: Bookshelf, Knex, SQL"
+    "stem": "What's the major difference between React and Redux",
+    "answer": "State is stored in the 'store' in Redux and state is maintained at component level in React",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Fullstack: CRUD"
+    "stem": "What is Redux?",
+    "answer": "A predicatable state management tool",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Fullstack: Monk, MongoDB"
+    "stem": "What is one use case for a state management tool like Redux?",
+    "answer": "When a React application becomes extremely complex with lots of parent/child components",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Fullstack: REST"
+    "stem": "In Redux, where is the state of your application held?",
+    "answer": "The store",
+    "subject": "Fullstack: Redux"
+  },  
+  {
+    "stem": "In Redux, what is an action?",
+    "answer": "Payloads of information that send data from your application to your store",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Git: Rebase"
+    "stem": "What are the three methods on the store object that are useful?",
+    "answer": "getState(), dispatch(), subscribe()",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-JS: Inheritance"
+    "stem": "What is a reducer?",
+    "answer": "A function that takes state and an action as arguments and returns a new state.",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-JS: this"
+    "stem": "Does a reducer mutate state?",
+    "answer": "No! Reducers should NOT mutate state, but instead makes a new state.",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Node: export/requires"
+    "stem": "What is a pure function?",
+    "answer": "A function where the return value is always the same for the same arguments and invoking it has no side effects.",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Node: Filesystem"
+    "stem": "What's the major difference between React and Redux",
+    "answer": "State is stored in the 'store' in Redux and state is maintained at component level in React",
+    "subject": "Fullstack: Redux"
+  },  
+  {
+    "stem": "What is state?",
+    "answer": "The data within your application",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-Node: Streams"
+    "stem": "How is state changed in Redux?",
+    "answer": "Reducers",
+    "subject": "Fullstack: Redux"
   },
   {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-TDD: Acceptance Testing"
-  },
-  {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-TDD: Refactoring"
-  },
-  {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-TDD: Unit Testing"
-  },
-  {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-User Stories: Acceptance Criteria, BDD"
-  },
-  {
-    "stem": "TODO?",
-    "answer": "TODO.",
-    "subject": "Z-XP: Practices"
+    "stem": "Which component is used to allow a React app to know about the store?",
+    "answer": "<Provider />",
+    "subject": "Fullstack: Redux"
   }
 ]
